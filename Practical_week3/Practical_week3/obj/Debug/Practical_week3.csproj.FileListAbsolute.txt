@@ -1,0 +1,11 @@
+C:\Users\Kri\Desktop\TrainingPractical_3\Practical_week3\Practical_week3\bin\Debug\Practical_week3.exe.config
+C:\Users\Kri\Desktop\TrainingPractical_3\Practical_week3\Practical_week3\bin\Debug\Practical_week3.exe
+C:\Users\Kri\Desktop\TrainingPractical_3\Practical_week3\Practical_week3\bin\Debug\Practical_week3.pdb
+C:\Users\Kri\Desktop\TrainingPractical_3\Practical_week3\Practical_week3\obj\Debug\Practical_week3.csproj.AssemblyReference.cache
+C:\Users\Kri\Desktop\TrainingPractical_3\Practical_week3\Practical_week3\obj\Debug\Practical_week3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kri\Desktop\TrainingPractical_3\Practical_week3\Practical_week3\obj\Debug\Practical_week3.Form1.resources
+C:\Users\Kri\Desktop\TrainingPractical_3\Practical_week3\Practical_week3\obj\Debug\Practical_week3.Properties.Resources.resources
+C:\Users\Kri\Desktop\TrainingPractical_3\Practical_week3\Practical_week3\obj\Debug\Practical_week3.csproj.GenerateResource.cache
+C:\Users\Kri\Desktop\TrainingPractical_3\Practical_week3\Practical_week3\obj\Debug\Practical_week3.csproj.CoreCompileInputs.cache
+C:\Users\Kri\Desktop\TrainingPractical_3\Practical_week3\Practical_week3\obj\Debug\Practical_week3.exe
+C:\Users\Kri\Desktop\TrainingPractical_3\Practical_week3\Practical_week3\obj\Debug\Practical_week3.pdb

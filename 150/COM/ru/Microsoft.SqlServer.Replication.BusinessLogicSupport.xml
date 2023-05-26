@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.Replication.BusinessLogicSupport</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.#ctor">
+      <summary>Конструктор.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.CommitHandler(Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier,System.Guid)">
+      <summary>Необязательный метод, который реализует пользовательскую бизнес-логику и вызывается при фиксации изменения данных во время синхронизации.</summary>
+      <param name="source">
+        <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier" /> указывает, является ли источник изменения издателем или подписчиком.</param>
+      <param name="rowGuid">Идентификатор GUID фиксированной строки.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.DeleteErrorHandler(Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier,System.Data.DataSet,Microsoft.SqlServer.Replication.BusinessLogicSupport.ErrorLogType@,System.String@,System.Int32,System.String,System.Int32@,System.String@)">
+      <summary>Необязательный метод, который реализует пользовательскую бизнес-логику и вызывается при возникновении ошибки в момент загрузки или передачи инструкции DELETE.</summary>
+      <param name="deleteSource">
+        <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier" /> указывает, является ли источник удаления, вызвавшего ошибку, издателем или подписчиком.</param>
+      <param name="deletedDataSet">Набор данных, содержащий идентификатор GUID удаленной строки.</param>
+      <param name="errorLogType">Выходной параметр <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ErrorLogType" />, управляющий регистрацией ошибки при репликации. Этот параметр используется, только если возвращается значение <see cref="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError.AcceptCustomErrorBehavior" />.</param>
+      <param name="customErrorMessage">Выходной параметр, используемый для возвращения настраиваемого сообщения об ошибке. Этот параметр используется, только если возвращается значение <see cref="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError.AcceptCustomErrorBehavior" />.</param>
+      <param name="errorCode">Код ошибки, соответствующий произошедшей базовой ошибке репликации.</param>
+      <param name="errorMessage">Сообщение об ошибке, соответствующее произошедшей базовой ошибке репликации.</param>
+      <param name="historyLogLevel">Уровень ведения журнала настраиваемого сообщения, возвращаемого настраиваемым обработчиком бизнес-логики.</param>
+      <param name="historyLogMessage">Сообщение журнала, передаваемое настраиваемым обработчиком бизнес-логики. Сообщение журнала записывается в базу данных распространителя.</param>
+      <returns>Действие <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError" />, которое будет выполняться процессом после выполнения пользовательского обработчика бизнес-логики.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.DeleteHandler(Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier,System.Data.DataSet,System.Int32@,System.String@)">
+      <summary>Необязательный метод, который реализует пользовательскую бизнес-логику и вызывается при загрузке или передаче инструкций DELETE.</summary>
+      <param name="deleteSource">Указывает, где было инициировано удаление — в издателе или в подписчике.</param>
+      <param name="deletedDataSet">Набор данных, содержащий идентификатор GUID удаленной строки.</param>
+      <param name="historyLogLevel">Уровень ведения журнала настраиваемого сообщения, возвращаемого настраиваемой бизнес-логикой.</param>
+      <param name="historyLogMessage">Сообщение журнала, передаваемое настраиваемой бизнес-логикой. Сообщение журнала записывается в базу данных распространителя.</param>
+      <returns>Действие <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataDelete" />, которое будет выполняться процессом после выполнения настраиваемой бизнес-логики.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.Dispose">
+      <summary>Освобождает все занятые ресурсы. Этот метод вызывается после того, как выполнена вся пользовательская бизнес-логика.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.Initialize(System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>Отправляет информацию о синхронизируемой статье сопоставителю бизнес-логики при запуске агента слияния.</summary>
+      <param name="publisher">Имя издателя.</param>
+      <param name="subscriber">Имя подписчика.</param>
+      <param name="distributor">Имя распространителя.</param>
+      <param name="publisherDB">Имя базы данных публикации.</param>
+      <param name="subscriberDB">Имя базы данных подписки.</param>
+      <param name="articleName">Имя опубликованной статьи.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.InsertErrorHandler(Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier,System.Data.DataSet,Microsoft.SqlServer.Replication.BusinessLogicSupport.ErrorLogType@,System.String@,System.Int32,System.String,System.Int32@,System.String@)">
+      <summary>Необязательный метод, который реализует пользовательскую бизнес-логику и вызывается при возникновении ошибки в момент загрузки или передачи инструкции INSERT.</summary>
+      <param name="insertSource">
+        <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier" /> указывает, является ли источник вставки, вызвавшей ошибку, издателем или подписчиком.</param>
+      <param name="insertedDataSet">Набор данных, содержащий идентификатор GUID вставленной строки.</param>
+      <param name="errorLogType">Выходной параметр <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ErrorLogType" />, управляющий регистрацией ошибки при репликации. Этот параметр используется, только если возвращается значение <see cref="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError.AcceptCustomErrorBehavior" />.</param>
+      <param name="customErrorMessage">Выходной параметр, используемый для возвращения настраиваемого сообщения об ошибке. Этот параметр используется, только если возвращается значение <see cref="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError.AcceptCustomErrorBehavior" />.</param>
+      <param name="errorCode">Код ошибки, соответствующий произошедшей базовой ошибке репликации.</param>
+      <param name="errorMessage">Сообщение об ошибке, соответствующее произошедшей базовой ошибке репликации.</param>
+      <param name="historyLogLevel">Уровень ведения журнала настраиваемого сообщения, возвращаемого настраиваемым обработчиком бизнес-логики.</param>
+      <param name="historyLogMessage">Сообщение журнала, передаваемое настраиваемым обработчиком бизнес-логики. Сообщение журнала записывается в базу данных распространителя.</param>
+      <returns>Действие <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError" />, которое будет выполняться процессом после выполнения пользовательского обработчика бизнес-логики.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.InsertHandler(Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier,System.Data.DataSet,System.Data.DataSet@,System.Int32@,System.String@)">
+      <summary>Необязательный метод, который реализует пользовательскую бизнес-логику и вызывается при загрузке или передаче инструкций INSERT.</summary>
+      <param name="insertSource">
+        <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier" /> определяет, где была инициирована вставка — в издателе или в подписчике.</param>
+      <param name="insertedDataSet">Набор данных, содержащий идентификатор GUID вставленной строки.</param>
+      <param name="customDataSet">Набор данных, содержащий измененную строку, возвращаемую настраиваемой бизнес-логикой.</param>
+      <param name="historyLogLevel">Уровень ведения журнала настраиваемого сообщения, возвращаемого настраиваемой бизнес-логикой.</param>
+      <param name="historyLogMessage">Сообщение журнала, передаваемое настраиваемой бизнес-логикой. Сообщение журнала записывается в базу данных распространителя.</param>
+      <returns>Действие <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataChange" />, которое будет выполняться процессом после выполнения настраиваемой бизнес-логики.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.PhaseBegin(System.Boolean)">
+      <summary>Необязательный метод, который указывает на начало этапа загрузки или передачи во время синхронизации.</summary>
+      <param name="download">Указывает, является ли стадия, которая должна начаться, загрузкой или передачей.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.UpdateConflictsHandler(System.Data.DataSet,System.Data.DataSet,System.Data.DataSet@,Microsoft.SqlServer.Replication.BusinessLogicSupport.ConflictLogType@,System.String@,System.Int32@,System.String@)">
+      <summary>Необязательный метод, который реализует пользовательскую бизнес-логику и вызывается при возникновении конфликта инструкции UPDATE на издателе и подписчике.</summary>
+      <param name="publisherDataSet">Набор данных, представляющий данные издателя.</param>
+      <param name="subscriberDataSet">Набор данных, представляющий данные подписчика.</param>
+      <param name="customDataSet">Набор данных, реализованный в настраиваемой бизнес-логике.</param>
+      <param name="conflictLogType">Тип <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ConflictLogType" />, запрашиваемый настраиваемым обработчиком бизнес-логики.</param>
+      <param name="customConflictMessage">Сообщение конфликта, возвращаемое настраиваемым обработчиком бизнес-логики.</param>
+      <param name="historyLogLevel">Уровень ведения журнала настраиваемого сообщения, возвращаемого настраиваемым обработчиком бизнес-логики.</param>
+      <param name="historyLogMessage">Сообщение журнала, передаваемое настраиваемым обработчиком бизнес-логики. Сообщение журнала записывается в базу данных распространителя.</param>
+      <returns>Действие <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateConflict" />, которое будет выполняться процессом после выполнения пользовательского обработчика бизнес-логики.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.UpdateDeleteConflictHandler(Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier,System.Data.DataSet,System.Data.DataSet@,Microsoft.SqlServer.Replication.BusinessLogicSupport.ConflictLogType@,System.String@,System.Int32@,System.String@)">
+      <summary>Необязательный метод, который реализует пользовательскую бизнес-логику и вызывается при возникновении конфликта инструкции DELETE на издателе и подписчике.</summary>
+      <param name="updateSource">
+        <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier" /> указывает, является ли источник обновления издателем или подписчиком.</param>
+      <param name="sourceDataSet">Набор данных, содержащий идентификатор GUID, представляющий строку в конфликте.</param>
+      <param name="customDataSet">Набор данных, реализованный в настраиваемой бизнес-логике.</param>
+      <param name="conflictLogType">Тип <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ConflictLogType" />, запрашиваемый настраиваемым обработчиком бизнес-логики.</param>
+      <param name="customConflictMessage">Сообщение конфликта, возвращаемое настраиваемым обработчиком бизнес-логики.</param>
+      <param name="historyLogLevel">Уровень ведения журнала настраиваемого сообщения, возвращаемого настраиваемым обработчиком бизнес-логики.</param>
+      <param name="historyLogMessage">Сообщение журнала, передаваемое настраиваемым обработчиком бизнес-логики. Сообщение журнала записывается в базу данных распространителя.</param>
+      <returns>Действие <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateDeleteConflict" />, которое будет выполняться процессом после выполнения пользовательского обработчика бизнес-логики.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.UpdateErrorHandler(Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier,System.Data.DataSet,Microsoft.SqlServer.Replication.BusinessLogicSupport.ErrorLogType@,System.String@,System.Int32,System.String,System.Int32@,System.String@)">
+      <summary>Необязательный метод, который реализует пользовательскую бизнес-логику и вызывается при возникновении ошибки в момент загрузки или передачи инструкции UPDATE.</summary>
+      <param name="updateSource">
+        <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier" /> указывает, является ли источник обновления, вызвавшего ошибку, издателем или подписчиком.</param>
+      <param name="updatedDataSet">Набор данных, представляющий инструкцию UPDATE, вызвавшую ошибку.</param>
+      <param name="errorLogType">Выходной параметр <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ErrorLogType" />, управляющий регистрацией ошибки при репликации. Этот параметр используется, только если возвращается значение <see cref="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError.AcceptCustomErrorBehavior" />.</param>
+      <param name="customErrorMessage">Выходной параметр, используемый для возвращения настраиваемого сообщения об ошибке. Этот параметр используется, только если возвращается значение <see cref="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError.AcceptCustomErrorBehavior" />.</param>
+      <param name="errorCode">Код ошибки, соответствующий произошедшей базовой ошибке репликации.</param>
+      <param name="errorMessage">Сообщение об ошибке, соответствующее произошедшей базовой ошибке репликации.</param>
+      <param name="historyLogLevel">Уровень ведения журнала настраиваемого сообщения, возвращаемого настраиваемым обработчиком бизнес-логики.</param>
+      <param name="historyLogMessage">Сообщение журнала, передаваемое настраиваемым обработчиком бизнес-логики. Сообщение журнала записывается в базу данных распространителя.</param>
+      <returns>Действие <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError" />, которое будет выполняться процессом после выполнения пользовательского обработчика бизнес-логики.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.UpdateHandler(Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier,System.Data.DataSet,System.Data.DataSet@,System.Int32@,System.String@)">
+      <summary>Необязательный метод, который реализует пользовательскую бизнес-логику и вызывается при загрузке или передаче инструкций UPDATE.</summary>
+      <param name="updateSource">Указывает, где было инициировано обновление — в издателе или в подписчике.</param>
+      <param name="updatedDataSet">Набор данных, представляющий обновляемые данные.</param>
+      <param name="customDataSet">Набор данных, реализованный в настраиваемой бизнес-логике.</param>
+      <param name="historyLogLevel">Уровень ведения журнала настраиваемого сообщения, возвращаемого настраиваемой бизнес-логикой.</param>
+      <param name="historyLogMessage">Сообщение журнала, представленное настраиваемой бизнес-логикой. Сообщение журнала записывается в базу данных распространителя.</param>
+      <returns>Действие <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataChange" />, которое будет выполняться процессом после выполнения настраиваемой бизнес-логики.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule.HandledChangeStates">
+      <summary>Обязательное свойство, которое возвращает сведения о типе изменений, обрабатываемых модулем бизнес-логики.</summary>
+      <returns>
+        <see cref="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates" /> перечисляет типы изменений, обрабатываемых модулем бизнес-логики.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataChange">
+      <summary>Перечисляет все действия, которые могут быть выполнены при обработке изменений данных, которые не приводят к конфликтам.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataChange.RejectData">
+      <summary>Изменение данных отклоняется и не распространяется процессом репликации.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataChange.AcceptData">
+      <summary>Изменение данных принимается и распространяется процессом репликации обычным образом.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataChange.AcceptCustomData">
+      <summary>Изменение данных переопределяется пользовательскими данными, которые предоставляются обработчиком бизнес-логики. Затем пользовательские данные распространяются с помощью репликации.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataDelete">
+      <summary>Перечисляет все действия, которые могут быть выполнены при репликации инструкций DELETE, которые не приводят к конфликтам.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataDelete.RejectDelete">
+      <summary>Операция удаления отклоняется и не распространяется процессом репликации.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataDelete.AcceptDelete">
+      <summary>Операция удаления принимается и распространяется процессом репликации обычным образом.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataDelete.ConvertDeleteToUpdate">
+      <summary>Операция удаления отклоняется, а изменяемая строка должна быть обновлена в месте назначения таким образом, чтобы она стала соответствовать операции вставки на источнике первоначальной операции удаления.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError">
+      <summary>Перечисляет все действия, которые могут быть предприняты при возникновении ошибок обработки данных.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError.AcceptDefaultErrorBehavior">
+      <summary>Ошибка обрабатывается репликацией с использованием поведения по умолчанию.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnDataError.AcceptCustomErrorBehavior">
+      <summary>Ошибка обрабатывается с помощью пользовательской функции, предоставляемой обработчиком бизнес-логики. Затем пользовательская функция распространяется с помощью процесса репликации.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateConflict">
+      <summary>Перечисляет все действия, которые могут быть предприняты при обработке инструкций UPDATE, вызывающих конфликт.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateConflict.AcceptDefaultResolution">
+      <summary>Конфликт разрешается на основе правил разрешения по умолчанию.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateConflict.AcceptPublisherData">
+      <summary>Конфликт разрешается путем принятия обновления от издателя в качестве победителя.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateConflict.AcceptSubscriberData">
+      <summary>Конфликт разрешается путем принятия обновления от подписчика в качестве победителя.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateConflict.AcceptCustomConflictData">
+      <summary>Конфликт разрешается с помощью пользовательских данных, предоставляемых обработчиком бизнес-логики. Затем пользовательские данные распространяются процессом репликации.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateDeleteConflict">
+      <summary>Перечисляет все действия, которые могут быть предприняты при обработке инструкции UPDATE, конфликтующей с инструкцией DELETE.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateDeleteConflict.AcceptDefaultResolution">
+      <summary>Конфликт разрешается на основе правил разрешения по умолчанию.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateDeleteConflict.AcceptUpdate">
+      <summary>Конфликт разрешается путем принятия операции обновления в качестве победителя.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateDeleteConflict.AcceptDelete">
+      <summary>Конфликт разрешается путем принятия операции удаления в качестве победителя.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ActionOnUpdateDeleteConflict.AcceptCustomData">
+      <summary>Конфликт разрешается с помощью пользовательских данных, предоставляемых обработчиком бизнес-логики. Затем пользовательские данные распространяются с помощью репликации.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicModule">
+      <summary>Реализует пользовательскую бизнес-логику, вызываемую во время работы процесса синхронизации репликации слиянием.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicRowUpdatedEventHandler">
+      <summary>Представляет метод, обрабатывающий событие обновленной строки.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.BusinessLogicRowUpdatingEventHandler">
+      <summary>Представляет метод, обрабатывающий событие обновления строки.</summary>
+      <param name="sender">Источник события.</param>
+      <param name="e">Событие.</param>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates">
+      <summary>Перечисляет все состояния изменения данных, которые пользовательская бизнес-логика может обрабатывать во время синхронизации.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.PublisherInserts">
+      <summary>При применении на подписчике инструкции INSERT, выполненной на издателе.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.PublisherUpdates">
+      <summary>При применении на подписчике инструкции UPDATE, выполненной на издателе.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.PublisherDeletes">
+      <summary>При применении на подписчике инструкции DELETE, выполненной на издателе.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.SubscriberInserts">
+      <summary>При применении на издателе инструкции INSERT, выполненной на подписчике.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.SubscriberUpdates">
+      <summary>При применении на издателе инструкции UPDATE, выполненной на подписчике.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.SubscriberDeletes">
+      <summary>При применении на издателе инструкции DELETE, выполненной на подписчике.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.UpdateConflicts">
+      <summary>При возникновении конфликта инструкции UPDATE на издателе с инструкцией UPDATE на подписчике.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.PublisherUpdateSubscriberDeleteConflicts">
+      <summary>При возникновении конфликта инструкции UPDATE на издателе с инструкцией DELETE на подписчике.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.SubscriberUpdatePublisherDeleteConflicts">
+      <summary>При возникновении конфликта инструкции UPDATE на подписчике с инструкцией DELETE на издателе.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.PublisherInsertErrors">
+      <summary>При возникновении ошибок во время распространения инструкции INSERT от издателя к подписчику.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.PublisherUpdateErrors">
+      <summary>При возникновении ошибок во время распространения инструкции UPDATE от издателя к подписчику.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.PublisherDeleteErrors">
+      <summary>При возникновении ошибки во время распространения инструкции DELETE от издателя к подписчику.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.SubscriberInsertErrors">
+      <summary>При возникновении ошибок во время распространения инструкции INSERT от подписчика к издателю.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.SubscriberUpdateErrors">
+      <summary>При возникновении ошибок во время распространения инструкции UPDATE от подписчика к издателю.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.SubscriberDeleteErrors">
+      <summary>При возникновении ошибок во время распространения инструкции DELETE от подписчика к издателю.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ChangeStates.CommitsToDestination">
+      <summary>При фиксации изменений в целевой базе данных.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ConflictLogType">
+      <summary>Перечисляет поддерживаемые режимы ведения журнала конфликтов, доступные обработчику конфликтов.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ConflictLogType.ConflictLogNone">
+      <summary>Конфликт не регистрируется в журнале.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ConflictLogType.ConflictLogSubscriber">
+      <summary>Набор данных подписчика регистрируется в качестве проигравшего в конфликте.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ConflictLogType.ConflictLogPublisher">
+      <summary>Набор данных издателя регистрируется в качестве проигравшего в конфликте.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.ErrorLogType">
+      <summary>Перечисляет все поддерживаемые режимы ведения журнала ошибок.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ErrorLogType.ErrorLogNone">
+      <summary>Ошибка не регистрируется в журнале.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.ErrorLogType.ErrorLogCustom">
+      <summary>В журнале регистрируется пользовательская информация об ошибках.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier">
+      <summary>Перечисляет все источники изменения данных.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier.SourceIsPublisher">
+      <summary>Изменение данных возникло на издателе.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.BusinessLogicSupport.SourceIdentifier.SourceIsSubscriber">
+      <summary>Изменение данных возникло на подписчике.</summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,49 @@
+Overall summary:
+  Final result:                  Пройдено
+  Exit code (Decimal):           0
+  Start time:                    2023-05-27 00:08:34
+  End time:                      2023-05-27 00:10:17
+  Requested action:              LandingPage
+
+Machine Properties:
+  Machine name:                  DESKTOP-C73J7NQ
+  Machine processor count:       6
+  OS version:                    Майкрософт Windows 10 Pro (10.0.19045)
+  OS service pack:               
+  OS region:                     Россия
+  OS language:                   русский (Россия)
+  OS architecture:               x64
+  Process architecture:          64-разрядная версия
+  OS clustered:                  Нет
+
+Package properties:
+  Description:                   Microsoft SQL Server 2019 
+  ProductName:                   SQL Server 2019
+  Type:                          RTM
+  Version:                       15
+  SPLevel:                       0
+  Installation location:         F:\x64\setup\
+  Installation edition:          
+
+Параметры пользовательского ввода:
+  ACTION:                        LandingPage
+  CONFIGURATIONFILE:             
+  ENU:                           false
+  HELP:                          false
+  IACCEPTPYTHONLICENSETERMS:     false
+  IACCEPTROPENLICENSETERMS:      false
+  IACKNOWLEDGEENTCALLIMITS:      false
+  INDICATEPROGRESS:              false
+  MRCACHEDIRECTORY:              
+  QUIET:                         false
+  QUIETSIMPLE:                   false
+  SUPPRESSPAIDEDITIONNOTICE:     false
+  SUPPRESSPRIVACYSTATEMENTNOTICE: false
+  UIMODE:                        Normal
+  X86:                           false
+
+  Configuration file:            C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230527_000833\ConfigurationFile.ini
+
+Rules with failures or warnings:
+
+Rules report file:               The rule result report file is not available.

@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.WebServiceTask</name>
+  </assembly>
+  <members>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.DEFAULT_CODE">
+      <summary>Задает значение по умолчанию для кода ошибки.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.NOTSUPPORTED_CODE">
+      <summary>Указывает код ошибки, используемый при обнаружении задачей неподдерживаемых элементов.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.#ctor(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" /> и <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> элементов массива.</summary>
+      <param name="paramType">Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" />. Представляет тип параметра для параметров в массиве.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.Clone">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" />, идентичный текущему объекту <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" />.</summary>
+      <returns>Объект, свойства которого идентичны свойствам этого объекта <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.Equals(System.Object)">
+      <summary>Определяет, равны ли два экземпляра объекта.</summary>
+      <param name="obj">Объект, сравниваемый с текущим объектом.</param>
+      <returns>Значение true, если указанный объект равен текущему объекту; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.GetHashCode">
+      <summary>Возвращает хэш-код для экземпляра класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" />.</summary>
+      <returns>Хэш-код, который является 32-разрядным целым числом со знаком.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.#ctor(System.String,System.String,Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />, а также имя, тип данных и тип параметра свойства <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />.</summary>
+      <param name="name">Имя свойства.</param>
+      <param name="datatype">Тип данных свойства.</param>
+      <param name="type">Тип <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> свойства.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.Clone">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />, идентичный текущему объекту <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />.</summary>
+      <returns>Объект, свойства которого идентичны свойствам этого объекта <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.Equals(System.Object)">
+      <summary>Определяет, равны ли два экземпляра объекта.</summary>
+      <param name="obj">Объект, сравниваемый с текущим объектом.</param>
+      <returns>Значение true, если указанный объект равен текущему объекту; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.GetHashCode">
+      <summary>Возвращает хэш-код для экземпляра класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />.</summary>
+      <returns>32-разрядное целое число со знаком, которое является хэш-кодом для этого экземпляра.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.#ctor(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty[])">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> и свойства объекта <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" />.</summary>
+      <param name="properties">Свойства, предназначенные для инициализации объекта <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" />.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.Clone">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" />, идентичный текущему объекту <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" />.</summary>
+      <returns>Объект, свойства которого идентичны свойствам этого объекта <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.Equals(System.Object)">
+      <summary>Определяет, равны ли два экземпляра объекта.</summary>
+      <param name="obj">Объект, сравниваемый с текущим объектом.</param>
+      <returns>Значение true, если указанный объект равен текущему объекту; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.GetHashCode">
+      <summary>Возвращает хэш-код этого объекта.</summary>
+      <returns>Хэш-код, который является 32-разрядным целым числом со знаком.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.#ctor(System.String,System.String,Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType,System.Int32)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> с использованием сведений о параметре, передаваемом методу.</summary>
+      <param name="name">Имя параметра.</param>
+      <param name="datatype">Тип данных параметра.</param>
+      <param name="type">Тип параметра. Это значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" />.</param>
+      <param name="sequenceNumber">Порядковый номер параметра в подписи метода.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.Clone">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" />, идентичный текущему объекту <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" />. Этот класс не может быть унаследован.</summary>
+      <returns>Объект, свойства которого идентичны свойствам этого объекта <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.Equals(System.Object)">
+      <summary>Определяет, равны ли два экземпляра объекта.</summary>
+      <param name="obj">Объект, сравниваемый с текущим объектом.</param>
+      <returns>Значение true, если указанный объект равен текущему объекту; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.GetHashCode">
+      <summary>Возвращает хэш-код для этого объекта.</summary>
+      <returns>Хэш-код, который является 32-разрядным целым числом со знаком.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue.Clone">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />, идентичный текущему классу <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />.</summary>
+      <returns>Объект.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Add(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+      <summary>Добавляет объект <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> в конец коллекции.</summary>
+      <param name="paramValue">Объект <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />, добавляемый в коллекцию.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Clone">
+      <summary>Создает глубокую копию коллекции. Этот метод не может быть унаследован.</summary>
+      <returns>Глубокая копия коллекции.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Contains(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+      <summary>Указывает, доступны ли элементы в коллекции с помощью индексирования без формирования исключения.</summary>
+      <param name="paramValue">Имя, удостоверение, идентификатор или индекс объекта <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />, который необходимо найти в коллекции.</param>
+      <returns>Значение true, если доступ к коллекции возможен с использованием синтаксиса DTSParamValueCollection [index]. Значение false, если индексацию нельзя использовать для извлечения элементов коллекции.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Equals(System.Object)">
+      <summary>Определяет, равны ли два экземпляра объекта.</summary>
+      <param name="obj">Объект, сравниваемый с текущим объектом.</param>
+      <returns>Значение true, если указанный объект равен текущему объекту; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.GetHashCode">
+      <summary>Возвращает хэш-код для этого объекта.</summary>
+      <returns>Хэш-код, который является 32-разрядным целым числом со знаком.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.IndexOf(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+      <summary>Возвращает индекс (от нуля) первого вхождения значения в коллекции.</summary>
+      <param name="value">Объект <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />, который необходимо найти в коллекции.</param>
+      <returns>Индекс первого вхождения заданного значения в коллекцию, если оно обнаружено. В противном случае метод возвращает значение -1.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Insert(System.Int32,Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+      <summary>Добавляет новый объект <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> в коллекцию в позицию, указанную индексом.</summary>
+      <param name="index">Положение в коллекции для вставки нового объекта <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />.</param>
+      <param name="paramValue">Объект <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />, который необходимо вставить в коллекцию.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.#ctor(System.String,System.String,System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> с указанным именем метода, именем сообщения и документацией для метода.</summary>
+      <param name="methodName">Имя метода.</param>
+      <param name="messageName">Имя сообщения.</param>
+      <param name="doc">Документация по этому методу.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Clone">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" />, идентичный текущему объекту.</summary>
+      <returns>Объект, свойства которого идентичны свойствам текущего объекта.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Equals(System.Object)">
+      <summary>Определяет, равны ли два экземпляра объекта.</summary>
+      <param name="obj">Объект, сравниваемый с текущим объектом.</param>
+      <returns>Значение true, если экземпляры объектов равны. В противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.GetHashCode">
+      <summary>Возвращает хэш-код для этого объекта.</summary>
+      <returns>Хэш-код, который является 32-разрядным целым числом со знаком.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.#ctor(System.String[])">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" /> с помощью массива, содержащего все возможные значения перечисления.</summary>
+      <param name="enumValues">Массив, содержащий все возможные значения из перечисления.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.Clone">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" />, идентичный текущему объекту <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" />.</summary>
+      <returns>Объект, свойства которого идентичны свойствам этого объекта <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.Equals(System.Object)">
+      <summary>Определяет, равны ли два экземпляра объекта.</summary>
+      <param name="obj">Объект, сравниваемый с текущим объектом.</param>
+      <returns>Значение true, если указанный объект равен текущему объекту; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.GetHashCode">
+      <summary>Возвращает хэш-код этого объекта.</summary>
+      <returns>Хэш-код, который является 32-разрядным целым числом со знаком.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.CompareArrays(System.Object[],System.Object[])">
+      <summary>Сравнивает два массива.</summary>
+      <param name="a">Первый массив, участвующий в сравнении.</param>
+      <param name="b">Второй массив, который нужно сравнить с первым.</param>
+      <returns>Значение true, если оба массива равны null. Значение false, если один из массивов равен null, их длины различаются, или элемент одного из них отличается от соответствующего элемента в другом массиве.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.GetDotNetType(System.String)">
+      <summary>Возвращает полное имя Microsoft .NET Framework System.Type, соответствующее типу значения.</summary>
+      <param name="primitiveType">Имя типа, соответствующее типу значения.</param>
+      <returns>Полное имя типа .NET Framework System.Type, соответствующее типу значения.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.IsPrimitiveType(System.String)">
+      <summary>Указывает, что тип данных является типом значения.</summary>
+      <param name="typeName">Имя типа для проверки типа данных.</param>
+      <returns>Значение true, если тип данных является типом значений. В противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.Validate(System.String,System.String)">
+      <summary>Указывает, может ли значение быть преобразовано в определенный тип-примитив.</summary>
+      <param name="datatype">Тип-примитив.</param>
+      <param name="valueToValidate">Проверяемое значение.</param>
+      <returns>Значение true, если указанное значение можно преобразовать в этот тип-примитив. В противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.Clone">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" />, идентичный текущему <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" />.</summary>
+      <returns>Объект, свойства которого идентичны свойствам этого объекта <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.Equals(System.Object)">
+      <summary>Определяет, равны ли два экземпляра объекта.</summary>
+      <param name="obj">Объект, сравниваемый с текущим объектом.</param>
+      <returns>Значение true, если указанный объект равен текущему объекту; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.GetHashCode">
+      <summary>Возвращает хэш-код этого объекта.</summary>
+      <returns>Хэш-код, который является 32-разрядным целым числом со знаком.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.Clear">
+      <summary>Очищает значение, связанное с переменной.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.Clone">
+      <summary>Создает копию указанного объекта переменной.</summary>
+      <returns>Созданная копия переменной.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.Equals(System.Object)">
+      <summary>Указывает, совпадает ли переменная с указанным объектом.</summary>
+      <param name="obj">Объект для сравнения.</param>
+      <returns>Значение True, если переменная совпадает с указанным объектом. В противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.GetHashCode">
+      <summary>Возвращает хэш-код переменной.</summary>
+      <returns>Хэш-код.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary>Передает объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> задаче. Задача использует диспетчер точек останова для создания, удаления и проверки состояния точек останова. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="breakPointMgr">Диспетчер точек останова для этой задачи.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>Выполняет задачу «Веб-служба».</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="txn">Объект транзакции, частью которого является контейнер. Это значение может быть равно null.</param>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>Инициализирует свойства, связанные с задачей «Веб-служба». Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="eventInfos">Коллекция, которая содержит события, вызываемые при выполнении задачи.</param>
+      <param name="logEntryInfos">Коллекция записей журнала.</param>
+      <param name="refTracker">Средство отслеживания ссылок на объекты.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="element">Узел, который содержит загружаемые данные.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для формирования событий при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.ResumeExecution">
+      <summary>Возобновляет выполнение задачи после приостановки. Задача или контейнер возобновляются средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XML-документ, в котором необходимо сохранить данные.</param>
+      <param name="events">Узел в вышеупомянутом документе, в котором сохраняются данные.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.SuspendExecution">
+      <summary>Указывает, что исполняемый объект должен быть приостановлен. Этот метод вызывается средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Проверяет, правильно ли настроен компонент веб-службы.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException" />, инициализируя SerializationInfo и StreamingContext.</summary>
+      <param name="info">Объект SerializationInfo, содержащий сериализованные данные объекта о вызываемом исключении.</param>
+      <param name="context">Объект StreamingContext, содержащий контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.#ctor(System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException" />, инициализируя строку сообщения об ошибке.</summary>
+      <param name="errorMessage">Строка сообщения об ошибке, которая используется в исключении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.#ctor(System.String,System.Int32)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException" />, инициализируя сообщение об ошибке и код ошибки.</summary>
+      <param name="errorMessage">Сообщение об ошибке, используемое в исключении.</param>
+      <param name="errorCode">Код ошибки, используемый в исключении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Задает объект SerializationInfo с данными об исключении.</summary>
+      <param name="info">Объект SerializationInfo, содержащий сериализованные данные объекта о вызываемом исключении.</param>
+      <param name="context">Объект StreamingContext, содержащий контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.#ctor(System.Object,System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil" />, инициализируя HTTP-соединение и файл языка WSDL для загрузки.</summary>
+      <param name="connection">HTTP-соединение.</param>
+      <param name="downloadedWSDL">Полный путь к загружаемому файлу WSDL.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.CleanUp">
+      <summary>Высвобождает ресурсы, используемые для синтаксического анализа языка WSDL и вызывает веб-метод.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.GetServices">
+      <summary>Возвращает массив, содержащий все службы, доступные в языке WSDL.</summary>
+      <returns>Массив типа String, содержащий список всех служб.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.GetWebMethodInfos(System.String)">
+      <summary>Возвращает массив, содержащий все методы, доступные в службе.</summary>
+      <param name="serviceName">Имя службы.</param>
+      <returns>Массив типа <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.Invoke(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo,System.String,System.Object,Microsoft.SqlServer.Dts.Runtime.VariableDispenser)">
+      <summary>Вызывает указанный веб-метод с предоставленными параметрами.</summary>
+      <param name="methodInfo">Объект <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" />, предоставляющий сведения о вызываемых веб-методах.</param>
+      <param name="serviceName">Имя службы.</param>
+      <param name="connection">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.HttpClientConnection" />, предоставляющий URL-адрес веб-службы.</param>
+      <param name="taskVariableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.VariableDispenser" />, связанный с задачей.</param>
+      <returns>Результаты вызова веб-метода.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.Elements">
+      <summary>Возвращает или задает элементы массива.</summary>
+      <returns>Коллекция <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection" />, содержащая элементы массива.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.ParamType">
+      <summary>Возвращает тип параметра.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.DataType">
+      <summary>Возвращает тип данных свойства.</summary>
+      <returns>Тип данных свойства.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.Name">
+      <summary>Возвращает имя свойства.</summary>
+      <returns>Имя свойства.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.ParamType">
+      <summary>Возвращает тип <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> параметра.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" />, указывающее тип параметра.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.ParamValue">
+      <summary>Возвращает или задает значение свойства.</summary>
+      <returns>Объект <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />, который содержит значение свойства.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.Properties">
+      <summary>Возвращает массив свойств для класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" />.</summary>
+      <returns>Массив типа <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.DataType">
+      <summary>Возвращает тип данных параметра.</summary>
+      <returns>Тип данных параметра.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.Name">
+      <summary>Возвращает имя параметра.</summary>
+      <returns>Имя параметра.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.ParamType">
+      <summary>Возвращает тип параметра.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />, указывающее тип параметра.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.ParamValue">
+      <summary>Возвращает или задает значение параметра.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />, указывающее значение параметра. Это может быть сложное значение, примитивное значение, массив значений или значение из перечисления.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.SequenceNumber">
+      <summary>Возвращает порядковый номер параметра в подписи метода.</summary>
+      <returns>Значение, указывающее порядковый номер параметра в подписи метода.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Item(System.Int32)">
+      <summary>Возвращает элемент по указанному индексу.</summary>
+      <param name="index">Имя, идентификатор или индекс объекта <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />, который необходимо вернуть из коллекции.</param>
+      <returns>Объект <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Documentation">
+      <summary>Возвращает документацию.</summary>
+      <returns>Документация.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.MessageName">
+      <summary>Возвращает имя сообщения.</summary>
+      <returns>Имя сообщения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.MethodName">
+      <summary>Возвращает имя метода.</summary>
+      <returns>Имя метода.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.ParamInfos">
+      <summary>Возвращает или задает массив, содержащий сведения обо всех параметрах для метода.</summary>
+      <returns>Массив объектов <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" />, по одному экземпляру на каждый параметр.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Supported">
+      <summary>Возвращает значение, указывающее, поддерживается ли веб-метод.</summary>
+      <returns>Значение true, если веб-метод поддерживается. В противном случае значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.EnumValues">
+      <summary>Возвращает возможные значения объекта перечисления.</summary>
+      <returns>Массив типа String, содержащий возможные значения из объекта перечисления.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.SelectedValue">
+      <summary>Возвращает или задает значение параметра.</summary>
+      <returns>Значение параметра.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask.Connection">
+      <summary>Возвращает или задает имя соединения, которое следует использовать.</summary>
+      <returns>Имя соединения, которое будет использоваться.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask.OverwriteWsdlFile">
+      <summary>Возвращает или задает значение, указывающее, будет ли WDSL-файл перезаписан.</summary>
+      <returns>Значение true, если WSDL-файл будет перезаписан. В противном случае — значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask.ServiceName">
+      <summary>Возвращает или задает имя веб-службы.</summary>
+      <returns>Имя веб-службы.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask.WebMethodInfo">
+      <summary>Возвращает или задает объект сведений веб-метода DTS.</summary>
+      <returns>Объект сведения веб-метода DTS.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask.WsdlFile">
+      <summary>Возвращает или задает имя WSDL-файла.</summary>
+      <returns>Имя WSDL-файла.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.AssignedValue">
+      <summary>Возвращает или задает значение параметра.</summary>
+      <returns>Значение параметра.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.Value">
+      <summary>Возвращает или задает значение объекта переменной.</summary>
+      <returns>Значение переменной.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue.VariableName">
+      <summary>Возвращает или задает имя переменной.</summary>
+      <returns>Имя переменной.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.Connection">
+      <summary>Возвращает или задает имя соединения, которое следует использовать.</summary>
+      <returns>Имя соединения, которое будет использоваться.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.DebugMode">
+      <summary>Возвращает или задает значение типа Boolean, указывающее, выполняется ли задача в режиме отладки. Свойство <see cref="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.DebugMode" /> может быть одновременно доступно для нескольких потоков. Чтобы обеспечить потокобезопасность и избежать проблем с параллелизмом, используется класс Interlocked платформы Microsoft .NET Framework.</summary>
+      <returns>Значение true, если задача выполняется в отладочном режиме. В противном случае — значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.OutputLocation">
+      <summary>Возвращает или задает выходное расположение результатов веб-метода.</summary>
+      <returns>Выходное расположение результатов веб-метода.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.OutputType">
+      <summary>Возвращает или задает значение, указывающее место хранения результатов вызова веб-метода.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType" />, указывающее расположение для хранения результатов веб-метода.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.OverwriteWsdlFile">
+      <summary>Возвращает или задает значение, указывающее, будет ли перезаписан файл языка описания веб-служб (WDSL).</summary>
+      <returns>Значение true указывает, что файл WSDL будет перезаписан. Значение false указывает, что файл не будет перезаписан.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.ServiceName">
+      <summary>Возвращает или задает имя веб-службы.</summary>
+      <returns>Имя веб-службы.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.SuspendRequired">
+      <summary>Возвращает или задает значение типа Boolean, которое указывает, будет ли производиться приостановка задачи в точке останова. Это значение устанавливается подсистемой среды выполнения для задач и контейнеров при обнаружении точки останова.</summary>
+      <returns>Значение true, если задача приостанавливается при достижении точки останова.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.WebMethodInfo">
+      <summary>Возвращает или задает объект <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" />.</summary>
+      <returns>Объект <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.WsdlFile">
+      <summary>Возвращает или задает имя файла на языке WSDL, который должен быть считан по URL-адресу файла или URL-адресу HTTP.</summary>
+      <returns>Имя файла WSDL, который будет загружен по заданному URL-адресу.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.ErrorCode">
+      <summary>Возвращает код ошибки.</summary>
+      <returns>Код ошибки.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue">
+      <summary>Содержит значение параметра, если параметр имеет тип <see cref="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Array" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty">
+      <summary>Инкапсулирует сведения о свойстве сложного параметра типа.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue">
+      <summary>Инкапсулирует значение параметра сложного типа.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType">
+      <summary>Классифицирует место хранения результата вызова веб-метода. Результат веб-метода можно сохранить в файле или в переменной.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType.File">
+      <summary>Сохраняет результат в файле.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType.Variable">
+      <summary>Сохраняет результат в переменной.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" />, соответствующий одному параметру веб-метода.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType">
+      <summary>Определяет тип параметра, передаваемого методу веб-службы.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Complex">
+      <summary>Указывает, что параметр является сложным типом.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Primitive">
+      <summary>Указывает, что параметр является типом-примитивом.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Enum">
+      <summary>Указывает то, что параметр является значением перечисления.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Array">
+      <summary>Указывает то, что параметр является массивом.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Variable">
+      <summary>Указывает, что значение параметра содержится в переменной.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Undefined">
+      <summary>Задает неопределенный тип параметра.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue">
+      <summary>Определяет абстрактный базовый класс, представляющий значение параметра, передаваемое веб-методу.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection">
+      <summary>Представляет набор объектов <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo">
+      <summary>Инкапсулирует данные веб-метода.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue">
+      <summary>Содержит значение параметра, если параметр имеет тип <see cref="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Enum" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper">
+      <summary>Содержит методы для определения типа-примитива и сопоставления типа-примитива с системным типом .NET Framework Microsoft.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.IDTSWebServiceTask">
+      <summary>Представляет задачу веб-службы DTS.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue">
+      <summary>Инкапсулирует определенный <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />, тип <see cref="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Primitive" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.VariableValue">
+      <summary>Представляет значение переменной.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask">
+      <summary>Выполняет веб-метод и сохраняет результат в указанном местоположении. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException">
+      <summary>Содержит определение для исключений, которое используется <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil">
+      <summary>Производит доступ и вызывает веб-службы. Этот класс используется <see cref="N:Microsoft.SqlServer.Dts.Tasks.WebServiceTask" />, а также своим пользовательским интерфейсом в качестве многократно используемой библиотеки функций.</summary>
+    </member>
+  </members>
+</doc>

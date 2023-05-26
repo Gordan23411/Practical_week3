@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.TransferStoredProceduresTask</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary>Передает задаче объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="manager">Диспетчер точек останова, определенный для этой задачи.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>Запускает задачу.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="transaction">Объект транзакции, частью которого является контейнер. Это значение может быть равно null.</param>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>Инициализирует свойства, связанные с задачей. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="eventInfos">Коллекция, которая содержит события, вызываемые при выполнении задачи.</param>
+      <param name="logEntryInfos">Коллекция записей журнала.</param>
+      <param name="refTracker">Средство отслеживания ссылок на объекты.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Узел, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.ResumeExecution">
+      <summary>Возобновляет выполнение задачи после приостановки. Задача или контейнер возобновляются средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XML-документ, в который сохраняется информация.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.SuspendExecution">
+      <summary>Указывает, что исполняемый объект должен быть приостановлен. Этот метод вызывается средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Проверяет, правильно ли настроен компонент.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask.DestinationConnection">
+      <summary>Возвращает или задает имя подключения для целевой базы данных.</summary>
+      <returns>Имя подключения для целевой базы данных.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask.IfObjectExists">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists" />, указывающее, должно ли выполнение задачи завершиться ошибкой, следует ли перезаписать существующую хранимую процедуру или пропустить передачу хранимой процедуры, если процедура с таким же именем уже существует в месте назначения.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask.SourceConnection">
+      <summary>Возвращает или задает имя диспетчера подключений для базы данных-источника.</summary>
+      <returns>Имя диспетчера подключений для базы данных-источника.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask.StoredProceduresList">
+      <summary>Возвращает или задает список имен хранимых процедур с разделителями-запятыми.</summary>
+      <returns>Список имен хранимых процедур с разделителями-запятыми.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask.TransferAllStoredProcedures">
+      <summary>Возвращает или задает значение, указывающее, должны ли переноситься все хранимые процедуры в базу данных master.</summary>
+      <returns>Значение true, если передаются все хранимые процедуры в базе данных master. В противном случае — значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.DebugMode">
+      <summary>Возвращает или задает значение типа Boolean, указывающее, должна ли задача определять точки останова.</summary>
+      <returns>Значение true, если задача должна определить, разрешены ли точки останова. Значение false, если задача может игнорировать все точки останова.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.DestinationConnection">
+      <summary>Возвращает или задает значение типа String, содержащее имя диспетчера соединений SMO для базы данных-источника или целевой базы данных.</summary>
+      <returns>Значение типа String, содержащее диспетчер соединений SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.ExecutionValue">
+      <summary>Возвращает объект, указывающий количество переданных хранимых процедур.</summary>
+      <returns>Объект, содержащий количество переданных хранимых процедур.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.IfObjectExists">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists" />, указывающее, должно ли выполнение задачи завершиться ошибкой, следует ли перезаписать существующую хранимую процедуру или пропустить передачу хранимой процедуры, если идентичная процедура уже существует в назначении.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists" />, указывающее, должно ли выполнение задачи завершиться ошибкой, следует ли игнорировать существующую хранимую процедуру или пропустить передачу хранимой процедуры, если хранимая процедура с тем же именем уже существует в назначении.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.SourceConnection">
+      <summary>Возвращает или задает значение типа String, содержащее имя диспетчера соединений SMO для базы данных-источника или целевой базы данных.</summary>
+      <returns>Значение типа String, содержащее строку соединения диспетчера соединений SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.StoredProceduresList">
+      <summary>Возвращает или задает коллекцию StringCollection, содержащую разделенный запятыми список имен хранимых процедур.</summary>
+      <returns>Коллекция StringCollection, содержащая разделенный запятыми список имен хранимых процедур.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.SuspendRequired">
+      <summary>Возвращает или задает значение типа Boolean, которое указывает, следует ли приостанавливать выполнение задачи в точке останова. Это значение устанавливается подсистемой выполнения для задач и контейнеров при обнаружении точки останова.</summary>
+      <returns>Значение true, если задача приостанавливается. Значение false, если задача может игнорировать точку останова.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.TransferAllStoredProcedures">
+      <summary>Значение типа Boolean, указывающее, передаются все хранимые процедуры в базе данных master исходного SQL Server или только указанные хранимые процедуры.</summary>
+      <returns>Значение true, если передаются все хранимые процедуры в базе данных master. Значение false, если передаются только хранимые процедуры, указанные в списке <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.StoredProceduresList" />.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists">
+      <summary>Содержит значения, используемые свойством <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.IfObjectExists" /><see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask" /> для определения способов обработки передачи, если хранимая процедура существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists.FailTask">
+      <summary>Вызывает ошибку в выполнении задачи, если эта же хранимая процедура существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists.Overwrite">
+      <summary>Перезаписывает задание, если эта же хранимая процедура существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.IfObjectExists.Skip">
+      <summary>Пропускает передачу хранимой процедуры, если эта же хранимая процедура существует в назначении.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.ITransferStoredProceduresTask">
+      <summary>Представляет задачу «Передача хранимых процедур».</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask">
+      <summary>Содержит методы, свойства и перечисления, позволяющие копировать хранимые процедуры из базы данных master, расположенной в одном экземпляре SQL Server, в другой. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.TransferStoredProceduresTask.DtsTransferSPException">
+      <summary>Исключение, которое вызывается во время загрузки, если сохраненное имя корневого узла XML задачи повреждено.</summary>
+    </member>
+  </members>
+</doc>

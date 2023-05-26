@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.WMIEWTask</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary>Передает в <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> ссылку на задачу <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" />. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="manager">Ссылка на <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />, которую необходимо передать.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>Запускает задачу.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> для задачи.</param>
+      <param name="variableDispenser">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> для задачи.</param>
+      <param name="events">Ссылка на объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> для вызова событий.</param>
+      <param name="log">Ссылка на объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="transaction">Объект транзакции, частью которого может являться задача, в зависимости от значения, содержащегося в свойстве TransactionOption. Этому значению можно присвоить пустую ссылку (Nothing в языке Visual Basic).</param>
+      <returns>Перечисление <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />, указывающее результат выполнения.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>Инициализирует свойства, связанные с задачей <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" />. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> для задачи.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для получения событий.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> для протоколирования событий.</param>
+      <param name="eventInfos">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" />.</param>
+      <param name="logEntryInfos">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" />.</param>
+      <param name="refTracker">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" />.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">XML-элемент, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ResumeExecution">
+      <summary>Возобновляет выполнение задачи после приостановки. Задача или контейнер возобновляются средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XML-документ, который содержит XML-элемент, представляющий задачу.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.SuspendExecution">
+      <summary>Указывает, что исполняемый объект должен быть приостановлен. Этот метод вызывается средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Проверяет, правильно ли настроена задача.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> для задачи.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для получения событий.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> для протоколирования событий.</param>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />, которое указывает результат проверки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.ActionAtEvent">
+      <summary>Возвращает или задает ответ <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask" />, когда задача получает WMI-событие.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.ActionAtTimeout">
+      <summary>Возвращает или задает ответ <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask" />, когда проходит время ожидания задачи без получения WMI-события.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.AfterEvent">
+      <summary>Возвращает или задает ответ <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask" />, когда задача получает указанное WMI-событие.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.AfterTimeout">
+      <summary>Возвращает или задает ответ <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask" />, когда проходит время ожидания задачи без получения WMI-события.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.NumberOfEvents">
+      <summary>Возвращает или задает число WMI-событий, которые должна отслеживать задача.</summary>
+      <returns>Число WMI-событий, которые должна отслеживать задача.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.Timeout">
+      <summary>Возвращает или задает число секунд, в течение которых задача должна подождать получения события WMI, прежде чем истечет время ожидания.</summary>
+      <returns>Число секунд, в течение которых задача должна подождать получения события WMI, прежде чем истечет время ожидания.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.WmiConnection">
+      <summary>Возвращает или задает имя WMI-соединения, связанного с задачей.</summary>
+      <returns>Имя WMI-соединения, связанного с задачей.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.WqlQuerySource">
+      <summary>Возвращает или задает источник WQL-запроса, который должен быть исполнен задачей.</summary>
+      <returns>Источник WQL-запроса.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask.WqlQuerySourceType">
+      <summary>Возвращает или задает тип источника WQL-запроса.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ActionAtEvent">
+      <summary>Определяет реакцию задачи <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> на получение события инструментария управления Windows (WMI).</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent" />. Значение по умолчанию — <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent.LogTheEventAndFireDTSEvent" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ActionAtTimeout">
+      <summary>Определяет реакцию <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> на превышение времени ожидания задачей события инструментария управления Windows (WMI).</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout" />. Значение по умолчанию — <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout.LogTimeoutAndFireDTSEvent" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterEvent">
+      <summary>Определяет реакцию <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> на получение задачей события инструментария управления Windows WMI.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent" />. Значение по умолчанию — <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.ReturnWithSuccess" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterTimeout">
+      <summary>Определяет реакцию <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> на превышение времени ожидания задачей события инструментария управления Windows (WMI).</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout" />. Значение по умолчанию — <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.ReturnWithFailure" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.DebugMode">
+      <summary>Значение типа Boolean, указывающее, должна ли задача <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> проверять точки останова.</summary>
+      <returns>Значение true, если задача <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> должна проверять включенные точки останова. В противном случае — значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ExecutionValue">
+      <summary>Возвращает объект Object, содержащий результаты выполнения задачи <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" />.</summary>
+      <returns>Значение типа Object, содержащее результаты выполнения задачи.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.NumberOfEvents">
+      <summary>Возвращает или задает количество событий инструментария управления Windows (WMI), которые необходимо отслеживать с помощью задачи <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" />.</summary>
+      <returns>Значение типа Integer, содержащее количество событий WMI, которые должна отслеживать задача. Значение по умолчанию равно 1.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.SuspendRequired">
+      <summary>Возвращает или задает значение типа Boolean, которое указывает, будет ли производиться приостановка задачи в точке останова. Это значение устанавливается подсистемой среды выполнения для задач и контейнеров при обнаружении точки останова.</summary>
+      <returns>Значение true, если задача приостанавливается при достижении точки останова.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.Timeout">
+      <summary>Возвращает или задает количество секунд, в течение которых задача ожидает получения события инструментария управления Windows (WMI) до истечения времени ожидания.</summary>
+      <returns>Значение типа Integer, содержащее количество секунд, в течение которых задача должна подождать получения события WMI прежде, чем истечет время ожидания. Если задано нулевое значение (0), задача ждет бесконечно. Значение по умолчанию равно нулю (0).</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WmiConnection">
+      <summary>Возвращает или задает имя класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" />, используемого задачей <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" />.</summary>
+      <returns>Имя класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" />, связанного с задачей.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource">
+      <summary>Возвращает или задает источник запроса на языке WQL, который должен быть выполнен задачей <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" />.</summary>
+      <returns>Возвращает значение типа String, содержащее источник WQL-запроса.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySourceType">
+      <summary>Возвращает или задает значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" />, которое указывает тип источника (соединение с файлом или переменная) для запроса на языке WQL, который должен быть выполнен задачей <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" />.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" />. По умолчанию <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.DirectInput" />.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent">
+      <summary>Определяет действие, выполняемое <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> при получении задачей указанного события инструментария управления Windows (WMI).</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent.LogTheEventAndFireDTSEvent">
+      <summary>Вызывает пользовательское событие DTS, указывающее на возникновение события WMI и предоставляющее все сведения, связанные с событием WMI, в формате управляющих объектов (MOF), а затем регистрирует в указанном журнале уведомление о событии и состояние, указанное в <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterEvent" />.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent.LogTheEvent">
+      <summary>Регистрирует в указанном журнале уведомление о событии и состояние, указанное в <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterEvent" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout">
+      <summary>Определяет реакцию <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> на превышение времени ожидания задачей события инструментария управления Windows (WMI).</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout.LogTimeoutAndFireDTSEvent">
+      <summary>Вызывает пользовательское событие DTS, указывающее на истечение времени ожидания для события WMI, а затем регистрирует в указанном журнале время ожидания и состояние, указанное в <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterTimeout" />.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout.LogTimeout">
+      <summary>Регистрирует в указанном журнале время ожидания и состояние, указанное в <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterTimeout" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent">
+      <summary>Определяет реакцию <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> на получение задачей события инструментария управления Windows WMI.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.ReturnWithSuccess">
+      <summary>Регистрирует в журнале выбор пользователя обработки уведомления о событии как успешно завершенного и прекращении ожидания зарегистрированного события.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.ReturnWithFailure">
+      <summary>Регистрирует в журнале выбор пользователя обработки уведомления о событии как сбоя и прекращении ожидания зарегистрированного события. Это значение по умолчанию.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.WatchfortheEventAgain">
+      <summary>Регистрирует в журнале, что пользователь выбрал продолжение ожидания события.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout">
+      <summary>Определяет реакцию <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> на превышение времени ожидания задачей события инструментария управления Windows (WMI).</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.ReturnWithSuccess">
+      <summary>Регистрирует в журнале выбор пользователя обработки времени ожидания как успешно завершенного и прекращении ожидания зарегистрированного события.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.ReturnWithFailure">
+      <summary>Регистрирует в журнале выбор пользователя обработки времени ожидания как сбоя и прекращении ожидания зарегистрированного события. Это значение по умолчанию.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.WatchfortheEventAgain">
+      <summary>Регистрирует в журнале, что пользователь выбрал продолжение ожидания события.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.IWmiEventWatcherTask">
+      <summary>Представляет задачу «Отслеживание WMI-событий».</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType">
+      <summary>Определяет тип источника свойства <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" />, обеспечивающего выполнение запроса на языке WQL классом <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" />.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.FileConnection">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" /> содержит имя файлового соединения, из которого необходимо получить WQL-запрос.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.DirectInput">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" /> содержит WQL-запрос.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.Variable">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" /> содержит имя переменной, из которой необходимо получить WQL-запрос.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask">
+      <summary>Содержит элементы, используемые для настройки и запуска задачи «Отслеживание событий WMI», запускающей запросы инструментария управления Windows (WMI), и возвращает сведения WMI о системе компьютера. Этот класс не может быть унаследован.</summary>
+    </member>
+  </members>
+</doc>

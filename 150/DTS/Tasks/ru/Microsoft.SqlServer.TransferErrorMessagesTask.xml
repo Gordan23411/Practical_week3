@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.TransferErrorMessagesTask</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary>Обеспечивает для задачи возможность создания, удаления и проверки состояния точек останова. Этот метод вызывается подсистемой выполнения при создании задачи или контейнера и не используется в коде.</summary>
+      <param name="manager">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />, используемый для управления точками останова в этой задаче или контейнере.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>Выполняет задачу в рамках рабочего процесса пакета.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> для контейнера.</param>
+      <param name="variableDispenser">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> для контейнера.</param>
+      <param name="events">Интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> для формирования событий.</param>
+      <param name="log">Интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="transaction">Объект транзакции, частью которого является контейнер, в зависимости от значения свойства <see cref="P:Microsoft.SqlServer.Dts.Runtime.DtsContainer.TransactionOption" />. Это значение может быть равно null.</param>
+      <returns>Перечисление <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />, которое указывает результат выполнения.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>Инициализирует свойства, связанные с задачей. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+      <param name="log">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" />.</param>
+      <param name="eventInfos">Коллекция, которая содержит события, вызываемые при выполнении задачи.</param>
+      <param name="logEntryInfos">Коллекция записей журнала.</param>
+      <param name="refTracker">Средство отслеживания ссылок на объекты.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Объект XmlElement, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.ResumeExecution">
+      <summary>Возобновляет выполнение задачи после приостановки. Выполнение задачи возобновляется подсистемой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XML-документ, в который сохраняется информация.</param>
+      <param name="events">Интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.SuspendExecution">
+      <summary>Вызывается подсистемой выполнения при необходимости приостановки выполнения исполняемого файла.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Предоставляет контейнеру возможность определить, что он содержит недопустимые настройки, которые могут помешать его успешному выполнению.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> для контейнера.</param>
+      <param name="variableDispenser">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> для контейнера.</param>
+      <param name="events">Интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> для формирования событий.</param>
+      <param name="log">Интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <returns>Перечисление <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />, которое указывает результат проверки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.ITransferErrorMessagesTask.DestinationConnection">
+      <summary>Возвращает или задает имя диспетчера подключений для целевой базы данных.</summary>
+      <returns>Имя диспетчера подключений для целевой базы данных.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.ITransferErrorMessagesTask.ErrorMessageLanguagesList">
+      <summary>Возвращает или задает определяемые пользователем сообщения об ошибках для передачи.</summary>
+      <returns>Определяемые пользователем сообщения об ошибках для передачи.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.ITransferErrorMessagesTask.ErrorMessagesList">
+      <summary>Возвращает или задает сообщения об ошибках для передачи.</summary>
+      <returns>Сообщение об ошибках для передачи.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.ITransferErrorMessagesTask.IfObjectExists">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists" />, указывающее, должно ли выполнение задачи завершиться ошибкой, следует ли перезаписать существующее сообщение или пропустить передачу сообщения об ошибке, если идентичное сообщение об ошибке уже существует в месте назначения.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.ITransferErrorMessagesTask.SourceConnection">
+      <summary>Возвращает или задает имя диспетчера подключений для базы данных-источника.</summary>
+      <returns>Имя диспетчера подключений для базы данных-источника.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.ITransferErrorMessagesTask.TransferAllErrorMessages">
+      <summary>Возвращает или задает значение, указывающее, следует ли передавать все определенные пользователем сообщения об ошибках в источнике.</summary>
+      <returns>Значение true, если передаются все определяемые пользователем сообщения об ошибках. В противном случае — значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.DebugMode">
+      <summary>Возвращает или задает значение типа Boolean, указывающее, должна ли задача определять точки останова.</summary>
+      <returns>Значение true, если задача должна определить, разрешены ли точки останова. Значение false, если задача может игнорировать все точки останова.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.DestinationConnection">
+      <summary>Возвращает или задает значение типа String, содержащее имя диспетчера соединений SMO для целевой базы данных.</summary>
+      <returns>Значение типа String, содержащее диспетчер соединений SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.ErrorMessageLanguagesList">
+      <summary>Возвращает или задает коллекцию StringCollection, содержащую определяемые пользователем сообщения об ошибках, которые необходимо передать.</summary>
+      <returns>Коллекция StringCollection, содержащая определяемые пользователем сообщения об ошибках, которые необходимо передать.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.ErrorMessagesList">
+      <summary>Возвращает или задает коллекцию StringCollection, содержащую идентификаторы языков, которые необходимо передать.</summary>
+      <returns>Коллекция StringCollection, содержащая идентификаторы языков сообщений об ошибках, которые необходимо передать.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.ExecutionValue">
+      <summary>Возвращает объект, указывающий количество переданных сообщений об ошибках.</summary>
+      <returns>Объект, содержащий количество переданных сообщений об ошибках.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.IfObjectExists">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists" />, указывающее, должно ли выполнение задачи завершиться ошибкой, следует ли перезаписать существующее сообщение или пропустить передачу сообщения об ошибке, если идентичное сообщение об ошибке уже существует в назначении.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists" />, указывающее, должно ли выполнение задачи завершиться ошибкой, следует ли игнорировать существующее сообщение или пропустить передачу сообщения об ошибке, если сообщение об ошибке с тем же именем уже существует в месте назначения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.SourceConnection">
+      <summary>Возвращает или задает значение типа String, содержащее имя диспетчера соединений SMO для базы данных-источника.</summary>
+      <returns>Значение типа String, содержащее соединение SMO для базы данных-источника.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.SuspendRequired">
+      <summary>Возвращает или задает значение типа Boolean, которое указывает, следует ли приостанавливать выполнение задачи в точке останова. Это значение устанавливается подсистемой среды выполнения для задач и контейнеров при обнаружении точки останова.</summary>
+      <returns>Значение true, если выполнение задачи приостанавливается в точке останова. Значение false, если точка останова может быть проигнорирована.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.TransferAllErrorMessages">
+      <summary>Возвращает или задает значение типа Boolean, указывающее, следует передавать все определенные пользователем сообщения об ошибках в источнике или только указанные сообщения об ошибках.</summary>
+      <returns>Значение true, если передаются все определяемые пользователем сообщения об ошибках.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists">
+      <summary>Содержит значения, используемые свойством <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.IfObjectExists" /><see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask" /> для определения способов обработки передачи, если сообщение об ошибке существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists.FailTask">
+      <summary>Вызывает ошибку в выполнении задачи, если это же сообщение об ошибке существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists.Overwrite">
+      <summary>Перезаписывает сообщение об ошибке, если это же сообщение об ошибке существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists.Skip">
+      <summary>Пропускает передачу сообщения об ошибке, если это же сообщение об ошибке существует в назначении.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.ITransferErrorMessagesTask">
+      <summary>Представляет задачу «Передача сообщений об ошибках».</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask">
+      <summary>Обеспечивает возможность копирования одного или нескольких определяемых пользователем сообщений об ошибках SQL Server в другой экземпляр SQL Server. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.DtsTransferErrorMessagesException">
+      <summary>Исключение, которое вызывается во время загрузки, если сохраненное имя корневого узла XML задачи повреждено.</summary>
+    </member>
+  </members>
+</doc>

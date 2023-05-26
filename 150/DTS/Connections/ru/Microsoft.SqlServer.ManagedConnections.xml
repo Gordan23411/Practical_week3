@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.ManagedConnections</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.#ctor(System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn" /> и путь к очереди сообщений.</summary>
+      <param name="strPath">Путь к очереди сообщений.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.AcquireConnection(System.Object)">
+      <summary>Устанавливает соединение MSMQ и возвращает объект соединения.</summary>
+      <param name="txn">Дескриптор типа транзакции.</param>
+      <returns>Объект соединения, содержащий MSMQ-соединение.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Чтобы загрузить пакет, сохраненный на жестком диске в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Узел, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XML-документ, в котором необходимо сохранить сведения.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.#ctor(System.Boolean,System.String,System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn" /> с указанием режима проверки подлинности, имени пользователя и пароля.</summary>
+      <param name="bUseWindowsAuthentication">Значение Boolean, которое указывает, использует ли диспетчер соединений проверку подлинности Windows. Значение true, если проверка подлинности Windows используется.</param>
+      <param name="UserName">Пользовательское имя, которое используется диспетчером соединений.</param>
+      <param name="Password">Пароль, используемый диспетчером соединений.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.#ctor(System.Boolean,System.String,System.String,System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn" /> с указанием режима проверки подлинности, имени пользователя, пароля и сервера.</summary>
+      <param name="bUseWindowsAuthentication">Значение Boolean, которое указывает, использует ли диспетчер соединений проверку подлинности Windows. Значение true, если проверка подлинности Windows используется.</param>
+      <param name="UserName">Пользовательское имя, которое используется диспетчером соединений.</param>
+      <param name="Password">Пароль, используемый диспетчером соединений.</param>
+      <param name="SqlServerName">Имя сервера, с которым требуется установить соединение SMO.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.AcquireConnection(System.Object)">
+      <summary>Устанавливает соединение SMO и возвращает объект соединения.</summary>
+      <param name="txn">Дескриптор типа транзакции.</param>
+      <returns>Объект соединения, содержащий соединение SMO.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Узел, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XML-документ, в котором необходимо сохранить сведения.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.#ctor(System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn" />, инициализируя имя SMTP-сервера.</summary>
+      <param name="strSmtpServer">Значение типа String, содержащее имя SMTP-сервера.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.#ctor(System.String,System.Boolean,System.Boolean)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn" />, инициализируя имя SMTP-сервера, проверку подлинности Windows и параметр для SSL.</summary>
+      <param name="strSmtpServer">Значение типа String, содержащее имя SMTP-сервера.</param>
+      <param name="useWindowsAuthentication">Значение типа Boolean, указывающее, используется ли проверка подлинности Windows при доступе к серверу.</param>
+      <param name="EnableSsl">Значение Boolean, показывающее, будут ли отправляемые по электронной почте сообщения шифроваться с помощью протокола SSL.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.AcquireConnection(System.Object)">
+      <summary>Устанавливает соединение SMTP и возвращает объект соединения.</summary>
+      <param name="txn">Дескриптор типа транзакции.</param>
+      <returns>Объект соединения, содержащий SMTP-соединение.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Узел, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XML-документ, в котором необходимо сохранить сведения.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.#ctor(System.Boolean,System.String,System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> с указанием режима проверки подлинности, имени пользователя и пароля.</summary>
+      <param name="bUseNtAuth">Значение Boolean, которое указывает, использует ли диспетчер соединений проверку подлинности Windows. Значение true, если проверка подлинности Windows используется.</param>
+      <param name="UserName">Пользовательское имя, которое используется диспетчером соединений.</param>
+      <param name="Password">Пароль, используемый диспетчером соединений.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.#ctor(System.Boolean,System.String,System.String,System.String,System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> с указанием режима проверки подлинности, имени пользователя, пароля, сервера и пространства имен.</summary>
+      <param name="bUseNtAuth">Значение Boolean, которое указывает, использует ли диспетчер соединений проверку подлинности Windows. Значение true, если проверка подлинности Windows используется.</param>
+      <param name="UserName">Пользовательское имя, которое используется диспетчером соединений.</param>
+      <param name="Password">Пароль, используемый диспетчером соединений.</param>
+      <param name="ServerName">Имя сервера для соединения через WMI-соединение.</param>
+      <param name="Namespace">Пространство имен, которое используется диспетчером соединений.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.#ctor(System.String,System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> с указанием имени сервера и пространства имен WMI.</summary>
+      <param name="ServerName">Имя сервера для соединения через WMI-соединение.</param>
+      <param name="Namespace">Пространство имен, которое используется диспетчером соединений.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.AcquireConnection(System.Object)">
+      <summary>Устанавливает WMI-соединение и возвращает объект соединения.</summary>
+      <param name="txn">Дескриптор типа транзакции.</param>
+      <returns>Объект соединения, содержащий WMI-соединение.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Объект XMLElement, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XML-документ, в котором необходимо сохранить сведения.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.ConnectionDescription">
+      <summary>Возвращает локализованное описание соединения.</summary>
+      <returns>Значение типа String, содержащее локализованное описание соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.ConnectionDisplayName">
+      <summary>Возвращает локализованное отображаемое имя соединения.</summary>
+      <returns>Значение типа String, содержащее локализованное отображаемое имя соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.ConnectionString">
+      <summary>Возвращает или задает строку подключения для соединения MSMQ.</summary>
+      <returns>Значение типа String, содержащее строку подключения для MSMQ-соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn.Path">
+      <summary>Возвращает или задает путь к файлу.</summary>
+      <returns>Значение String, содержащее путь к файлу.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.ConnectionDescription">
+      <summary>Возвращает описание диспетчера соединений для соединений SMO.</summary>
+      <returns>Значение String, описывающее диспетчер соединений для соединения SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.ConnectionDisplayName">
+      <summary>Возвращает локализованное отображаемое имя соединения.</summary>
+      <returns>Значение типа String, содержащее локализованное отображаемое имя соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.ConnectionString">
+      <summary>Возвращает или задает строку подключения для соединения SMO.</summary>
+      <returns>Значение String, содержащее строку подключения для соединения SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.Password">
+      <summary>Задает пароль для соединения, если не используется проверка подлинности Windows.</summary>
+      <returns>Значение String, указывающее пароль для соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.SqlServerName">
+      <summary>Возвращает или задает строку String, содержащую имя SQL Server, к которому необходимо подключиться через соединение SMO.</summary>
+      <returns>Значение String, содержащее имя сервера SQL Server, с которым осуществляется соединение SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.UserName">
+      <summary>Возвращает или задает имя пользователя для соединения, если не используется проверка подлинности Windows.</summary>
+      <returns>Значение типа String, содержащее пользовательское имя для соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.UseWindowsAuthentication">
+      <summary>Возвращает или задает значение типа Boolean, указывающее, используется ли для соединения проверка подлинности Windows.</summary>
+      <returns>Значение true, если в соединении используется проверка подлинности Windows; в противном случае значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.ConnectionDescription">
+      <summary>Возвращает локализованное описание соединения.</summary>
+      <returns>Значение типа String, содержащее локализованное описание соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.ConnectionDisplayName">
+      <summary>Возвращает локализованное отображаемое имя соединения.</summary>
+      <returns>Значение типа String, содержащее локализованное отображаемое имя соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.ConnectionString">
+      <summary>Возвращает или задает строку подключения для соединения SMTP.</summary>
+      <returns>Значение String, содержащее строку подключения для SMTP-соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.EnableSsl">
+      <summary>Возвращает или задает значение типа Boolean, показывающее, будут ли отправляемые по электронной почте сообщения шифроваться с помощью протокола SSL.</summary>
+      <returns>Значение true указывает, что обмен данными зашифрован с помощью протокола SSL при отправке электронных сообщений. Значение false указывает, что шифрование не применялось.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.SmtpServer">
+      <summary>Возвращает или задает имя, используемое для подключения к SMTP-серверу.</summary>
+      <returns>Значение String, содержащее имя, используемое для соединения с SMTP-сервером.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.Timeout">
+      <summary>Возвращает или задает запрос времени ожидания, выданный соединением.</summary>
+      <returns>Запрос времени ожидания, выданный соединением.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.UseWindowsAuthentication">
+      <summary>Возвращает или задает значение типа Boolean, показывающее, использует ли SMTP-сервер проверку подлинности Windows.</summary>
+      <returns>Значение true означает, что проверка подлинности Windows используется для проверки подлинности при доступе на сервер. Значение false означает, что проверка подлинности Windows не используется.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.ConnectionDescription">
+      <summary>Возвращает описание диспетчера соединений для WMI-соединений.</summary>
+      <returns>Значение String, описывающее диспетчер соединений для WMI-соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.ConnectionDisplayName">
+      <summary>Возвращает локализованное отображаемое имя соединения.</summary>
+      <returns>Значение типа String, содержащее локализованное отображаемое имя соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.ConnectionString">
+      <summary>Возвращает или задает строку подключения для WMI-соединения.</summary>
+      <returns>Значение String, содержащее строку подключения для WMI-соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.Namespace">
+      <summary>Возвращает или задает пространство имен WMI.</summary>
+      <returns>Значение String, которое содержит пространство имен WMI.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.Password">
+      <summary>Задает пароль для соединения, если не используется проверка подлинности Windows.</summary>
+      <returns>Значение String, содержащее пароль для соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.ServerName">
+      <summary>Возвращает или задает имя сервера для соединения через WMI-соединение.</summary>
+      <returns>Значение String, содержащее имя сервера, с которым осуществляется WMI-соединение.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.UserName">
+      <summary>Возвращает или задает имя пользователя для соединения, если не используется проверка подлинности Windows.</summary>
+      <returns>Значение типа String, содержащее пользовательское имя для соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn.UseWindowsAuth">
+      <summary>Возвращает или задает значение типа Boolean, указывающее, используется ли для соединения проверка подлинности Windows.</summary>
+      <returns>Значение true, если в соединении используется проверка подлинности Windows; в противном случае значение false.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.ManagedConnections.MSMQConn">
+      <summary>Содержит методы и свойства, используемые соединениями MSMQ. Они определены с помощью атрибута DtsConnection, <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsConnectionAttribute" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn">
+      <summary>Содержит методы и свойства, используемые соединениями SMO.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn">
+      <summary>Содержит методы и свойства, используемые соединениями SMTP.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn">
+      <summary>Содержит методы и свойства, используемые WMI-соединениями.</summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.ExpressionTask</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionEval.#ctor">
+      <summary />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionEval.Evaluate(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100,System.Boolean)">
+      <summary />
+      <param name="vars" />
+      <param name="assign" />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionEval.IsBoolean(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100)">
+      <summary />
+      <param name="vars" />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionEval.Validate(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100)">
+      <summary />
+      <param name="vars" />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.#ctor">
+      <summary />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary />
+      <param name="manager" />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary />
+      <param name="connections" />
+      <param name="variableDispenser" />
+      <param name="events" />
+      <param name="log" />
+      <param name="transaction" />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary />
+      <param name="root" />
+      <param name="events" />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.ResumeExecution">
+      <summary />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary />
+      <param name="doc" />
+      <param name="events" />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.SuspendExecution">
+      <summary />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary />
+      <param name="connections" />
+      <param name="variableDispenser" />
+      <param name="events" />
+      <param name="log" />
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.ValidateExpression(Microsoft.SqlServer.Dts.Runtime.VariableDispenser)">
+      <summary />
+      <param name="variableDispenser" />
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionEval.Expression">
+      <summary />
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.DebugMode">
+      <summary />
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.ExecutionValue">
+      <summary />
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.Expression">
+      <summary />
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask.SuspendRequired">
+      <summary />
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionEval">
+      <summary />
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.ExpressionTask.ExpressionTask">
+      <summary />
+    </member>
+  </members>
+</doc>

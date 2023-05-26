@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.ForEachADOEnumerator</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADORowsetEnumerator.MoveNext">
+      <summary>Продвигает перечислитель на следующий элемент коллекции. Возвращает значение типа Boolean , указывающее, успешно ли была выполнена операция <see cref="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADORowsetEnumerator.MoveNext" />.</summary>
+      <returns>Значение true, если перечислитель успешно перешел к следующему элементу. Значение false, если перечислитель достиг конца коллекции.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADORowsetEnumerator.Reset">
+      <summary>Устанавливает перечислитель в его первоначальную позицию (перед первым элементом коллекции).</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator.MoveNext">
+      <summary>Указывает, переходит ли перечислитель к следующему элементу.</summary>
+      <returns>Значение True, если перечислитель переходит к следующему элементу. В противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator.Reset">
+      <summary>Возвращает конфигурацию по умолчанию для <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataRowEnumerator.MoveNext">
+      <summary>Продвигает перечислитель на следующий элемент коллекции. Возвращает значение типа Boolean, указывающее, успешно ли была выполнена операция <see cref="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataRowEnumerator.MoveNext" />.</summary>
+      <returns>Значение true, если перечислитель успешно перемещен к следующему элементу. Значение false, если перечислитель прошел конец коллекции.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataRowEnumerator.Reset">
+      <summary>Устанавливает перечислитель в его первоначальную позицию (перед первым элементом коллекции).</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator.MoveNext">
+      <summary>Продвигает перечислитель на следующий элемент коллекции. Для этого метода <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator" /> всегда возвращает значение false.</summary>
+      <returns>Значение false, поскольку отсутствует элемент, на который можно перейти.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator.Reset">
+      <summary>Устанавливает перечислитель в его первоначальную позицию (перед первым элементом коллекции).</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.FieldColEnumerator.MoveNext">
+      <summary>Указывает, переходит ли перечислитель к следующему элементу.</summary>
+      <returns>Значение True, если перечислитель переходит к следующему элементу. В противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.FieldColEnumerator.Reset">
+      <summary>Возвращает конфигурацию по умолчанию для <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.GetEnumerator(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Возвращает интерфейс IEnumerator, обеспечивающий проход по объекту данных ActiveX.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" />, которая используется задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <returns>Объект.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Элемент, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />. Этот метод не может быть унаследован.</summary>
+      <param name="doc">XML-документ, в который сохраняется информация.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.GetEnumerator(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Возвращает перечислитель для прохода по коллекции.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> для перечислителя.</param>
+      <param name="variableDispenser">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для контейнера.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+      <param name="log">Интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <returns>Объект.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Элемент, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XmlDocument, в который сохраняется информация.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADORowsetEnumerator.Current">
+      <summary>Возвращает текущую коллекцию полей из перечислителя.</summary>
+      <returns>Текущий объект в коллекции полей.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator.Current">
+      <summary>Возвращает текущий объект в коллекции.</summary>
+      <returns>Текущий объект в коллекции.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataRowEnumerator.Current">
+      <summary>Возвращает текущий элемент коллекции.</summary>
+      <returns>Текущий элемент в коллекции.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator.Current">
+      <summary>Выдает ошибку, указывающую на пустой перечислитель.</summary>
+      <returns>Объект.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.FieldColEnumerator.Current">
+      <summary>Возвращает текущий объект в коллекции.</summary>
+      <returns>Текущий объект в коллекции.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.DataObjectVariable">
+      <summary>Возвращает или задает значение типа String, содержащее полученный от перечислителя материализованный объект данных.</summary>
+      <returns>Значение типа String, содержащее полученный от перечислителя материализованный объект данных.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator.Type">
+      <summary>Возвращает или задает значение, указывающее, какой тип объектов перечисляется.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType" />, указывающее, что подлежит перечислению.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.Connection">
+      <summary>Возвращает или задает строку String, которая содержит сведения о соединении для перечислителя набора строк схемы.</summary>
+      <returns>Значение типа String, содержащее сведения о соединении.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.ForEachEnumeratorDescription">
+      <summary>Возвращает описание для <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator" />.</summary>
+      <returns>Значение типа String, содержащее описание перечислителя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.ForEachEnumeratorDisplayName">
+      <summary>Возвращает или задает значение типа String, содержащее отображаемое имя перечислителя.</summary>
+      <returns>Значение типа String, содержащее отображаемое имя перечислителя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.Restrictions">
+      <summary>Возвращает или задает массив строк Strings, который содержит ограничения, применяемые к возвращаемому набору строк.</summary>
+      <returns>Массив типа String.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator.SchemaRowset">
+      <summary>Возвращает или задает идентификатор GUID схемы.</summary>
+      <returns>Идентификатор GUID схемы.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachADOEnumerator.DataObjectVariable">
+      <summary>Возвращает или задает значение типа String, содержащее полученный от перечислителя материализованный объект данных.</summary>
+      <returns>Значение типа String, содержащее полученный от перечислителя материализованный объект данных.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachADOEnumerator.Type">
+      <summary>Возвращает или задает значение, указывающее, какой тип объектов перечисляется.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType" />, указывающее, что подлежит перечислению.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachSchemaRowsetEnumerator.Connection">
+      <summary>Возвращает или задает строку String, которая содержит сведения о соединении для перечислителя набора строк схемы.</summary>
+      <returns>Значение типа String, содержащее сведения о соединении.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachSchemaRowsetEnumerator.Restrictions">
+      <summary>Возвращает или задает массив строк Strings, который содержит ограничения, применяемые к возвращаемому набору строк.</summary>
+      <returns>Массив типа String.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachSchemaRowsetEnumerator.SchemaRowset">
+      <summary>Возвращает или задает идентификатор GUID схемы.</summary>
+      <returns>Идентификатор GUID схемы.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType">
+      <summary>Описывает объекты, подлежащие перечислению.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType.EnumerateTables">
+      <summary>Если переменная содержит набор данных, в этом параметре перечисляются все таблицы набора данных. Если переменная содержит таблицу данных, во время выполнения происходит ошибка. Если содержит набор записей, то перечисляются все строки, которые в нем содержатся.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType.EnumerateAllRows">
+      <summary>Если переменная содержит набор данных, в этом параметре перечисляются все строки всех таблиц набора данных. Если переменная содержит таблицу данных, в этом параметре перечисляются все строки таблицы. Если содержит набор записей, то перечисляются все строки, которые в нем содержатся.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType.EnumerateRowsInFirstTable">
+      <summary>Если переменная содержит набор данных, в этом параметре перечисляются все строки первой таблицы набора данных. Если переменная содержит таблицу данных, в этом параметре перечисляются все строки таблицы. Если содержит набор записей, то перечисляются все строки, которые в нем содержатся.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADORowsetEnumerator">
+      <summary>Поддерживает проход по набору записей объектов данных ActiveX. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataColEnumerator">
+      <summary>Этот класс используется в тех случаях, когда перечислитель ADO возвращает набор записей или набор данных. Этот перечислитель обеспечивает перечисление по столбцам. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.DataRowEnumerator">
+      <summary>Обеспечивает проход по данным, когда <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType" /> настроен на возврат значения <see cref="F:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ADOEnumerationType.EnumerateAllRows" />, а переменная содержит набор данных. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.EmptyEnumerator">
+      <summary>Работает как заполнитель, когда перечислитель вызывается для пустой коллекции. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.FieldColEnumerator">
+      <summary>Этот класс используется в тех случаях, когда перечислитель ADO возвращает набор записей или набор данных. Этот перечислитель обеспечивает перечисление по полям. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator">
+      <summary>Выполняет перечисление по строкам набора данных, таблицы данных или набора записей. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator">
+      <summary>Содержит методы и свойства, предназначенные для реализации цикла Foreach, который проходит по набору строк схемы. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachADOEnumerator">
+      <summary>Поддерживает проход по строкам набора данных, таблицы данных или набора записей. Этот интерфейс наследуется и используется классом <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.IDTSForEachSchemaRowsetEnumerator">
+      <summary>Содержит свойства, используемые перечислителем <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachSchemaRowsetEnumerator" />.</summary>
+    </member>
+  </members>
+</doc>

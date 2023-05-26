@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<sqlcm xmlns="http://www.microsoft.com/sqlserver/management/sqlcm.xsd">
+  <_locDefinition>
+    <_locDefault _loc="locNone"/>
+    <_locTag _loc="locNone" _locAttrData="locDescr">item</_locTag>
+  </_locDefinition>
+
+  <descriptions>
+
+
+
+
+    <!-- SERVICES -->
+
+    <!-- SQLCM - Services - service type - service instance -->
+    <sheet location="property_description" name="Service">
+      <page name="General">
+        <item name="DisplayName" locDescr="Имя службы."/>
+        <item name="HostName" locDescr="Имя главного узла, на котором запускается служба."/>
+        <item name="SQLServiceType" locDescr="Тип службы."/>
+        <item name="State" locDescr="Текущее состояние службы."/>
+        <item name="StartMode" locDescr="Режим запуска службы."/>
+        <item name="LogOnUsingLocalAccount" locDescr="Имеет значение true, если для входа в систему служба использует учетную запись LocalSystem."/>
+        <item name="StartName" locDescr="Имя учетной записи, под которым работает служба."/>
+        <item name="OldPassword" locDescr="Старый пароль для учетной записи, от имени которой работает служба."/>
+        <item name="PasswordForLogin" locDescr="Пароль для учетной записи, от имени которой работает служба."/>
+        <item name="VerifyPassword" locDescr="Подтвердите (повторно введите) новый пароль."/>
+        <item name="ErrorControl" locDescr="Если происходит сбой этой службы во время загрузки, данное свойство указывает серьезность ошибки."/>
+        <item name="BinaryPath" locDescr="Путь к исполняемому файлу службы."/>
+        <item name="ProcessID" locDescr="Идентификатор процесса, используемый операционной системой для опознания этого процесса службы."/>
+        <item name="ExitCode" locDescr="Код ошибки Win32, определяющий проблемы при запуске или остановке службы."/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Services - service instance -->
+    <sheet location="property_description" name="Service" key="SQL Server">
+      <page name="Advanced">
+        <item name="VERSION" locDescr="Версия экземпляра SQL Server"/>
+        <item name="SPLEVEL" locDescr="Уровень пакета обновления, установленного на данном экземпляре SQL Server."/>
+        <item name="CLUSTERED" locDescr="Показывает, является ли SQL Server частью кластера."/>
+        <item name="EXTERNAL_USERS_COUNT" locDescr="Количество внешних пользователей, созданных для панели запуска. Максимально допустимое число пользователей: 100."/>
+        <item name="RESET_USERS_PASSWORD" locDescr="Сброс пароля для внешних пользователей."/>
+        <item name="SECURITY_CONTEXTS_COUNT" locDescr="Число контекстов безопасности, созданных для панели запуска."/>
+        <item name="INSTALLPATH" locDescr="Путь к месту установки SQL Server"/>
+        <item name="DATAPATH" locDescr="Путь к папке данных по умолчанию"/>
+        <item name="LANGUAGE" locDescr="Язык"/>
+        <item name="FILEVERSION" locDescr="Версия исполняемого файла SQL Server."/>
+        <item name="VSNAME" locDescr="Имя виртуального сервера (если свойство Clustered имеет значение &quot;yes&quot;)."/>
+        <item name="REGROOT" locDescr="Корень реестра для выбранного экземпляра SQL Server"/>
+        <item name="SKU" locDescr="Номер SKU установленного выпуска"/>
+        <item name="INSTANCEID" locDescr="Идентификатор экземпляра SQL Server"/>
+        <item name="STARTUPPARAMETERS" locDescr="Параметры, используемые SQL Server для загрузки службы"/>
+        <item name="SQLSTATES" locDescr="Состояния SQL"/>
+        <item name="ERRORREPORTING" locDescr="Включить отчет об ошибках"/>
+        <item name="DUMPDIR" locDescr="Папка для сбрасывания данных об ошибках"/>
+        <item name="SQMREPORTING" locDescr="Включить передачу отзывов пользователей."/>
+        <item name="SKUNAME" locDescr="Номер SKU установленного выпуска"/>
+        <item name="ISWOW64" locDescr="Показывает, работает ли эта 32-разрядная служба в 64-разрядной операционной системе."/>
+        <item name="BROWSER" locDescr="Показывает, находится ли служба &quot;Обозреватель SQL&quot; в режиме прослушивания."/>
+        <item name="LOGDIR" locDescr="Путь к папке журналов"/>
+        <item name="INSTANT_FILE_INIT" locDescr="Предоставляет привилегию на выполнение задач обслуживания томов для учетной записи службы ядра СУБД SQL Server."/>
+        <item name="LOCKPAGES" locDescr="Предоставляет привилегию на блокировку страниц в памяти для учетной записи службы ядра СУБД SQL Server."/>
+      </page>
+    </sheet>
+
+    <!-- ... localized names -->
+    <sheet location="property_name" name="Service" key="SQL Server">
+      <page name="Advanced">
+        <item name="VERSION" locDescr="Версия"/>
+        <item name="SPLEVEL" locDescr="Версия пакета обновления"/>
+        <item name="CLUSTERED" locDescr="Кластеризованный"/>
+        <item name="SECURITY_CONTEXTS_COUNT" locDescr="Число контекстов безопасности"/>
+        <item name="EXTERNAL_USERS_COUNT" locDescr="Число внешних пользователей"/>
+        <item name="RESET_USERS_PASSWORD" locDescr="Сбросить пароль внешних пользователей"/>
+        <item name="INSTALLPATH" locDescr="Путь установки"/>
+        <item name="DATAPATH" locDescr="Путь сохранения данных"/>
+        <item name="LANGUAGE" locDescr="Язык"/>
+        <item name="FILEVERSION" locDescr="Версия файла"/>
+        <item name="VSNAME" locDescr="Имя виртуального сервера"/>
+        <item name="REGROOT" locDescr="Корень реестра"/>
+        <item name="SKU" locDescr="Идентификатор номера SKU"/>
+        <item name="INSTANCEID" locDescr="Идентификатор экземпляра"/>
+        <item name="STARTUPPARAMETERS" locDescr="Параметры загрузки"/>
+        <item name="SQLSTATES" locDescr="Состояния SQL"/>
+        <item name="ERRORREPORTING" locDescr="Отчеты об ошибках"/>
+        <item name="DUMPDIR" locDescr="Каталог дампа"/>
+        <item name="SQMREPORTING" locDescr="Отправка отзывов пользователей"/>
+        <item name="SKUNAME" locDescr="Имя номера SKU"/>
+        <item name="ISWOW64" locDescr="Выполнение в 64-разрядной ОС"/>
+        <item name="BROWSER" locDescr="Активно"/>
+        <item name="LOGDIR" locDescr="Каталог журналов"/>
+        <item name="INSTANT_FILE_INIT" locDescr="Мгновенная инициализация файлов"/>
+        <item name="LOCKPAGES" locDescr="Блокировка страниц в памяти"/>
+      </page>
+    </sheet>
+
+
+
+
+    <!-- SERVER NETWORK CONFIGURATION -->
+
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols -->
+    <sheet location="property_description" name="Server Instance Network Configuration">
+      <page name="Flags">
+        <item name="ForceEncryption" locDescr="Включить или выключить шифрование на выбранном экземпляре сервера"/>
+		<item name="HideInstance" locDescr="Предотвращает показ данного экземпляра ядра СУБД клиентским компьютерам через службу &quot;обозреватель SQL Server&quot;"/>
+      </page>
+      <page name="Certificate">
+        <item name="Friendly Name" locDescr="Понятное имя для сертификата"/>
+        <item name="Issued By" locDescr="Кем выдан сертификат"/>
+        <item name="Issued To" locDescr="Кому выдан сертификат"/>
+        <item name="Expiration Date" locDescr="Срок действия сертификата"/>
+      </page>
+    </sheet>
+
+      <sheet location="property_name" name="Server Instance Network Configuration">
+          <page name="Flags">
+              <item name="ForceEncryption" locDescr="Принудительное шифрование"/>
+              <item name="HideInstance" locDescr="Скрыть экземпляр"/>
+          </page>
+          <page name="Certificate">
+              <item name="Friendly Name" locDescr="Понятное имя"/>
+              <item name="Issued By" locDescr="Кем выдан"/>
+              <item name="Issued To" locDescr="Кому выдано"/>
+              <item name="Expiration Date" locDescr="Срок окончания действия"/>
+          </page>
+      </sheet>
+      
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols - "sm" protocol -->
+    <sheet location="property_description" name="Server Protocol" key="sm">
+      <page name="General">
+        <item name="Enabled" locDescr="Включить или отключить протокол общей памяти для данного экземпляра сервера"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized names -->
+    <sheet location="property_name" name="Server Protocol" key="sm">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="Общая память"/>
+      </page>
+      <page name="General">
+        <item name="Enabled" locDescr="Включено"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols - "np" protocol -->
+    <sheet location="property_description" name="Server Protocol" key="np">
+      <page name="General">
+        <item name="PipeName" locDescr="Имя канала"/>
+        <item name="Enabled" locDescr="Включить или отключить протокол именованных каналов для данного экземпляра сервера"/>
+        <item name="LocalAccessOnly" locDescr="Разрешить только локальный доступ к этому именованному каналу"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized names -->
+    <sheet location="property_name" name="Server Protocol" key="np">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="Именованные каналы"/>
+      </page>
+      <page name="General">
+        <item name="PipeName" locDescr="Имя канала"/>
+        <item name="Enabled" locDescr="Включено"/>
+        <item name="LocalAccessOnly" locDescr="Только локальный доступ"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols - "tcp" protocol -->
+    <sheet location="property_description" name="Server Protocol" key="tcp">
+      <page name="General">
+        <item name="KeepAlive" locDescr="Как часто протокол TCP проверяет, что неактивное соединение еще работоспособно"/>
+        <item name="Enabled" locDescr="Включить или отключить протокол TCP/IP для данного экземпляра сервера"/>
+        <item name="ListenOnAllIPs" locDescr="Прослушивать все IP-адреса"/>
+        <item name="NoDelay" locDescr="Без задержки"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized names -->
+    <sheet location="property_name" name="Server Protocol" key="tcp">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="TCP/IP"/>
+      </page>
+      <page name="General">
+        <item name="KeepAlive" locDescr="Проверка активности (Keep Alive)"/>
+        <item name="Enabled" locDescr="Включено"/>
+        <item name="ListenOnAllIPs" locDescr="Прослушивать все"/>
+        <item name="NoDelay" locDescr="Без задержки"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols - "via" protocol -->
+    <sheet location="property_description" name="Server Protocol" key="via">
+      <page name="General">
+        <item name="DefaultServerPort" locDescr="Порт сервера по умолчанию"/>
+        <item name="ListenInfo" locDescr="Информация о режиме ожидания вызовов"/>
+        <item name="VendorName" locDescr="Поставщик"/>
+        <item name="Enabled" locDescr="Включить или отключить протокол Virtual Interface Architecture (архитектура виртуального интерфейса) для данного экземпляра сервера"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized names -->
+    <sheet location="property_name" name="Server Protocol" key="via">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="VIA"/>
+      </page>
+      <page name="General">
+        <item name="DefaultServerPort" locDescr="Порт по умолчанию"/>
+        <item name="ListenInfo" locDescr="Данные прослушивания"/>
+        <item name="VendorName" locDescr="Поставщик"/>
+        <item name="Enabled" locDescr="Включено"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Server Network Configuration - Server Instance Protocols - "tcp" protocol - IP-s -->
+    <sheet location="property_description" name="IP Address" key="tcp">
+      <page name="General">
+        <item name="TcpPort" locDescr="TCP-порт"/>
+        <item name="TcpDynamicPorts" locDescr="Не задано, если динамические порты не включены. Чтобы использовать динамические порты, установите в 0."/>
+        <item name="IpAddress" locDescr="IP-адрес"/>
+        <item name="Active" locDescr="Указывает, активен ли выбранный IP-адрес."/>
+        <item name="Enabled" locDescr="Включить или отключить IP-адрес"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized name -->
+    <sheet location="property_name" name="IP Address" key="tcp">
+      <page name="General">
+        <item name="TcpPort" locDescr="TCP-порт"/>
+        <item name="TcpDynamicPorts" locDescr="Динамические TCP-порты"/>
+        <item name="IpAddress" locDescr="IP-адрес"/>
+        <item name="Active" locDescr="Активно"/>
+        <item name="Enabled" locDescr="Включено"/>
+      </page>
+    </sheet>
+
+
+
+
+    <!-- CLIENT NETWORK CONFIGURATION -->
+
+    <!-- SQLCM - Client Network Configuration -->
+    <sheet location="property_description" name="Client Network Configuration">
+      <page name="Library">
+        <item name="ANSItoOEM" locDescr="Чтобы указать, допустимо ли преобразование из ANSI-формата в OEM-формат, можно использовать свойство &quot;ANSI в OEM&quot;"/>
+        <item name="Date" locDescr="Дата создания библиотеки DBLib, доступной на клиентском компьютере"/>
+        <item name="FileName" locDescr="Имя файла DBLib"/>
+        <item name="UseInternationalSettings" locDescr="Включить или выключить выбор языка"/>
+        <item name="Size" locDescr="Размер библиотеки DBLib"/>
+      </page>
+    </sheet>
+
+    <sheet location="property_description" name="Client Network Configuration">
+      <page name="Flags">
+        <item name="Force protocol encryption" locDescr="Запросить соединение по протоколу SSL"/>
+		<item name="Trust Server Certificate" locDescr="Пропустить проверку сертификата сервера"/>
+      </page>
+    </sheet>
+	<sheet location="property_name" name="Client Network Configuration">
+		<page name="Flags">
+			<item name="Force protocol encryption" locDescr="Принудительное шифрование протокола"/>
+			<item name="Trust Server Certificate" locDescr="Доверять сертификату сервера"/>
+		</page>
+	</sheet>
+
+    <!-- SQLCM - Client Network Configuration - Client Protocols -->
+    <!--
+		<sheet location="property_description" name="Client Protocols">
+			<page name="Order">
+				<item name="sm" locDescr="Protocol used by client to communicate with local server via Shared Memory. Shared Memory is used only for client/server connections on the same computer. If enabled this protocol is always first." />
+				<item name="tcp" locDescr="Protocol used by client to comunicate with a server via TCP/IP. TCP/IP Sockets is a non-authenticated protocol. This means that connections are not authenticated, and connections and access levels are determined only by the user name and password provided during the connection. TCP/IP Sockets requires more administration than Named Pipes, since each user access permission must be defined at the SQL Server. TCP/IP Sockets is a good choice for network protocol if your application does not require SQL Server's integrated security. Microsoft recommands using integrated security whenever possible." />
+				<item name="np" locDescr="Protocol used by client to communicate with a server via Named Pipes. Named Pipes is an authenticated protocol. This means that any time a user attempts to open a connection to the SQL Server via Named Pipes, the Windows NT authentication process occurs. Named Pipes is required to support SQL Server's integrated security option. It's also worth noting that Named Pipes connects very fast much faster than the other protocols. Named Pipes is an excellent choice for network protocol if your application intends to use SQL Server's integrated security and does not need other protocols for remote connections." />
+				<item name="via" locDescr="Protocol used by client to communicate with a server via Virtual Interface Architecture." />
+			</page>
+		</sheet>
+		-->
+    <sheet location="property_description" name="Client Protocols">
+      <page name="Order">
+        <item name="sm" locDescr="Протокол, используемый клиентом для обмена данными с локальным сервером через общую память. Этот протокол всегда используется первым, если он включен."/>
+        <item name="tcp" locDescr="Протокол, используемый клиентом для обмена данными с сервером через TCP/IP. Проверка подлинности протоколом сокетов TCP/IP не предусмотрена."/>
+        <item name="np" locDescr="Протокол, используемый клиентом для обмена данными с сервером через именованные каналы. Этим протоколом предусмотрена проверка подлинности."/>
+        <item name="via" locDescr="Протокол, используемый клиентом для обмена данными с сервером через архитектуру виртуальных интерфейсов (VIA)."/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Client Network Configuration - Client Protocols - "tcp" protocol -->
+    <sheet location="property_description" name="Client Protocol" key="tcp">
+      <page name="General">
+        <item name="Default Port" locDescr="Порт по умолчанию для установки соединения"/>
+        <item name="KEEPALIVE (in milliseconds)" locDescr="Как часто протокол TCP проверяет, что неактивное соединение еще работоспособно"/>
+        <item name="KEEPALIVEINTERVAL (in milliseconds)" locDescr="Интервал между повторными передачами KEEPALIVE для неактивных TCP-соединений"/>
+        <item name="Enabled" locDescr="Включить или отключить протокол TCP/IP для этого клиента"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized name -->
+    <sheet location="property_name" name="Client Protocol" key="tcp">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="TCP/IP"/>
+      </page>
+      <page name="General">
+        <item name="Default Port" locDescr="Порт по умолчанию"/>
+        <item name="KEEPALIVE (in milliseconds)" locDescr="Проверка активности (Keep Alive)"/>
+        <item name="KEEPALIVEINTERVAL (in milliseconds)" locDescr="Интервал проверки активности"/>
+        <item name="Enabled" locDescr="Включено"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Client Network Configuration - Client Protocols - "np" protocol -->
+    <sheet location="property_description" name="Client Protocol" key="np">
+      <page name="General">
+        <item name="Default Pipe" locDescr="Канал для обмена данными по умолчанию"/>
+        <item name="Enabled" locDescr="Включить или отключить протокол именованных каналов для этого клиента"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized name -->
+    <sheet location="property_name" name="Client Protocol" key="np">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="Именованные каналы"/>
+      </page>
+      <page name="General">
+        <item name="Default Pipe" locDescr="Канал по умолчанию"/>
+        <item name="Enabled" locDescr="Включено"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Client Network Configuration - Client Protocols - "via" protocol -->
+    <sheet location="property_description" name="Client Protocol" key="via">
+      <page name="General">
+        <item name="Default Server Port" locDescr="Имя сервера по умолчанию"/>
+        <item name="Vendor Name" locDescr="Имя поставщика, предоставляющего поддержку протокола VIA"/>
+        <item name="Vendor DLL" locDescr="Имя библиотеки, содержащей реализацию протокола VIA"/>
+        <item name="Default Client NIC" locDescr="Сетевая интерфейсная карта клиента по умолчанию"/>
+        <item name="Enabled" locDescr="Включить или отключить протокол виртуальных интерфейсов для этого клиента"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized name -->
+    <sheet location="property_name" name="Client Protocol" key="via">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="VIA"/>
+      </page>
+      <page name="General">
+        <item name="Default Server Port" locDescr="Сервер по умолчанию"/>
+        <item name="Vendor Name" locDescr="Поставщик"/>
+        <item name="Vendor DLL" locDescr="Библиотека поставщика"/>
+        <item name="Default Client NIC" locDescr="Сетевая интерфейсная карта по умолчанию"/>
+        <item name="Enabled" locDescr="Включено"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Client Network Configuration - Client Protocols - "sm" protocol -->
+    <sheet location="property_description" name="Client Protocol" key="sm">
+      <page name="General">
+        <item name="Enabled" locDescr="Включить или отключить протокол общей памяти для этого клиента"/>
+      </page>
+    </sheet>
+
+    <!-- ... localized name -->
+    <sheet location="property_name" name="Client Protocol" key="sm">
+      <page name="Right Pane List">
+        <item name="Name" locDescr="Общая память"/>
+      </page>
+      <page name="General">
+        <item name="Enabled" locDescr="Включено"/>
+      </page>
+    </sheet>
+
+
+    <!-- SQLCM - Client Network Configuration - Aliases - new alias -->
+    <sheet location="property_description" name="New Alias">
+      <page name="New Alias">
+        <item name="AliasName" locDescr="Имя создаваемого псевдонима"/>
+        <item name="ServerName" locDescr="Имя сервера, на который будет указывать псевдоним"/>
+        <item name="ProtocolName" locDescr="Имя протокола, используемого с этим псевдонимом"/>
+        <item name="ConnectionString" locDescr="Строка соединения, связанная с новым псевдонимом"/>
+        <item name="Encrypted" locDescr="Указывает, будет ли использоваться шифрование при соединении через этот псевдоним"/>
+        <item name="Shared Memory" locDescr="Для протокола общей памяти не требуются параметры соединения"/>
+        <item name="Named Pipes" locDescr="Имя канала должно соответствовать имени канала, используемого экземпляром SQL Server"/>
+        <item name="TCP/IP" locDescr="Номер порта, используемого новым псевдонимом для подключения к SQL Server"/>
+        <item name="VIA" locDescr="Параметры VIA, используемые новым псевдонимом для подключения к SQL Server"/>
+        <item name="Unknown" locDescr="Сведения о соединении, используемые новым псевдонимом для указанного протокола"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Client Network Configuration - Aliases - alias properties -->
+    <sheet location="property_description" name="Alias">
+      <page name="Alias">
+        <item name="AliasName" locDescr="Имя существующего псевдонима"/>
+        <item name="ServerName" locDescr="Имя сервера, на который указывает псевдоним"/>
+        <item name="ProtocolName" locDescr="Имя протокола, используемого этим псевдонимом"/>
+        <item name="ConnectionString" locDescr="Строка соединения, связанная с псевдонимом"/>
+        <item name="Encrypted" locDescr="Указывает, используется ли шифрование при соединении через этот псевдоним"/>
+        <item name="Shared Memory" locDescr="Для протокола общей памяти не требуются параметры соединения"/>
+        <item name="Named Pipes" locDescr="Имя канала, используемого псевдонимом для подключения к SQL Server"/>
+        <item name="TCP/IP" locDescr="Номер порта, используемого псевдонимом для подключения к SQL Server"/>
+        <item name="VIA" locDescr="Параметры VIA, используемые псевдонимом для подключения к SQL Server"/>
+        <item name="Unknown" locDescr="Сведения о соединении, используемые псевдонимом для указанного протокола"/>
+      </page>
+    </sheet>
+
+
+
+
+    <!-- REPORT SERVER CONFIGURATION -->
+
+    <!-- SQLCM - Report Server Configuration - report manager instance -->
+    <sheet location="property_description" name="Report Manager Instance">
+      <page name="Report Manager">
+        <item name="InstanceName" locDescr="Имя экземпляра"/>
+        <item name="VirtualRoot" locDescr="Виртуальный корневой каталог сервера отчетов"/>
+        <item name="PathName" locDescr="Локальный путь к файлам приложения"/>
+        <item name="URLToReportServer" locDescr="URL-адрес, указывающий на сервер отчетов"/>
+        <item name="URLToReportServerWebService" locDescr="URL-адрес, указывающий на веб-службу сервера отчетов"/>
+      </page>
+    </sheet>
+
+    <!-- SQLCM - Report Server Configuration - report manager instance -->
+    <!-- SQLCM - Services - Report Server - service instance -->
+    <sheet location="property_description" name="Report Manager Instance">
+      <page name="Report Service">
+        <item name="InstanceName" locDescr="Имя экземпляра"/>
+        <item name="PathName" locDescr="Путь к исполняемому объекту"/>
+        <item name="VirtualRoot" locDescr="Полный URL-адрес, соответствующий виртуальному корневому каталогу"/>
+        <item name="InstanceID" locDescr="Уникальный идентификатор конкретной службы отчетов"/>
+        <item name="DatabaseServerName" locDescr="Имя компьютера, на котором запущена база данных сервера отчетов"/>
+        <item name="DatabaseName" locDescr="Имя экземпляра базы данных сервера отчетов"/>
+        <item name="Impersonate" locDescr="Выполнять олицетворение пользователя Windows при подключении к базе данных сервера отчетов"/>
+        <item name="ImpersonateDomain" locDescr="Домен пользователя, используемый для олицетворения при подключении к базе данных сервера отчетов"/>
+        <item name="ImpersonateUserName" locDescr="Имя пользователя, используемое для олицетворения при подключении к базе данных сервера отчетов"/>
+        <item name="ImpersonatePassword" locDescr="Пароль пользователя, используемый для олицетворения при подключении к базе данных сервера отчетов"/>
+        <item name="DatabaseIntegratedSecurity" locDescr="Встроенная система безопасности базы данных"/>
+        <item name="DatabaseLogonName" locDescr="Имя пользователя, от лица которого служба получает доступ к базе данных сервера отчетов"/>
+        <item name="DatabaseLogonPassword" locDescr="Пароль учетной записи входа в базу данных"/>
+        <item name="DatabaseLoginTimeout" locDescr="Число секунд ожидания перед возвращением из-за неудачной попытки входа в базу данных сервера отчетов. Значение 0 разрешает бесконечное ожидание."/>
+        <item name="DatabaseQueryTimeout" locDescr="Число секунд, которое должно пройти до того, как сервер отчетов предположит, что при выполнении команды произошла ошибка или оно занимает слишком много времени (превышено время ожидания)."/>
+        <item name="UnattendedExecutionLogonDomain" locDescr="Домен пользователя, используемый сервером отчетов для олицетворения при автоматическом запуске отчетов."/>
+        <item name="UnattendedExecutionLogonName" locDescr="Имя пользователя, используемое сервером отчетов для олицетворения при автоматическом запуске отчетов."/>
+        <item name="UnattendedExecutionLogonPassword" locDescr="Пароль, используемый сервером отчетов вместе с именем пользователя для олицетворения при автоматическом запуске отчетов."/>
+      </page>
+    </sheet>
+
+
+
+  </descriptions>
+</sqlcm>

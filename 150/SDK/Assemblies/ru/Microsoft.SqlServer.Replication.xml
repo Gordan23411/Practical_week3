@@ -1,0 +1,1357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.Replication</name>
+  </assembly>
+  <members>
+    <member name="E:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.ComStatus">
+      <summary>Возникает, когда агент слияния возвращает сведения о состоянии @@@команды@@@ синхронизации.</summary>
+    </member>
+    <member name="E:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Status">
+      <summary>Происходит, когда агент слияния возвращает сведения о состоянии синхронизации.</summary>
+    </member>
+    <member name="E:Microsoft.SqlServer.Replication.TransSynchronizationAgent.ComStatus">
+      <summary>Возникает, когда агент распространителя возвращает сведения о состоянии @@@команды@@@ синхронизации.</summary>
+    </member>
+    <member name="E:Microsoft.SqlServer.Replication.TransSynchronizationAgent.Status">
+      <summary>Происходит, когда агент распространителя возвращает информацию о состоянии синхронизации.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.AlternateSynchronizationPartner.#ctor">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.AlternateSynchronizationPartner" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.AlternateSynchronizationPartner.#ctor(System.String,System.String,System.String,System.String,System.String)">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.AlternateSynchronizationPartner" /> со всеми обязательными свойствами.</summary>
+      <param name="publisher">Имя альтернативного издателя.</param>
+      <param name="publisherDatabase">Имя базы данных публикации.</param>
+      <param name="publication">Имя публикации.</param>
+      <param name="distributor">Имя распространителя.</param>
+      <param name="friendlyName">Понятное имя для ассоциации издателя, публикации и распространителя в качестве альтернативного участника синхронизации.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ComErrorException.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ComErrorException" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ComErrorException.#ctor(System.Int32,System.String,System.Int32,System.String,System.String,System.Guid,System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ComErrorException" />.</summary>
+      <param name="comHResult">Значение кода ошибки (HRESULT), связанное с этим исключением.</param>
+      <param name="description">Описание ошибки.</param>
+      <param name="helpContext">Контекст раздела в файле справки.</param>
+      <param name="helpFile">Полный путь к файлу справки.</param>
+      <param name="source">Имя источника ошибки.</param>
+      <param name="interfaceId">Идентификатор COM-интерфейса, являющегося источником ошибки.</param>
+      <param name="errorMessage">Строка сообщения об ошибке.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ComErrorException.#ctor(System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ComErrorException" /> с указанным сообщением об ошибке.</summary>
+      <param name="message">Сообщение, которое описывает ошибку.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ComErrorException.#ctor(System.String,System.Exception)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ComErrorException" /> с указанным сообщением об ошибке и ссылкой на внутреннее исключение, которое является причиной этого исключения.</summary>
+      <param name="message">Сообщение об ошибке, описывающее причину исключения.</param>
+      <param name="innerException">Исключение, ставшее причиной текущего исключения.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ComErrorException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Задает указанный объект <see cref="T:System.Runtime.Serialization.SerializationInfo" /> с данными об исключении.</summary>
+      <param name="info">Объект, содержащий сериализованные данные объекта.</param>
+      <param name="context">Контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ComErrorRecord.#ctor">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ComErrorRecord" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ComErrorRecord.#ctor(System.String,System.String,System.Int32)">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ComErrorRecord" /> и задает свойства ошибки.</summary>
+      <param name="sourceType">Значение, определяющее источник ошибки.</param>
+      <param name="description">Описание ошибки.</param>
+      <param name="errorNumber">Числовой код ошибки.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ConnectionFailureException.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ConnectionFailureException" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ConnectionFailureException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ConnectionFailureException" /> с сериализованными данными.</summary>
+      <param name="info">Объект, содержащий сериализованные данные объекта.</param>
+      <param name="context">Контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ConnectionFailureException.#ctor(System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ConnectionFailureException" /> с указанным сообщением об ошибке.</summary>
+      <param name="message">Сообщение, которое описывает ошибку.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ConnectionFailureException.#ctor(System.String,System.Exception)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ConnectionFailureException" /> с указанным сообщением об ошибке и ссылкой на внутреннее исключение, которое является причиной этого исключения.</summary>
+      <param name="message">Сообщение об ошибке, описывающее причину исключения.</param>
+      <param name="innerException">Исключение, ставшее причиной текущего исключения.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.FciException.#ctor">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.FciException" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.FciException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.FciException" /> с сериализованными данными.</summary>
+      <param name="info">Объект, содержащий сериализованные данные объекта.</param>
+      <param name="context">Контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.FciException.#ctor(System.String)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.FciException" /> с указанным текстом сообщения об ошибке.</summary>
+      <param name="message">Сообщение, которое описывает ошибку.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.FciException.#ctor(System.String,System.Exception)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.FciException" /> с указанным сообщением об ошибке и ссылкой на внутреннее исключение, которое является причиной этого исключения.</summary>
+      <param name="message">Сообщение об ошибке, описывающее причину исключения.</param>
+      <param name="innerException">Исключение, ставшее причиной текущего исключения.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.#ctor">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.MergeSynchronizationAgent" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Abort">
+      <summary>Прерывает синхронизацию.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.ClearAllTraceFlags">
+      <summary>Очищает все флаги трассировки, используемые агентом синхронизации.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.ClearTraceFlag(System.Int32)">
+      <summary>Очищает флаг трассировки.</summary>
+      <param name="traceFlag">Очищаемый флаг трассировки.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Dispose">
+      <summary>Освобождает неуправляемые ресурсы, занятые <see cref="T:Microsoft.SqlServer.Replication.MergeSynchronizationAgent" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Dispose(System.Boolean)">
+      <summary>Освобождает неуправляемые ресурсы, занятые <see cref="T:Microsoft.SqlServer.Replication.MergeSynchronizationAgent" />.</summary>
+      <param name="disposing">Значение true, чтобы освобождать и управляемые, и неуправляемые ресурсы. Значение false, чтобы освобождать только неуправляемые ресурсы.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.EnableTraceFlag(System.Int32)">
+      <summary>Включает флаг трассировки.</summary>
+      <param name="traceFlag">Включаемый флаг трассировки.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Finalize">
+      <summary>Завершает работу агента.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.IsSnapshotRequired">
+      <summary>Соединяется с издателем или распространителем и подписчиком, чтобы определить, будет ли применяться новый моментальный снимок при следующей синхронизации агента.</summary>
+      <returns>Значение типа <see cref="T:System.Boolean" />, которое показывает, будет ли применяться новый моментальный снимок.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.ProcessMessagesAtPublisher">
+      <summary>Обрабатывает сообщения на издателе.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.ProcessMessagesAtSubscriber">
+      <summary>Обрабатывает сообщения на подписчике.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Synchronize">
+      <summary>Запускает агент слияния для синхронизации подписки.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.NativeSqlConnectionException.#ctor">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.NativeSqlConnectionException" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.NativeSqlConnectionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.NativeSqlConnectionException" /> с сериализованными данными.</summary>
+      <param name="info">Объект, содержащий сериализованные данные объекта.</param>
+      <param name="context">Контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.NativeSqlConnectionException.#ctor(System.String)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.NativeSqlConnectionException" /> с указанным текстом сообщения об ошибке.</summary>
+      <param name="message">Сообщение, которое описывает ошибку.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.NativeSqlConnectionException.#ctor(System.String,System.Exception)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.NativeSqlConnectionException" /> с указанным сообщением об ошибке и ссылкой на внутреннее исключение, которое является причиной этого исключения.</summary>
+      <param name="message">Сообщение об ошибке, описывающее причину исключения.</param>
+      <param name="innerException">Исключение, ставшее причиной текущего исключения.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.NativeSqlConnectionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Задает указанный объект <see cref="T:System.Runtime.Serialization.SerializationInfo" /> с данными об исключении.</summary>
+      <param name="info">Объект, содержащий сериализованные данные объекта.</param>
+      <param name="context">Контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.OciException.#ctor">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.OciException" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.OciException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.OciException" /> с сериализованными данными.</summary>
+      <param name="info">Объект, содержащий сериализованные данные объекта.</param>
+      <param name="context">Контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.OciException.#ctor(System.String)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.OciException" /> с указанным текстом сообщения об ошибке.</summary>
+      <param name="message">Сообщение, которое описывает ошибку.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.OciException.#ctor(System.String,System.Exception)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.OciException" /> с указанным сообщением об ошибке и ссылкой на внутреннее исключение, которое является причиной этого исключения.</summary>
+      <param name="message">Сообщение об ошибке, описывающее причину исключения.</param>
+      <param name="innerException">Исключение, ставшее причиной текущего исключения.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.OSException.#ctor">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.OSException" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.OSException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.OSException" /> с сериализованными данными.</summary>
+      <param name="info">Объект, содержащий сериализованные данные объекта.</param>
+      <param name="context">Контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.OSException.#ctor(System.String)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.OSException" /> с указанным текстом сообщения об ошибке.</summary>
+      <param name="message">Сообщение, которое описывает ошибку.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.OSException.#ctor(System.String,System.Exception)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.OSException" /> с указанным сообщением об ошибке и ссылкой на внутреннее исключение, которое является причиной этого исключения.</summary>
+      <param name="message">Сообщение об ошибке, описывающее причину исключения.</param>
+      <param name="innerException">Исключение, ставшее причиной текущего исключения.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ParameterValueOutOfRangeException.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ParameterValueOutOfRangeException" /> со значениями по умолчанию.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ParameterValueOutOfRangeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ParameterValueOutOfRangeException" /> при наличии параметров данных и контекста.</summary>
+      <param name="info">Объект <see cref="T:System.Runtime.Serialization.SerializationInfo" /> для заполнения данными.</param>
+      <param name="context">Назначение (см. <see cref="T:System.Runtime.Serialization.StreamingContext" />), указывающее данную сериализацию.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ParameterValueOutOfRangeException.#ctor(System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ParameterValueOutOfRangeException" /> при наличии параметра сообщения.</summary>
+      <param name="message">Описание ошибки.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ParameterValueOutOfRangeException.#ctor(System.String,System.Exception)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ParameterValueOutOfRangeException" /> при наличии параметров сообщений и внутренних исключений.</summary>
+      <param name="message">Описание ошибки.</param>
+      <param name="innerException">Упакованное исключение из внешнего компонента.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.PasswordWriteOnlyException.#ctor">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.PasswordWriteOnlyException" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.PasswordWriteOnlyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.PasswordWriteOnlyException" /> с сериализованными данными.</summary>
+      <param name="info">Объект, содержащий сериализованные данные объекта.</param>
+      <param name="context">Контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.PasswordWriteOnlyException.#ctor(System.String)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.PasswordWriteOnlyException" /> с указанным текстом сообщения об ошибке.</summary>
+      <param name="message">Сообщение, которое описывает ошибку.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.PasswordWriteOnlyException.#ctor(System.String,System.Exception)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.PasswordWriteOnlyException" /> с указанным сообщением об ошибке и ссылкой на внутреннее исключение, которое является причиной этого исключения.</summary>
+      <param name="message">Сообщение об ошибке, описывающее причину исключения.</param>
+      <param name="innerException">Исключение, ставшее причиной текущего исключения.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentContainerException.#ctor">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ReplicationAgentContainerException" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentContainerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ReplicationAgentContainerException" /> с указанной информацией и контекстом.</summary>
+      <param name="info">Информация.</param>
+      <param name="context">Контекст.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentContainerException.#ctor(System.String)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ReplicationAgentContainerException" /> с указанным текстом сообщения об ошибке.</summary>
+      <param name="message">Сообщение, которое описывает ошибку.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentContainerException.#ctor(System.String,System.Exception)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ReplicationAgentContainerException" /> с указанным сообщением об ошибке и ссылкой на внутреннее исключение, которое является причиной этого исключения.</summary>
+      <param name="message">Сообщение об ошибке, описывающее причину исключения.</param>
+      <param name="innerException">Исключение, ставшее причиной текущего исключения.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentContainerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Задает указанный объект <see cref="T:System.Runtime.Serialization.SerializationInfo" /> с данными об исключении.</summary>
+      <param name="info">Объект, содержащий сериализованные данные объекта.</param>
+      <param name="context">Контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentContainerWithWatsonException.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ReplicationAgentContainerWithWatsonException" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentContainerWithWatsonException.#ctor(System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ReplicationAgentContainerWithWatsonException" /> с указанным сообщением.</summary>
+      <param name="message">Сообщение.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentContainerWithWatsonException.#ctor(System.String,System.Exception)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ReplicationAgentContainerWithWatsonException" /> с указанным сообщением и внутренним исключением.</summary>
+      <param name="message">Сообщение.</param>
+      <param name="innerException">Внутреннее исключение</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentException.#ctor">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ReplicationAgentException" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ReplicationAgentException" /> с сериализованными данными.</summary>
+      <param name="info">Объект, содержащий сериализованные данные объекта.</param>
+      <param name="context">Контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentException.#ctor(System.String)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ReplicationAgentException" /> с указанным текстом сообщения об ошибке.</summary>
+      <param name="message">Сообщение, которое описывает ошибку.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentException.#ctor(System.String,System.Exception)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.ReplicationAgentException" /> с указанным сообщением об ошибке и ссылкой на внутреннее исключение, которое является причиной этого исключения.</summary>
+      <param name="message">Сообщение об ошибке, описывающее причину исключения.</param>
+      <param name="innerException">Исключение, ставшее причиной текущего исключения.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.ReplicationAgentException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+      <summary>Задает указанный объект <see cref="T:System.Runtime.Serialization.SerializationInfo" /> с данными об исключении.</summary>
+      <param name="info">Объект, содержащий сериализованные данные объекта.</param>
+      <param name="context">Контекстные сведения об источнике или назначении.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.StatusEventArgs.#ctor">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.StatusEventArgs" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.StatusEventArgs.#ctor(System.String,System.Byte,Microsoft.SqlServer.Replication.MessageStatus)">
+      <summary>Создает новый экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.StatusEventArgs" /> с указанными сведениями о состоянии агента репликации.</summary>
+      <param name="message">Сообщение о состоянии, возвращаемое агентом репликации.</param>
+      <param name="percentCompleted">Значение <see cref="T:System.Byte" />, указывающее примерный объем завершения процесса общей синхронизации.</param>
+      <param name="messageStatus">Значение <see cref="T:Microsoft.SqlServer.Replication.MessageStatus" />, указывающее текущее рабочее состояние агента репликации.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.TransSynchronizationAgent.#ctor">
+      <summary>Создает экземпляр класса <see cref="T:Microsoft.SqlServer.Replication.TransSynchronizationAgent" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.TransSynchronizationAgent.Abort">
+      <summary>Прерывает выполнение операции <see cref="T:Microsoft.SqlServer.Replication.TransSynchronizationAgent" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.TransSynchronizationAgent.Dispose">
+      <summary>Освобождает все ресурсы, используемые текущим экземпляром класса <see cref="T:Microsoft.SqlServer.Replication.TransSynchronizationAgent" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.TransSynchronizationAgent.Dispose(System.Boolean)">
+      <summary>Освобождает все ресурсы, используемые классом <see cref="T:Microsoft.SqlServer.Replication.TransSynchronizationAgent" />.</summary>
+      <param name="">Значение true, чтобы освобождать и управляемые, и неуправляемые ресурсы. Значение false, чтобы освобождать только неуправляемые ресурсы.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.TransSynchronizationAgent.Finalize">
+      <summary>Завершает работу <see cref="T:Microsoft.SqlServer.Replication.TransSynchronizationAgent" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.TransSynchronizationAgent.IsSnapshotRequired">
+      <summary>Соединяется с распространителем и подписчиком, чтобы определить, будет ли применяться новый моментальный снимок при следующей синхронизации агента.</summary>
+      <returns>Значение true, если будет применен новый моментальный снимок; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Replication.TransSynchronizationAgent.Synchronize">
+      <summary>Запускает агент распространителя для синхронизации подписки.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.DumpClient.GetDumper">
+      <summary>Возвращает сборщик данных, связанный с <see cref="T:Microsoft.SqlServer.SqlDumper.DumpClient" />.</summary>
+      <returns>Сборщик данных, связанный с <see cref="T:Microsoft.SqlServer.SqlDumper.DumpClient" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.DumpClient.Initialize">
+      <summary>Инициализирует текущий объект <see cref="T:Microsoft.SqlServer.SqlDumper.DumpClient" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.DumpClient.InitializeStandalone">
+      <summary>Инициализирует автономный клиент дампа.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.DumpClient.IsInitialized">
+      <summary>Указывает, инициализирован ли объект <see cref="T:Microsoft.SqlServer.SqlDumper.DumpClient" />.</summary>
+      <returns>Значение true, если объект <see cref="T:Microsoft.SqlServer.SqlDumper.DumpClient" /> инициализирован; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.DumpClient.SetDefaultExceptionHandling(System.AppDomain)">
+      <summary>Задает обработку ошибок по умолчанию.</summary>
+      <param name="appDomain">Домен приложения.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.AddMemoryRaw(System.IntPtr,System.Int32)">
+      <summary>Добавляет строку памяти.</summary>
+      <param name="pData">Данные.</param>
+      <param name="size">Размер строки памяти.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.Dispose">
+      <summary>Освобождает ресурсы, используемые классом <see cref="T:Microsoft.SqlServer.SqlDumper.Dumper" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.Dump">
+      <summary>Файлы дампа.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.GetDumpResultText">
+      <summary>Возвращает текст результата дампа.</summary>
+      <returns>Текст результата дампа.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.RemoveMemoryRaw(System.IntPtr,System.Int32)">
+      <summary>Удаляет строку памяти.</summary>
+      <param name="pData">Данные.</param>
+      <param name="size">Размер строки памяти.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetAppImageName(System.String)">
+      <summary>Задает образ приложения сборщика данных.</summary>
+      <param name="appImageName">Имя образа приложения.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetAppVersion(System.Int32,System.Int32)">
+      <summary>Задает версию приложения сборщика данных.</summary>
+      <param name="mostSignificant">Основная версия.</param>
+      <param name="leastSignificant">Дополнительная версия.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetBucket(System.Int32,System.Int32)">
+      <summary>Задает сегмент сборщика данных.</summary>
+      <param name="framesToInclude">Кадры, которые требуется включить.</param>
+      <param name="framesToSkip">Кадры, которые следует пропустить.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetBucketingParameters(System.Int32,System.Int32)">
+      <summary>Задает параметры сегментирования сборщика данных.</summary>
+      <param name="offset">Смещение.</param>
+      <param name="signature">Сигнатура.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetDirectory(System.String)">
+      <summary>Задает каталог сборщика данных.</summary>
+      <param name="dirPath">Путь к каталогу.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetErrorDetails(System.String)">
+      <summary>Задает сведения об ошибке сборщика данных.</summary>
+      <param name="errorDetail">Сведения об ошибке.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetErrorText(System.String)">
+      <summary>Задает текст ошибки для сборщика данных.</summary>
+      <param name="errorText">Текст ошибки.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetException(System.Exception)">
+      <summary>Задает исключение сборщика данных.</summary>
+      <param name="ex">Исключение.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetExtraFile(System.String)">
+      <summary>Задает дополнительный файл сборщика данных.</summary>
+      <param name="fileName">Имя дополнительного файла.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetFileName(System.String)">
+      <summary>Задает имя файла сборщика данных.</summary>
+      <param name="fileName">Имя файла.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetFlags(Microsoft.SqlServer.SqlDumper.DumperFlags,Microsoft.SqlServer.SqlDumper.DumperFlags)">
+      <summary>Задает указанные флаги сборщика данных.</summary>
+      <param name="flagsTurnOn">Флаги включены.</param>
+      <param name="flagsTurnOff">Флаги выключены.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetInstanceName(System.String)">
+      <summary>Задает имя экземпляра сборщика данных.</summary>
+      <param name="instanceName">Имя экземпляра.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetLogFile(System.String,System.Int32)">
+      <summary>Задает файл журнала сборщика данных.</summary>
+      <param name="logName">Имя журнала.</param>
+      <param name="size">Размер файла журнала.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetMiniDumpFlags(Microsoft.SqlServer.SqlDumper.MiniDumpFlags,Microsoft.SqlServer.SqlDumper.MiniDumpFlags)">
+      <summary>Задает флаги мини-дампа.</summary>
+      <param name="miniDumpFlagsTurnOn">Флаги мини-дампа включены.</param>
+      <param name="miniDumpFlagsTurnOff">Флаги мини-дампа выключены.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetServiceName(System.String)">
+      <summary>Задает имя службы сборщика данных.</summary>
+      <param name="serviceName">Имя службы.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetThreadId(System.Int32)">
+      <summary>Задает идентификатора потока сборщика данных.</summary>
+      <param name="threadId">Идентификатор потока.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetTitleName(System.String)">
+      <summary>Задает имя сборщика данных.</summary>
+      <param name="titleName">Имя.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.SqlDumper.Dumper.SetWaitTime(System.Int32)">
+      <summary>Задает время ожидания для сборщика данных.</summary>
+      <param name="waitTime">Время ожидания.</param>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.AlternateSynchronizationPartner.Distributor">
+      <summary>Имя распространителя.</summary>
+      <returns>Значение <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.AlternateSynchronizationPartner.FriendlyName">
+      <summary>Понятное имя для ассоциации издателя, публикации и распространителя в качестве альтернативного участника синхронизации. </summary>
+      <returns>Значение <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.AlternateSynchronizationPartner.Publication">
+      <summary>Имя публикации.</summary>
+      <returns>Значение <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.AlternateSynchronizationPartner.Publisher">
+      <summary>Имя альтернативного издателя.</summary>
+      <returns>Значение <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.AlternateSynchronizationPartner.PublisherDatabase">
+      <summary>Имя базы данных публикации.</summary>
+      <returns>Значение <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ComErrorException.ComHResult">
+      <summary>Возвращает значение кода ошибки (HRESULT), связанное с этим исключением.</summary>
+      <returns>Код ошибки (HRESULT).</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ComErrorException.Description">
+      <summary>Возвращает описание ошибки.</summary>
+      <returns>Описание ошибки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ComErrorException.ErrorMessage">
+      <summary>Возвращает строку сообщения об ошибке.</summary>
+      <returns>Сообщение об ошибке.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ComErrorException.HelpContext">
+      <summary>Возвращает контекст раздела в файле справки.</summary>
+      <returns>Контекст раздела в файле справки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ComErrorException.HelpFile">
+      <summary>Возвращает полный путь к файлу справки.</summary>
+      <returns>Полный путь к файлу справки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ComErrorException.InterfaceId">
+      <summary>Возвращает идентификатор COM-интерфейса, являющегося источником ошибки.</summary>
+      <returns>Идентификатор COM-интерфейса.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ComErrorException.Source">
+      <summary>Возвращает имя объекта или приложения, вызвавшего ошибку.</summary>
+      <returns>Имя объекта или приложения, вызвавшего ошибку.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ComErrorRecord.Description">
+      <summary>Описание ошибки.</summary>
+      <returns>Значение <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ComErrorRecord.ErrorNumber">
+      <summary>Числовой код ошибки.</summary>
+      <returns>Значение типа <see cref="T:System.Int32" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ComErrorRecord.SourceType">
+      <summary>Значение, определяющее источник ошибки.</summary>
+      <returns>Значение <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.AlternateSynchronizationPartnerCollection">
+      <summary>Возвращает альтернативных участников синхронизации для подписки.</summary>
+      <returns>Альтернативные участников синхронизации для подписки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.AltSnapshotFolder">
+      <summary>Возвращает или задает альтернативную папку для моментального снимка подписки.</summary>
+      <returns>Значение <see cref="T:System.String" />, представляющее путь к альтернативной папке размещения моментальных снимков.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.ComErrorCollection">
+      <summary>Возвращает коллекцию ошибок, сформированных агентом репликации.</summary>
+      <returns>Коллекция <see cref="T:System.Collections.IEnumerable" /> объектов <see cref="T:Microsoft.SqlServer.Replication.ComErrorRecord" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Distributor">
+      <summary>Возвращает или задает имя экземпляра Microsoft SQL Server, действующего в качестве распространителя подписки.</summary>
+      <returns>Значение типа <see cref="T:System.String" />, представляющее имя распространителя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.DistributorAddress">
+      <summary>Возвращает или задает сетевой адрес, используемый для подключения к распространителю, если указано свойство <see cref="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.DistributorNetwork" />.</summary>
+      <returns>Значение <see cref="T:System.String" />, представляющее адрес распространителя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.DistributorEncryptedPassword">
+      <summary>Возвращает или задает зашифрованный пароль распространителя.</summary>
+      <returns>Зашифрованный пароль распространителя</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.DistributorLogin">
+      <summary>Возвращает или задает имя входа, используемое при соединении с распространителем посредством проверки подлинности SQL Server.</summary>
+      <returns>Значение типа <see cref="T:System.String" />, представляющее имя входа.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.DistributorNetwork">
+      <summary>Возвращает или задает клиентскую сетевую библиотеку Net-Library при соединении с распространителем.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Replication.NetworkType" />, указывающее Net-Library для использования.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.DistributorPassword">
+      <summary>Задает пароль, используемый при соединении с распространителем с проверкой подлинности SQL Server.</summary>
+      <returns>Пароль.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.DistributorSecurityMode">
+      <summary>Возвращает или задает режим безопасности при соединении с распространителем.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Replication.SecurityMode" />, представляющее режим безопасности.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.DownloadGenerationsPerBatch">
+      <summary>Возвращает или задает число поколений, которые должны быть обработаны в одном пакете при загрузке изменений с издателя на подписчик. Поколение — это логическая группа изменений для статьи.</summary>
+      <returns>Количество операций создания на пакет.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.DynamicSnapshotLocation">
+      <summary>Возвращает или задает расположение секционированного моментального снимка для данного подписчика.</summary>
+      <returns>Полный путь к месту расположения файлов секционированных моментальных снимков.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.ExchangeType">
+      <summary>Возвращает или задает значение, определяющее, каким образом происходит обмен данными при синхронизации.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Replication.MergeExchangeType" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.FileTransferType">
+      <summary>Возвращает или задает способ передачи исходных файлов моментальных снимков подписчику.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Replication.FileTransferOption" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.HostName">
+      <summary>Возвращает или задает значение, используемое агентом слияния при оценке параметризованного фильтра, использующего функцию HOST_NAME.</summary>
+      <returns>Значение, используемое агентом слияния.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.InputMessageFile">
+      <summary>Возвращает или задает входной файл сообщения.</summary>
+      <returns>Входной файл сообщения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.InternetLogin">
+      <summary>Возвращает или задает имя входа, используемое с веб-синхронизацией при соединении с издателем посредством проверки подлинности через Интернет.</summary>
+      <returns>Значение <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.InternetPassword">
+      <summary>Задает пароль для свойства <see cref="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.InternetLogin" />, используемого с веб-синхронизацией при соединении с издателем с проверкой подлинности через Интернет.</summary>
+      <returns>Пароль для свойства <see cref="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.InternetLogin" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.InternetProxyLogin">
+      <summary>Возвращает или задает имя входа, используемое с веб-синхронизацией при соединении с веб-сервером посредством прокси-сервера в Интернет.</summary>
+      <returns>Имя входа, используемое для веб-синхронизации.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.InternetProxyPassword">
+      <summary>Задает пароль для имени входа, используемого с веб-синхронизацией при соединении с веб-сервером посредством прокси-сервера в Интернет.</summary>
+      <returns>Пароль для имени входа.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.InternetProxyServer">
+      <summary>Возвращает или задает имя входа прокси-сервера в Интернет, используемое с веб-синхронизацией при соединении с веб-сервером.</summary>
+      <returns>Имя сервера.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.InternetSecurityMode">
+      <summary>Возвращает или задает метод проверки подлинности HTTP, используемый при соединении с веб-сервером в течение веб-синхронизации.</summary>
+      <returns>Используемый метод проверки подлинности HTTP.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.InternetTimeout">
+      <summary>Возвращает или задает время ожидания HTTP при соединении с веб-сервером.</summary>
+      <returns>Время ожидания HTTP.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.InternetUrl">
+      <summary>Возвращает или задает URL-адрес веб-службы, настроенной для веб-синхронизации.</summary>
+      <returns>Значение <see cref="T:System.String" />, представляющее допустимый URL-адрес.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.LastUpdatedTime">
+      <summary>Возвращает отметку времени последней синхронизации подписки агентом репликации.</summary>
+      <returns>Значение типа <see cref="T:System.String" />, представляющее дату и время.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.LoginTimeout">
+      <summary>Возвращает или задает максимальное количество секунд, в течение которых ожидается установка соединения.</summary>
+      <returns>Значение типа <see cref="T:System.Int32" />, представляющее максимальное время (в секундах).</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.MetadataRetentionCleanup">
+      <summary>Возвращает или задает значение, указывающее, выполняется ли очистка метаданных.</summary>
+      <returns>Значение True, если необходима очистка метаданных; в противном случае значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Output">
+      <summary>Возвращает или задает выходной файл агента.</summary>
+      <returns>Значение <see cref="T:System.String" />, указывающее имя выходного файла и полный путь к выходному файлу.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.OutputMessageFile">
+      <summary>Возвращает или задает входной файл сообщения.</summary>
+      <returns>Входной файл сообщения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.OutputVerboseLevel">
+      <summary>Возвращает или задает уровень детализации данных, записываемых в выходной файл агента.</summary>
+      <returns>Значение <see cref="T:System.Int32" />, которое может быть одним из следующих.ValueDescription0Only error messages are logged.1All progress report messages are logged.2All progress report messages and error messages are logged.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.ProfileName">
+      <summary>Возвращает или задает имя профиля, используемого агентом.</summary>
+      <returns>Значение типа <see cref="T:System.String" />, представляющее имя профиля.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Publication">
+      <summary>Возвращает или задает имя публикации.</summary>
+      <returns>Имя публикации.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Publisher">
+      <summary>Возвращает или задает имя экземпляра Microsoft SQL Server, действующего в качестве издателя подписки.</summary>
+      <returns>Издатель.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.PublisherAddress">
+      <summary>Возвращает или задает сетевой адрес, используемый для подключения к издателю, если указано свойство <see cref="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.PublisherNetwork" />.</summary>
+      <returns>Значение <see cref="T:System.String" />, представляющее адрес издателя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.PublisherChanges">
+      <summary>Возвращает общее количество изменений в издателе, примененных к подписчику во время последней синхронизации.</summary>
+      <returns>Общее число изменений на издателе.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.PublisherConflicts">
+      <summary>Возвращает общее количество конфликтов, возникших у издателя во время последней синхронизации.</summary>
+      <returns>Общее число возникших конфликтов.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.PublisherDatabase">
+      <summary>Возвращает или задает имя базы данных публикации.</summary>
+      <returns>Имя базы данных публикации.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.PublisherEncryptedPassword">
+      <summary>Возвращает или задает зашифрованный пароль издателя.</summary>
+      <returns>Зашифрованный пароль издателя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.PublisherFailoverPartner">
+      <summary>Возвращает или задает партнера по обеспечению отработки отказа служб SQL Server, участвующего в сеансе зеркального отображения базы данных с базой данных публикации.</summary>
+      <returns>Экземпляр партнера по обеспечению обработки отказа SQL Server.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.PublisherLogin">
+      <summary>Возвращает или задает имя входа, используемое при соединении с издателем с проверкой подлинности SQL Server.</summary>
+      <returns>Значение типа <see cref="T:System.String" />, представляющее имя входа.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.PublisherNetwork">
+      <summary>Возвращает или задает клиентскую сетевую библиотеку Net-Library при соединении с издателем.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Replication.NetworkType" />, указывающее Net-Library для использования.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.PublisherPassword">
+      <summary>Задает пароль, используемый при соединении с издателем с проверкой подлинности SQL Server.</summary>
+      <returns>Используемый пароль.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.PublisherSecurityMode">
+      <summary>Возвращает или задает режим безопасности при соединении с издателем.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Replication.SecurityMode" />, представляющее режим безопасности.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.QueryTimeout">
+      <summary>Возвращает или задает количество секунд, разрешенное для завершения внутренних запросов.</summary>
+      <returns>Значение типа <see cref="T:System.Int32" />, представляющее число секунд.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SecureDistributorEncryptedPassword">
+      <summary>Возвращает или задает зашифрованный пароль безопасного распространителя.</summary>
+      <returns>Возвращает или задает зашифрованный пароль безопасного распространителя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SecurePublisherEncryptedPassword">
+      <summary>Возвращает или задает зашифрованный пароль безопасного издателя.</summary>
+      <returns>Зашифрованный пароль безопасного издателя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SecureSubscriberEncryptedPassword">
+      <summary>Возвращает или задает зашифрованный пароль безопасного подписчика.</summary>
+      <returns>Зашифрованный пароль безопасного подписчика.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Subscriber">
+      <summary>Возвращает или задает имя экземпляра Microsoft SQL Server, являющегося подписчиком.</summary>
+      <returns>Подписчик.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SubscriberChanges">
+      <summary>Возвращает общее количество изменений в подписчике, примененных к издателю во время последней синхронизации.</summary>
+      <returns>Общее число изменений на подписчике, которые были применены к издателю во время последней синхронизации.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SubscriberConflicts">
+      <summary>Возвращает общее количество конфликтов, возникших у издателя во время последней синхронизации.</summary>
+      <returns>Общее число возникших конфликтов.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SubscriberDatabase">
+      <summary>Возвращает или задает имя базы данных подписки.</summary>
+      <returns>Имя базы данных подписки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SubscriberDatabasePath">
+      <summary>Возвращает или задает путь базы данных подписчика.</summary>
+      <returns>Путь базы данных подписчика.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SubscriberDataSourceType">
+      <summary>Возвращает или задает тип источника данных, используемого в качестве подписчика.</summary>
+      <returns>Тип источника данных, используемого в качестве подписчика.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SubscriberEncryptedPassword">
+      <summary>Возвращает или задает зашифрованный пароль подписчика.</summary>
+      <returns>Зашифрованный пароль подписчика.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SubscriberLogin">
+      <summary>Возвращает или задает имя входа, используемое при соединении с подписчиком с проверкой подлинности SQL Server.</summary>
+      <returns>Значение типа <see cref="T:System.String" />, представляющее имя входа.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SubscriberPassword">
+      <summary>Устанавливает пароль, используемый при соединении с подписчиком с проверкой подлинности SQL Server.</summary>
+      <returns>Пароль, используемый при соединении с подписчиком.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SubscriberSecurityMode">
+      <summary>Возвращает или задает режим безопасности при соединении с подписчиком.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Replication.SecurityMode" />, представляющее режим безопасности.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SubscriptionType">
+      <summary>Возвращает или задает значение, указывающее, является ли подписка принудительной или подпиской по запросу.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Replication.SubscriptionOption" />, указывающее тип подписки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.SyncToAlternate">
+      <summary>Возвращает или задает значение, указывающее, выполняется ли синхронизация с альтернативным участником синхронизации.</summary>
+      <returns>Значение True, если синхронизация производится с альтернативным участником синхронизации; в противном случае значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.UploadGenerationsPerBatch">
+      <summary>Возвращает или задает число поколений, обрабатываемых в одном пакете при передаче изменений с подписчика на издатель. Поколение — это логическая группа изменений для статьи.</summary>
+      <returns>Количество операций создания на пакет.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.UseInteractiveResolver">
+      <summary>Возвращает или задает значение, определяющее, используется ли интерактивный арбитр конфликтов во время проверки.</summary>
+      <returns>Значение True, если при согласовании используется интерактивный арбитр конфликтов; в противном случае значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.UseWebSynchronization">
+      <summary>Возвращает или задает значение, указывающее, используется ли веб-синхронизация.</summary>
+      <returns>Значение True, если используется веб-синхронизация; в противном случае значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.Validate">
+      <summary>Возвращает или задает значение, указывающее, проводится ли проверка данных подписчика в конце процесса синхронизации.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Replication.ValidateType" />, указывающее тип проводимой проверки данных.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.MergeSynchronizationAgent.WorkingDirectory">
+      <summary>Возвращает или задает рабочий каталог, из которого осуществляется доступ к файлам моментальных снимков, когда используется протокол FTP.</summary>
+      <returns>Рабочий каталог, из которого осуществляется доступ к файлам моментальных снимков.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.NativeSqlConnectionException.ErrorSource">
+      <summary>Источник ошибки.</summary>
+      <returns>Значение <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.NativeSqlConnectionException.SqlState">
+      <summary>Указывает значение SQL State для ошибки MicrosoftSQL Server.</summary>
+      <returns>Состоящее из пяти символов значение <see cref="T:System.String" />, следующее стандарту ANSI SQL и указывающее код ошибки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ReplicationAgentContainerException.ExceptionCollection">
+      <summary>Возвращает коллекцию объектов исключений, возвращаемую агентом репликации.</summary>
+      <returns>
+        <see cref="T:System.Collections.ArrayList" /> объектов исключений.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ReplicationAgentContainerException.FlatExceptionCollection">
+      <summary>Возвращает коллекцию объектов исключений, доступ к которой осуществляется через интерфейс <see cref="T:System.Collections.IEnumerable" />.</summary>
+      <returns>Интерфейс <see cref="T:System.Collections.IEnumerable" />, используемый для доступа к коллекции.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.ReplicationAgentException.MessageCode">
+      <summary>Возвращает код базовой ошибки.</summary>
+      <returns>Значение типа <see cref="T:System.Int32" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.StatusEventArgs.Message">
+      <summary>Сообщение о состоянии, возвращаемое агентом репликации.</summary>
+      <returns>Значение <see cref="T:System.String" />, содержащее сообщение о состоянии.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.StatusEventArgs.MessageStatus">
+      <summary>Текущее состояние работы агента репликации.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Replication.MessageStatus" />, указывающее текущее рабочее состояние агента репликации.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.StatusEventArgs.PercentCompleted">
+      <summary>Примерный объем завершения процесса общей синхронизации.</summary>
+      <returns>Значение <see cref="T:System.Byte" />, указывающее примерный объем завершения процесса общей синхронизации, от 0 (начало) до 100 (завершение).</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.AltSnapshotFolder">
+      <summary>Возвращает или задает альтернативную папку для моментального снимка подписки.</summary>
+      <returns>Альтернативный каталог для моментальных снимков.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.ComErrorCollection">
+      <summary>Возвращает коллекцию ошибок, сформированных агентом репликации.</summary>
+      <returns>Коллекция <see cref="T:System.Collections.IEnumerable" /> ошибок, сформированных агентом репликации.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.Distributor">
+      <summary>Возвращает или задает имя экземпляра Microsoft SQL Server, действующего в качестве распространителя подписки.</summary>
+      <returns>Имя распространителя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.DistributorAddress">
+      <summary>Возвращает или задает сетевой адрес, используемый для подключения к распространителю, если указано свойство <see cref="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.DistributorNetwork" />.</summary>
+      <returns>Адрес распространителя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.DistributorEncryptedPassword">
+      <summary>Возвращает или задает зашифрованный пароль, используемый при соединении с распространителем с проверкой подлинности SQL Server.</summary>
+      <returns>Используетмый зашифрованный пароль.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.DistributorLogin">
+      <summary>Возвращает или задает имя входа, используемое при соединении с распространителем с проверкой подлинности SQL Server.</summary>
+      <returns>Имя входа.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.DistributorNetwork">
+      <summary>Возвращает или задает клиентскую сетевую библиотеку Net-Library при соединении с распространителем.</summary>
+      <returns>Сетевая библиотека, которая будет использоваться.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.DistributorPassword">
+      <summary>Возвращает или задает пароль, используемый при соединении с распространителем с проверкой подлинности SQL Server.</summary>
+      <returns>Используемый пароль.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.DistributorSecurityMode">
+      <summary>Возвращает или задает режим безопасности при соединении с распространителем.</summary>
+      <returns>Режим безопасности.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.DtsPackageFileName">
+      <summary>Возвращает или задает имя и путь пакета служб MicrosoftSQL Server 2000 DTS, используемого для преобразования наборов команд перед применением к подписчику.</summary>
+      <returns>Имя и путь пакета служб Microsoft SQL Server 2000 DTS.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.DtsPackagePassword">
+      <summary>Возвращает или задает пароль владельца для получения доступа к пакету служб MicrosoftSQL Server 2000 DTS, указываемому свойством <see cref="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.DtsPackageFileName" />.</summary>
+      <returns>Пароль владельца, исптользуемый для доступа к пакету служб Microsoft SQL Server 2000 DTS.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.FileTransferType">
+      <summary>Возвращает или задает способ передачи исходных файлов моментальных снимков подписчику.</summary>
+      <returns>Параметр для получения файла моментального снимка.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.HostName">
+      <summary>Возвращает или задает используемое имя сервера.</summary>
+      <returns>Имя сервера.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.LastUpdatedTime">
+      <summary>Возвращает отметку времени последней синхронизации подписки агентом репликации.</summary>
+      <returns>Отметка времени последней синхронизации подписки агентом репликации.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.LoginTimeout">
+      <summary>Возвращает или задает максимальное количество секунд, в течение которых ожидается установка соединения.</summary>
+      <returns>Максимальное число секунд, в течение которых ожидается установка соединения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.MaxDeliveredTransactions">
+      <summary>Возвращает или задает максимальное количество транзакций, применяемое к подписчику при выполнении одного агента.</summary>
+      <returns>Максимальное число транзакций.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.Output">
+      <summary>Возвращает или задает имя файла и путь выходного файла агента.</summary>
+      <returns>Имя файла и путь выходного файла агента.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.OutputVerboseLevel">
+      <summary>Возвращает или задает объем данных, регистрируемых агентом распространителя в выходном файле агента.</summary>
+      <returns>Значение <see cref="T:System.Int32" />, которое может быть одним из следующих.ValueDescription0 Only error messages are printed.1All the progress report messages are printed.2 (default)All error messages and progress report messages are printed. This is useful for debugging.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.ProfileName">
+      <summary>Возвращает или задает имя профиля, используемого агентом.</summary>
+      <returns>Имя профиля.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.Publication">
+      <summary>Возвращает или задает имя публикации.</summary>
+      <returns>Имя публикации.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.Publisher">
+      <summary>Возвращает или задает имя экземпляра Microsoft SQL Server, действующего в качестве издателя подписки.</summary>
+      <returns>Имя экземпляра Microsoft SQL Server.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.PublisherDatabase">
+      <summary>Возвращает или задает имя базы данных публикации.</summary>
+      <returns>Имя базы данных публикации.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.QueryTimeout">
+      <summary>Возвращает или задает количество секунд, разрешенное для завершения внутренних запросов.</summary>
+      <returns>Число секунд, разрешенное для завершения внутренних запросов.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.SecureDistributorEncryptedPassword">
+      <summary>Возвращает или задает зашифрованный пароль безопасного распространителя.</summary>
+      <returns>Возвращает или задает зашифрованный пароль распространителя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.SecureSubscriberEncryptedPassword">
+      <summary>Возвращает или задает зашифрованный пароль подписчика.</summary>
+      <returns>Безопасный зашифрованный пароль подписчика.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.SkipErrors">
+      <summary>Возвращает или задает список с разделителями-двоеточиями, перечисляющий коды ошибок, которые этот агент должен пропускать.</summary>
+      <returns>Список номеров ошибок, разделенных двоеточиями Microsoft SQL Server.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.Subscriber">
+      <summary>Возвращает или задает имя экземпляра Microsoft SQL Server, являющегося подписчиком.</summary>
+      <returns>Имя экземпляра Microsoft SQL Server.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.SubscriberDatabase">
+      <summary>Возвращает или задает имя базы данных подписки.</summary>
+      <returns>Имя базы данных подписки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.SubscriberDatabasePath">
+      <summary>Возвращает или задает путь базы данных для подписчика.</summary>
+      <returns>Путь базы данных для подписчика.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.SubscriberDataSourceType">
+      <summary>Возвращает или задает тип источника данных, используемого в качестве подписчика.</summary>
+      <returns>Тип источника данных, используемого в качестве подписчика.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.SubscriberEncryptedPassword">
+      <summary>Возвращает или задает зашифрованный пароль для подписчика.</summary>
+      <returns>Зашифрованный пароль для подписчика.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.SubscriberLogin">
+      <summary>Возвращает или задает имя входа, которое используется при соединении с подписчиком с проверкой подлинности SQL Server.</summary>
+      <returns>Имя входа.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.SubscriberPassword">
+      <summary>Возвращает или задает пароль, используемый при соединении с подписчиком с проверкой подлинности SQL Server.</summary>
+      <returns>Пароль подписчика.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.SubscriberSecurityMode">
+      <summary>Возвращает или задает режим безопасности при соединении с издателем.</summary>
+      <returns>Режим безопасности.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.SubscriptionType">
+      <summary>Возвращает или задает значение, указывающее, является ли подписка принудительной или подпиской по запросу.</summary>
+      <returns>Тип подписки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.UndeliveredCommands">
+      <summary>Возвращает число недоставленных команд.</summary>
+      <returns>Число недоставленных команд.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.UndeliveredTransactions">
+      <summary>Возвращает число недоставленных транзакций.</summary>
+      <returns>Число недоставленных транзакций.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.UseInProcLoader">
+      <summary>Возвращает или задает значение, которое указывает, следует ли использовать команду BULK INSERT при применении файлов моментального снимка на подписчике.</summary>
+      <returns>Значение true, чтобы команда BULK INSERT использовалась при применении файлов моментального снимка на подписчике; в противном случае значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Replication.TransSynchronizationAgent.WorkingDirectory">
+      <summary>Возвращает или задает рабочий каталог, из которого осуществляется доступ к файлам моментальных снимков, когда используется протокол FTP.</summary>
+      <returns>Рабочий каталог.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.AbortPolicy">
+      <summary>Перечисляет параметры, определяющие завершение выполняемых потоков агента репликации при неожиданном завершении работы.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.AbortPolicy.Synchronous">
+      <summary>Потоки агента прерываются только в четко определенных местоположениях после выполнения процесса завершения работы, например до или после выполнения запросов и регистрации сообщений.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.AbortPolicy.Asynchronous">
+      <summary>Потоки агента, инициирующие завершение работы, могут прерывать работу других потоков агента.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.AlternateSynchronizationPartner">
+      <summary>Представляет альтернативного издателя, с которым может выполняться синхронизация подписки, если основной издатель недоступен.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.ComErrorException">
+      <summary>Исключение, которое формируется при возникновении общей ошибки в агенте репликации.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.ComErrorRecord">
+      <summary>Представляет сведения об ошибке, сформированной агентом репликации.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.ConnectionFailureException">
+      <summary>Исключение, которое формируется при ошибке подключения к базе данных при выполнении агента репликации.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.DataSourceType">
+      <summary>Перечисляет источники данных, поддерживаемые в качестве подписчиков репликации.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DataSourceType.SqlServer">
+      <summary>Подписчик Microsoft SQL Server</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DataSourceType.OdbcDsn">
+      <summary>Подписчик источника данных ODBC</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DataSourceType.Jet4Database">
+      <summary>Подписчик базы данных Microsoft Jet 4.0 (Access)</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DataSourceType.OleDBDataSource">
+      <summary>Подписчик источника данных OLE DB</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DataSourceType.Exchange">
+      <summary>Подписчик Microsoft Exchange </summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DataSourceType.Oracle">
+      <summary>Подписчик базы данных Oracle</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DataSourceType.DB2Universal">
+      <summary>Подписчик базы данных DB2 Universal</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DataSourceType.SqlServerCE">
+      <summary>Подписчик Microsoft SQL Server Compact</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DataSourceType.XmlDataSource">
+      <summary>Подписчик источника данных XML</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.DeadlockPriority">
+      <summary>Перечисляет приоритеты, используемые для разрешения взаимоблокировок, возникающих при создании моментальных снимков.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.MinusTen">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.MinusNine">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.MinusEight">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.MinusSeven">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.MinusSix">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.MinusFive">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.MinusFour">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.MinusThree">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.MinusTwo">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.MinusOne">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Zero">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.One">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Two">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Three">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Four">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Five">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Six">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Seven">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Eight">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Nine">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Ten">
+      <summary>См. раздел «Примечания».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Low">
+      <summary>Указывает, что текущий сеанс будет выбран в качестве жертвы взаимоблокировки, если он входит во взаимоблокировку, а другие сеансы, входящие в цепочку взаимоблокировок, имеют приоритет взаимоблокировки, установленный равным NORMAL или HIGH либо равным целочисленному значению больше -5.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.Normal">
+      <summary>Указывает, что текущий сеанс будет выбран в качестве жертвы взаимоблокировки, если другие сеансы, входящие в цепочку взаимоблокировок, имеют приоритет взаимоблокировки, установленный равным HIGH или равным целочисленному значению больше 0, но не станет жертвой взаимоблокировки, если другим сеансам назначен приоритет взаимоблокировки, равный LOW или равный целочисленному значению меньше 0.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.DeadlockPriority.High">
+      <summary>Указывает, что текущий сеанс будет выбран в качестве жертвы в случае взаимоблокировки с другим сеансом, если другой сеанс входит в цепочку взаимного блокирования с приоритетом, равным целочисленному значению больше 5, или может быть выбран в качестве жертвы, если другому сеансу назначен приоритет HIGH или равный целочисленному значению 5.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.FciException">
+      <summary>Исключение, возникающее в случае ошибки интерфейса FCI.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.FileTransferOption">
+      <summary>Перечисляет параметры получения файлов моментальных снимков.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.FileTransferOption.Unc">
+      <summary>Доступ к файлам моментальных снимков осуществляется с сетевого ресурса в формате UNC.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.FileTransferOption.Ftp">
+      <summary>Файлы моментальных снимков загружаются посредством FTP.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.MergeExchangeType">
+      <summary>Перечисляет возможности синхронизации данных агентом слияния.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MergeExchangeType.None">
+      <summary>Не указан тип обмена.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MergeExchangeType.Upload">
+      <summary>Загружаются только изменения данных с подписчика.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MergeExchangeType.Download">
+      <summary>Передаются только изменения данных издателя.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MergeExchangeType.Bidirectional">
+      <summary>Изменения загружаются с издателя и передаются с подписчика (по умолчанию).</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.MergeSynchronizationAgent">
+      <summary>Предоставляет функциональные возможности агента слияния репликации.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.MessageStatus">
+      <summary>Перечисляет коды состояния агентов репликации.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MessageStatus.None">
+      <summary>Состояние отсутствует.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MessageStatus.Start">
+      <summary>Выполняется запуск агента.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MessageStatus.Succeed">
+      <summary>Операция агента успешно завершена.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MessageStatus.InProgress">
+      <summary>Выполняется операция агента.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MessageStatus.Idle">
+      <summary>Агент запущен и ожидает изменений.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MessageStatus.Retry">
+      <summary>Операция агента завершилась неудачно и будет выполнена повторно.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MessageStatus.Fail">
+      <summary>Сбой в работе агента.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MessageStatus.ValidationFail">
+      <summary>Агент запустил проверку данных, и при проверке данных возникла ошибка.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MessageStatus.ValidationPass">
+      <summary>Агент запустил проверку данных, и проверка данных успешно завершена.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MessageStatus.RequestShutdownOnValidationFail">
+      <summary>Агент запустил проверку данных, и при проверке данных возникла ошибка. Агент завершил работу.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.MessageStatus.Abort">
+      <summary>Работа агента аварийно завершена.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.NativeSqlConnectionException">
+      <summary>Исключение, формируемое при возникновении ошибки в драйвере ODBC или поставщике OLE DB в ходе операции массового копирования.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.NetworkType">
+      <summary>Перечисляет поддерживаемые сетевые библиотеки, которые используются агентом репликации при подключении к серверу репликации.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.NetworkType.DefaultNetwork">
+      <summary>Текущая настроенная клиентская сетевая библиотека (по умолчанию).</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.NetworkType.TcpIPSockets">
+      <summary>Сетевая библиотека с поддержкой сокетов TCP/IP.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.NetworkType.Multiprotocol">
+      <summary />
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.OciException">
+      <summary>Исключение, которое формируется при возникновении ошибки в интерфейсе Oracle Call Interface (OCI).</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.OSException">
+      <summary>Исключение, формируемое при возникновении ошибки операционной системы во время выполнения операции интерфейса FCI.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.ParameterValueOutOfRangeException">
+      <summary>Исключение, возникающее, если значение, переданное параметру, выходит за пределы допустимого диапазона для этого типа данных параметра.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.PasswordWriteOnlyException">
+      <summary>Исключение, которое формируется при обращении к свойству пароля агента репликации.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.ReplicationAgentContainerException">
+      <summary>Исключение, которое формируется при возникновении одной или более ошибок в агенте репликации на основе управляемого кода.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.ReplicationAgentContainerWithWatsonException">
+      <summary>Представляет исключение, которое формируется при возникновении одной или нескольких ошибок неуправляемом коде агента репликации через программу Watson.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.ReplicationAgentException">
+      <summary>Базовый класс исключений для исключений, сформированных при выполнении агента репликации.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.ReplicationType">
+      <summary>Перечисляет типы публикации, для которых создается моментальный снимок.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.ReplicationType.None">
+      <summary>Тип публикации не указан.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.ReplicationType.Transactional">
+      <summary>Публикация транзакций.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.ReplicationType.Snapshot">
+      <summary>Публикация моментальных снимков.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.ReplicationType.Merge">
+      <summary>Публикация слиянием.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.SecurityMode">
+      <summary>Перечисляет типы проверки подлинности, используемые при соединении агента репликации с сервером в топологии репликации.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.SecurityMode.Standard">
+      <summary>Проверка подлинности SQL Server или обычная проверка подлинности HTTP при использовании для соединения с помощью протокола SSL с веб-сервером веб-синхронизации.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.SecurityMode.Integrated">
+      <summary>Проверка подлинности Windows.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.StatusEventArgs">
+      <summary>Предоставляет сведения о состоянии, возвращаемые агентом репликации в ответ на событие <see cref="E:Microsoft.SqlServer.Replication.AgentCore.Status" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.SubscriptionOption">
+      <summary>Перечисляет типы подписки.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.SubscriptionOption.Push">
+      <summary>Принудительная подписка.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.SubscriptionOption.Pull">
+      <summary>Подписка по запросу.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.SubscriptionOption.Anonymous">
+      <summary>Анонимная подписка. Анонимные подписки необходимы, если требуется создать подписку без регистрации у издателя подписки. Это необходимо в тех случаях, когда невозможно установить соединение SQL Server с издателем в момент настройки подписки.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.TransSynchronizationAgent">
+      <summary>Предоставляет функциональные возможности агента распространения репликации.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Replication.ValidateType">
+      <summary>Перечисляет типы проверки, которые выполняются во время синхронизации.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.ValidateType.NoValidation">
+      <summary>Не проверять данные подписчика (по умолчанию).</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.ValidateType.RowCountOnly">
+      <summary>Проверка полного подсчета количества строк данных подписчика.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.ValidateType.RowCountAndChecksum">
+      <summary>Полный подсчет количества строк и проверка контрольной суммы данных подписчика.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.ValidateType.FastRowCountOnly">
+      <summary>Выполнить только проверку быстрого подсчета строк данных подписчика.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.ValidateType.FastRowCountAndChecksum">
+      <summary>Быстрый подсчет количества строк и проверка контрольной суммы данных подписчика.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.ValidateType.RowCountAndBinaryChecksum">
+      <summary>Полный подсчет количества строк и проверка двоичной контрольной суммы данных подписчика.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Replication.ValidateType.FastRowCountAndBinaryChecksum">
+      <summary>Быстрый подсчет количества строк и проверка двоичной контрольной суммы данных подписчика.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.SqlDumper.DumpClient">
+      <summary>Представляет клиент дампа.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.SqlDumper.Dumper">
+      <summary>Представляет сборщик данных.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.SqlDumper.DumperFlags">
+      <summary>Это перечисление имеет атрибут <see cref="T:System.FlagsAttribute" />, поддерживающий побитовое соединение составляющих его значений.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.Default">
+      <summary>Атрибут Default.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.NoMiniDump">
+      <summary>Атрибут NoMiniDump.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.ReferencedMemory">
+      <summary>Атрибут ReferencedMemory.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.AllMemory">
+      <summary>Атрибут AllMemory.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.AllThreads">
+      <summary>Атрибут AllThreads.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.MatchFilename">
+      <summary>Атрибут MatchFilename.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.Verbose">
+      <summary>Атрибут Verbose.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.WaitAtExit">
+      <summary>Атрибут WaitAtExit.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.SendToWatson">
+      <summary>Атрибут SendToWatson.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.UseDefault">
+      <summary>Атрибут UseDefault.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.MaximumDump">
+      <summary>Атрибут MaximumDump.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.DoubleDump">
+      <summary>Атрибут DoubleDump.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.ForceWatson">
+      <summary>Атрибут ForceWatson.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.Filtered">
+      <summary />
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.CriticalClr">
+      <summary />
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.NoRegistry">
+      <summary />
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.LocalOnly">
+      <summary />
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.DeleteFiles">
+      <summary />
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.ShowUI">
+      <summary />
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.ForceUserThread">
+      <summary />
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.DumperFlags.MatchSignatureTime">
+      <summary />
+    </member>
+    <member name="T:Microsoft.SqlServer.SqlDumper.MiniDumpFlags">
+      <summary>Задает перечисление флагов мини-дампа.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.Normal">
+      <summary>Флаг дампа Normal.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.DataSegs">
+      <summary>Флаг дампа DataSegs.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.FullMemory">
+      <summary>Флаг дампа FullMemory.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.HandleData">
+      <summary>Флаг дампа HandleData.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.FilterMemory">
+      <summary>Флаг дампа FilterMemory.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.ScanMemory">
+      <summary>Флаг дампа ScanMemory.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.UnloadedModules">
+      <summary>Флаг дампа UnloadedModules.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.IndirectlyReferencedMemory">
+      <summary>Флаг дампа IndirectlyReferencedMemory.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.FilterModulePaths">
+      <summary>Флаг дампа FilterModulePaths.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.ProcessThreadData">
+      <summary>Флаг дампа ProcessThreadData.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.PrivateReadWriteMemory">
+      <summary>Флаг дампа PrivateReadWriteMemory.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.outOptionalData">
+      <summary>Флаг дампа outOptionalData.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.FullMemoryInfo">
+      <summary>Флаг дампа FullMemoryInfo.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.ThreadInfo">
+      <summary>Флаг дампа ThreadInfo.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.CodeSegs">
+      <summary>Флаг дампа CodeSegs.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.SqlDumper.MiniDumpFlags.WithoutManagedState">
+      <summary>Флаг дампа WithoutManagedState.</summary>
+    </member>
+  </members>
+</doc>

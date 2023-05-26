@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.TransferDatabasesTask</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ActionTypeConverter.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ActionTypeConverter" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ActionTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+      <summary>Указывает, может ли преобразователь типа действия выполнить преобразование из указанного исходного объекта.</summary>
+      <param name="context">Контекст.</param>
+      <param name="sourceType">Тип источника данных.</param>
+      <returns>Значение True, если преобразователь типа действия может выполнить преобразование из указанного исходного объекта. В противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ActionTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+      <summary>Указывает, может ли преобразователь типа действия выполнить преобразование в указанный целевой объект.</summary>
+      <param name="context">Контекст.</param>
+      <param name="destinationType">Целевой тип.</param>
+      <returns>Значение True, если преобразователь типа действия может выполнить преобразование в указанный целевой объект. В противном случае — значение false.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ActionTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+      <summary>Преобразовывает объект типа действия из указанного объекта.</summary>
+      <param name="context">Контекст.</param>
+      <param name="culture">Культура объекта.</param>
+      <param name="value">Значение объекта.</param>
+      <returns>Преобразованный объект типа действия.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ActionTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+      <summary>Преобразовывает объект типа действия в указанный объект.</summary>
+      <param name="context">Контекст.</param>
+      <param name="culture">Культура объекта.</param>
+      <param name="value">Значение объекта.</param>
+      <param name="destinationType">Целевой тип.</param>
+      <returns>Преобразованный объект типа действия.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ActionTypeConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>Возвращает коллекцию стандартных значений объекта типа действия.</summary>
+      <param name="context">Контекст.</param>
+      <returns>Коллекция стандартных значений объекта типа действия.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ActionTypeConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>Возвращает стандартные значения, поддерживаемые объектом типа действия.</summary>
+      <param name="context">Контекст.</param>
+      <returns>Всегда возвращает значение true.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>Запускает задачу.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> для контейнера.</param>
+      <param name="variableDispenser">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для контейнера.</param>
+      <param name="events">Интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> для формирования событий.</param>
+      <param name="log">Интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="transaction">Объект транзакции, частью которого является контейнер, в зависимости от значения свойства <see cref="P:Microsoft.SqlServer.Dts.Runtime.DtsContainer.TransactionOption" />. Это значение может быть равно null.</param>
+      <returns>Перечисление <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />, которое указывает результат выполнения.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>Инициализирует свойства, связанные с задачей. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="eventInfos">Коллекция, которая содержит события, вызываемые при выполнении задачи.</param>
+      <param name="logEntryInfos">Коллекция записей журнала.</param>
+      <param name="refTracker">Средство отслеживания ссылок на объекты.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Объект XmlElement, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">Объект в памяти XmlDocument, в котором сохраняются сведения.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Проверяет, правильно ли настроен компонент задачи.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ITransferDatabaseTask.Action">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction" />, указывающее, что делает задача: копирование или перемещение баз данных.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction" />, которое указывает действие перемещения или копирования.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ITransferDatabaseTask.DestinationConnection">
+      <summary>Возвращает или задает имя диспетчера подключений для целевой базы данных.</summary>
+      <returns>Имя диспетчера подключений для целевой базы данных.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ITransferDatabaseTask.DestinationDatabaseFiles">
+      <summary>Возвращает или задает имя файлов базы данных для целевой базы данных.</summary>
+      <returns>Имена файлов базы данных для целевой базы данных.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ITransferDatabaseTask.DestinationDatabaseName">
+      <summary>Возвращает или задает имя базы данных в месте назначения.</summary>
+      <returns>Имя целевой базы данных в месте назначения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ITransferDatabaseTask.DestinationOverwrite">
+      <summary>Возвращает или задает значение, указывающее, может ли целевая база данных (при ее наличии) быть перезаписана.</summary>
+      <returns>Значение true, если целевая база данных, если она существует, может быть перезаписана. В противном случае ― значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ITransferDatabaseTask.Method">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod" />, указывающее нужный режим передачи: «в сети» или «вне сети».</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ITransferDatabaseTask.ReattachSourceDatabase">
+      <summary>Возвращает или задает значение, которое указывает, должна база данных повторно прикрепляться или нет.</summary>
+      <returns>Значение true, если база данных присоединяется повторно. В противном случае ― значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ITransferDatabaseTask.SourceConnection">
+      <summary>Возвращает или задает имя диспетчера подключений для базы данных-источника.</summary>
+      <returns>Имя диспетчера подключений для базы данных-источника.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ITransferDatabaseTask.SourceDatabaseFiles">
+      <summary>Возвращает или задает имена файлов базы данных-источника для передачи.</summary>
+      <returns>Имена файлов базы данных-источника для передачи.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ITransferDatabaseTask.SourceDatabaseName">
+      <summary>Возвращает или задает имя базы данных-источника для передачи.</summary>
+      <returns>Имя базы данных-источника для передачи.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.Action">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction" />, указывающее действие, которое выполняется задачей «Передача базы данных»: копирование или перемещение баз данных.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction" />, которое указывает действие перемещения или копирования.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.DestinationConnection">
+      <summary>Возвращает или задает значение типа String, содержащее имя диспетчера соединений SMO для целевой базы данных.</summary>
+      <returns>Значение типа String, содержащее диспетчер соединений SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.DestinationDatabaseFiles">
+      <summary>Возвращает или задает значение типа String, содержащее имя файлов базы данных для целевой базы данных.</summary>
+      <returns>Значение типа String, содержащее имена файлов данных и журнала целевой базы данных.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.DestinationDatabaseName">
+      <summary>Возвращает или задает значение типа String, содержащее имя базы данных в месте назначения.</summary>
+      <returns>Значение типа String, содержащее имя базы данных в назначении.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.DestinationOverwrite">
+      <summary>Возвращает или задает значение типа Boolean, указывающее, может ли целевая база данных (при ее наличии) быть перезаписана.</summary>
+      <returns>Значение true указывает, что существующая база данных назначения перезаписывается в процессе передачи.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.ExecutionValue">
+      <summary>Возвращает результат выполнения задачи.</summary>
+      <returns>Определяемый пользователем объект. Эта задача всегда возвращает 1.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.Method">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod" />, указывающее нужный режим передачи: «в сети» или «вне сети».</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.ReattachSourceDatabase">
+      <summary>Значение типа Boolean, указывающее, следует ли повторно присоединять базу данных.</summary>
+      <returns>Значение true, если база данных присоединяется повторно. Значение false, если база данных не присоединяется повторно.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.SourceConnection">
+      <summary>Возвращает или задает значение типа String, содержащее имя диспетчера соединений SMO для базы данных-источника.</summary>
+      <returns>Значение типа String, содержащее строку соединения диспетчера соединений SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.SourceDatabaseFiles">
+      <summary>Возвращает или задает значение типа String, содержащее имена файлов базы данных-источника для передачи.</summary>
+      <returns>Значение типа String, содержащее имена файлов данных и журнала для передачи из базы данных-источника. Если указано несколько файлов, они разделяются точкой с запятой.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.SourceDatabaseName">
+      <summary>Возвращает или задает значение типа String, содержащее имя базы данных-источника для передачи.</summary>
+      <returns>Значение типа String, содержащее имя базы данных-источника для передачи.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ActionTypeConverter">
+      <summary>Представляет класс преобразователя типа действия.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.ITransferDatabaseTask">
+      <summary>Представляет задачу «Передача базы данных».</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction">
+      <summary>Используется свойством <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.Action" /> для определения режима передачи: копирование или перемещение.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction.Copy">
+      <summary>Действие — копирование.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction.Move">
+      <summary>Действие — перемещение.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask">
+      <summary>Разрешает передачу баз данных между исходным и целевым сервером с помощью двух разных методов: базы данных в сети и базы данных вне сети. Задаче требуется диспетчер соединений SMO.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.DtsTransferDBException">
+      <summary>Исключение, которое вызывается во время загрузки, если сохраненное имя корневого узла XML задачи повреждено.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod">
+      <summary>Используется задачей <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask" /> для определения того, в каком режиме, «в сети» или «не в сети», выполнять перемещение или копирование.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod.DatabaseOffline">
+      <summary>Файлы базы данных копируются или перемещаются в указанное расположение в режиме «не в сети».</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod.DatabaseOnline">
+      <summary>Файлы базы данных копируются или перемещаются в режиме «в сети» с помощью объекта передачи SMO.</summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.ForEachSMOEnumerator</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator.MoveNext">
+      <summary>Продвигает перечислитель на следующий элемент коллекции. Возвращает значение false, если объект, на который можно переместиться, отсутствует.</summary>
+      <returns>Значение false, поскольку в пустой коллекции отсутствует элемент, на который можно переместиться.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator.Reset">
+      <summary>Устанавливает перечислитель в его первоначальную позицию (перед первым элементом коллекции).</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.GetEnumerator(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Возвращает перечислитель, служащий для прохода по экземпляру <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator" />.</summary>
+      <param name="connections">Коллекция соединений, которые используются перечислителем SMO.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <returns>Объект, который впоследствии приводится к объекту IEnumerator.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Узел, который содержит объект или данные для загрузки и сохранения.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий, ошибок, предупреждений и т. д. во время сохранения данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XML-документ, в который сохраняется информация.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Возвращает значение, указывающее, имеются ли у контейнера недопустимые параметры, которые помешают его успешному выполнению.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> для контейнера.</param>
+      <param name="variableDispenser">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для контейнера.</param>
+      <param name="events">Интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для формирования событий.</param>
+      <param name="log">Интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <returns>Перечисление <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />, которое указывает результат проверки.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMODataFileEnumerator.MoveNext">
+      <summary>Продвигает перечислитель на следующий элемент коллекции.</summary>
+      <returns>Значение true, если перечислитель успешно перемещен к следующему элементу. Значение false, если перечислитель прошел конец коллекции.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMODataFileEnumerator.Reset">
+      <summary>Устанавливает перечислитель в его первоначальную позицию (перед первым элементом коллекции).</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMOEnumerator.MoveNext">
+      <summary>Продвигает перечислитель на следующий элемент коллекции.</summary>
+      <returns>Значение true, если перечислитель успешно перемещен к следующему элементу. Значение false, если перечислитель прошел конец коллекции.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMOEnumerator.Reset">
+      <summary>Устанавливает перечислитель в его первоначальную позицию (перед первым элементом коллекции).</summary>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator.Current">
+      <summary>Выдает ошибку, указывающую на пустой перечислитель.</summary>
+      <returns>Объект.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator.EnumURN">
+      <summary>Возвращает или задает значение типа String, содержащее универсальное имя ресурса перечисления SMO для выбранного перечисления.</summary>
+      <returns>Значение типа String, содержащее параметры конфигурации перечислителя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.IDTSForEachSMOEnumerator.EnumURN">
+      <summary>Возвращает или задает значение типа String, содержащее адрес универсального имени ресурса перечисления объектов SMO SQL Server для выбранного перечисления.</summary>
+      <returns>Значение типа String, содержащее параметры конфигурации перечислителя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMODataFileEnumerator.Current">
+      <summary>Возвращает текущий объект из перечислителя.</summary>
+      <returns>Объект, который является текущим объектом в коллекции.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMOEnumerator.Current">
+      <summary>Возвращает текущий объект из перечислителя.</summary>
+      <returns>Объект, который является текущим объектом в коллекции.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.EmptyEnumerator">
+      <summary>Работает как заполнитель, когда перечислитель вызывается для пустой коллекции. Среда выполнения возвращает пустой перечислитель, если в коллекции отсутствуют элементы для перечисления. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator">
+      <summary>Содержит элементы, используемые при перечислении объектов SMO SQL Server. Этот класс не может быть унаследован.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.IDTSForEachSMOEnumerator">
+      <summary>Определяет интерфейс для класса <see cref="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.ForEachSMOEnumerator" />, предоставляя элементы, обеспечивающие перечисление объектов SMO SQL Server.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMODataFileEnumerator">
+      <summary>Перечисляет файл данных объектов SMO SQL Server.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.SMOEnumerator">
+      <summary>Перечисляет объекты SMO SQL Server.</summary>
+    </member>
+  </members>
+</doc>

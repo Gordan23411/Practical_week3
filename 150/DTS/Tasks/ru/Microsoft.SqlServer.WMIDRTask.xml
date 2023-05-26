@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.WMIDRTask</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary>Передает в <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> ссылку на задачу <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="manager">Ссылка на <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />, которую необходимо передать.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>Запускает задачу.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> для задачи.</param>
+      <param name="variableDispenser">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> для задачи.</param>
+      <param name="events">Ссылка на объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> для формирования событий.</param>
+      <param name="log">Ссылка на объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="transaction">Объект транзакции, частью которого может являться задача, в зависимости от значения, содержащегося в свойстве TransactionOption. Этому значению можно присвоить пустую ссылку (Nothing в языке Visual Basic).</param>
+      <returns>Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />, указывающий результат выполнения.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>Инициализирует свойства, связанные с задачей <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> для задачи.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для получения событий.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> для протоколирования событий.</param>
+      <param name="eventInfos">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" />.</param>
+      <param name="logEntryInfos">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" />.</param>
+      <param name="refTracker">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" />.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">XML-элемент, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.ResumeExecution">
+      <summary>Возобновляет выполнение задачи после приостановки. Задача или контейнер возобновляются средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">Объект XmlDocument, который содержит XML-элемент, представляющий задачу.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.SuspendExecution">
+      <summary>Указывает, что исполняемый объект должен быть приостановлен. Этот метод вызывается средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Проверяет, правильно ли настроена задача.</summary>
+      <param name="connections">Коллекция <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> для задачи.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для получения событий.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> для протоколирования событий.</param>
+      <returns>Возвращает значение перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />, которое указывает результат проверки.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.Destination">
+      <summary>Возвращает или задает целевое имя для задачи.</summary>
+      <returns>Целевое имя.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.DestinationType">
+      <summary>Возвращает или задает целевой тип.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.Output">
+      <summary>Возвращает или задает объект, содержащий результаты задачи.</summary>
+      <returns>Объект, содержащий результаты задачи.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.OutputType">
+      <summary>Возвращает или задает тип результата.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.OverwriteDestination">
+      <summary>Возвращает или задает значение, определяющее, как задача должна обрабатывать существующие данные в назначении, указанном свойством.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.WmiConnection">
+      <summary>Возвращает или задает имя WMI-соединения, связанного с задачей.</summary>
+      <returns>Имя WMI-соединения, связанного с задачей.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.WqlQuerySource">
+      <summary>Возвращает или задает источник WQL-запроса, который должен быть исполнен задачей.</summary>
+      <returns>Источник WQL-запроса.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask.WqlQuerySourceType">
+      <summary>Возвращает или задает тип источника запроса.</summary>
+      <returns>Тип источника запроса.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.DebugMode">
+      <summary>Значение типа Boolean, указывающее, должна ли задача <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> проверять точки останова.</summary>
+      <returns>Значение true, если задача <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> должна проверять включенные точки останова. В противном случае — значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination">
+      <summary>Возвращает или задает имя назначения для задачи <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+      <returns>Значение типа String, содержащее имя назначения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.DestinationType">
+      <summary>Возвращает или задает значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType" />, указывающее тип назначения, например файл или переменную, используемые задачей <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType" />. По умолчанию <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType.FileConnection" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.ExecutionValue">
+      <summary>Возвращает объект Object, содержащий результаты выполнения задачи <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+      <returns>Значение типа Object, содержащее результаты выполнения задачи.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Output">
+      <summary>Возвращает или задает Object, содержащий результаты выполнения задачи <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+      <returns>Значение типа Object, содержащее результаты выполнения задачи.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.OutputType">
+      <summary>Возвращает или задает значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType" />, указывающее тип выходных данных, такой как <see cref="T:System.Data.DataTable" /> или строка, возвращаемый задачей <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType" />. По умолчанию <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.DataTable" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.OverwriteDestination">
+      <summary>Возвращает или задает значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination" />, определяющее, как <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> должен обрабатывать существующие данные в назначении, указанном свойством <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" />.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination" />. По умолчанию <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.KeepOriginal" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.SuspendRequired">
+      <summary>Возвращает или задает значение типа Boolean, которое указывает, будет ли производиться приостановка задачи в точке останова. Это значение устанавливается подсистемой среды выполнения для задач и контейнеров при обнаружении точки останова.</summary>
+      <returns>Значение true, если задача приостанавливается при достижении точки останова.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WmiConnection">
+      <summary>Возвращает или задает имя соединения <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" />, используемого задачей <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+      <returns>Имя объекта <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" />, связанного с задачей.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource">
+      <summary>Возвращает или задает источник запроса на языке WQL, который должен быть выполнен задачей <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+      <returns>Возвращает значение типа String, содержащее источник WQL-запроса.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySourceType">
+      <summary>Возвращает или задает значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" />, которое указывает тип источника (соединение с файлом или переменная) для запроса на языке WQL, который должен быть выполнен задачей <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+      <returns>Значение <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" />. По умолчанию <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.DirectInput" />.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType">
+      <summary>Определяет тип назначения, указанный в свойстве <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType.FileConnection">
+      <summary>Свойство <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> содержит имя соединения файла, получающего результаты <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType.Variable">
+      <summary>Свойство <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> содержит имя String или переменной Object, получающей результаты <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.IWmiDataReaderTask">
+      <summary>Представляет задачу «Модуль чтения данных WMI».</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType">
+      <summary>Определяет тип выходных данных, возвращаемый классом <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.DataTable">
+      <summary>Выходные данные возвращаются в виде <see cref="T:System.Data.DataTable" />.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.PropertyValue">
+      <summary>Выходные данные возвращаются в виде объекта String, содержащего значение указанного свойства.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.PropertyNameAndValue">
+      <summary>Выходные данные возвращаются в виде объекта String, содержащего имя и значение указанного свойства.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination">
+      <summary>Определяет, как класс <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> записывает данные в назначение, указанное в <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" />.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.OverwriteDestination">
+      <summary>Задача перезаписывает существующие данные в указанном назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.AppendToDestination">
+      <summary>Задача добавляет свои результаты к существующим данным в указанном назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.KeepOriginal">
+      <summary>Если в указанном назначении данные уже существуют, возникает ошибка.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType">
+      <summary>Определяет тип источника <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" />, обеспечивающего выполнение запроса на языке WQL классом <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.FileConnection">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" /> содержит имя файлового соединения, из которого необходимо получить WQL-запрос.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.DirectInput">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" /> содержит WQL-запрос.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.Variable">
+      <summary>
+        <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" /> содержит имя переменной, из которой необходимо получить WQL-запрос.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask">
+      <summary>Содержит элементы, используемые для настройки и запуска задачи «Модуль чтения данных WMI», запускающей запросы инструментария управления Windows (WMI), и возвращает сведения WMI о системе компьютера. Этот класс не может быть унаследован.</summary>
+    </member>
+  </members>
+</doc>

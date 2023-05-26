@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>System Configuration Check Report for Microsoft SQL Server 2019</title>
+  </head>
+  <body>
+    <p STYLE="font-family: Verdana, Arial, sans-serif; font-size: 14pt;">
+      <b>Microsoft SQL Server 2019 - System Configuration Check Report</b>
+    </p>
+    <p STYLE="font-family: Verdana, Arial, sans-serif; font-size: 10pt;">
+      <b>Computer Name(s): </b>DESKTOP-C73J7NQ <br /><b>Report Date/Time: </b>27.05.2023 0:12<br /><b>Saved to Directory: </b><a href="C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230527_001219\SystemConfigurationCheck_Report.htm">C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230527_001219\SystemConfigurationCheck_Report.htm</a></p>
+    <table border="1" cellpadding="7" cellspacing="0" STYLE="font-family: Verdana, Arial, sans-serif; font-size: 9pt;">
+      <tr style="background-color:Silver">
+        <th colspan="2" align="center">Rule Name</th>
+        <th align="center">Rule Description</th>
+        <th align="center">Result</th>
+        <th align="center">Message/Corrective Action</th>
+      </tr>
+      <tr style="background-color:Aqua">
+        <td colspan="5">
+          <b>PreInstallRules:
+                    SQL Server 2019 Setup configuration checks for rules group 'PreInstallRules'</b>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>HasSecurityBackupAndDebugPrivilegesCheck</td>
+        <td>Checks whether the account that is running SQL Server Setup has the right to back up files and directories, the right to manage auditing and the security log and the right to debug programs.</td>
+        <td>Passed</td>
+        <td>The account that is running SQL Server Setup has the right to back up files and directories, the right to manage auditing and security log and the right to debug programs.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>RebootRequiredCheck</td>
+        <td>Checks if a pending computer restart is required. A pending restart can cause Setup to fail.</td>
+        <td>Passed</td>
+        <td>The computer does not require a restart.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>WmiServiceStateCheck</td>
+        <td>Checks whether the WMI service is started and running on the computer.</td>
+        <td>Passed</td>
+        <td>The Windows Management Instrumentation (WMI) service is running.</td>
+      </tr>
+    </table>
+    <p STYLE="font-family: Verdana, Arial, sans-serif; font-size: 10pt;">
+      <b>Rules Documentation: </b>
+      <a href="https://go.microsoft.com/fwlink/?linkid=862098">https://go.microsoft.com/fwlink/?linkid=862098</a>
+      <br />
+      <b>Community: </b>
+      <a href="https://go.microsoft.com/fwlink/?linkid=2094703">https://go.microsoft.com/fwlink/?linkid=2094703</a>
+      <br />
+      <b>Setup Help File: </b>
+      <a href="https://go.microsoft.com/fwlink/?linkid=862093">https://go.microsoft.com/fwlink/?linkid=862093</a>
+    </p>
+  </body>
+  <xml id="xmlDataIsland">
+    <RunRuleResults>
+  <Header reportDate="27.05.2023" reportTime="0:12" savedToDirectory="C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230527_001219\SystemConfigurationCheck_Report.htm">
+    <Machines>
+      <Machine value="DESKTOP-C73J7NQ" />
+    </Machines>
+  </Header>
+  <group groupName="PreInstallRules" groupDescription="SQL Server 2019 Setup configuration checks for rules group 'PreInstallRules'">
+    <RunRuleResult ruleName="HasSecurityBackupAndDebugPrivilegesCheck" machineName="DESKTOP-C73J7NQ" description="Checks whether the account that is running SQL Server Setup has the right to back up files and directories, the right to manage auditing and the security log and the right to debug programs." result="Passed" message="The account that is running SQL Server Setup has the right to back up files and directories, the right to manage auditing and security log and the right to debug programs." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="RebootRequiredCheck" machineName="DESKTOP-C73J7NQ" description="Checks if a pending computer restart is required. A pending restart can cause Setup to fail." result="Passed" message="The computer does not require a restart." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="WmiServiceStateCheck" machineName="DESKTOP-C73J7NQ" description="Checks whether the WMI service is started and running on the computer." result="Passed" message="The Windows Management Instrumentation (WMI) service is running." imagePath="resources\ProgressSuccess.ico" />
+  </group>
+  <Resources rulesDocumentation="https://go.microsoft.com/fwlink/?linkid=862098" community="https://go.microsoft.com/fwlink/?linkid=2094703" setupHelpFile="https://go.microsoft.com/fwlink/?linkid=862093" />
+</RunRuleResults>
+  </xml>
+</html>

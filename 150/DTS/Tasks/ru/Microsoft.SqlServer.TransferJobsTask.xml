@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.TransferJobsTask</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary>Вызывается подсистемой среды выполнения при создании задачи или контейнера и получает объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />, чтобы обеспечить создание, удаление и проверку состояния точек останова. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="manager">Диспетчер точек останова, определенный для этой задачи.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>Запускает задачу.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="transaction">Объект транзакции, частью которого является контейнер. Это значение может быть равно null.</param>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>Инициализирует свойства, связанные с задачей. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="eventInfos">Коллекция, которая содержит события, вызываемые при выполнении задачи.</param>
+      <param name="logEntryInfos">Коллекция записей журнала.</param>
+      <param name="refTracker">Средство отслеживания ссылок на объекты.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Объект XmlElement, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.ResumeExecution">
+      <summary>Возобновляет выполнение задачи после приостановки. Задача или контейнер возобновляются средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XML-документ, в котором необходимо сохранить сведения.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.SuspendExecution">
+      <summary>Указывает, что исполняемый объект должен быть приостановлен. Этот метод вызывается средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Проверяет, правильно ли настроена задача.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.DestinationConnection">
+      <summary>Возвращает или задает имя диспетчера подключений для целевой базы данных.</summary>
+      <returns>Имя диспетчера подключений для целевой базы данных.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.EnableJobsAtDestination">
+      <summary>Возвращает или задает значение, указывающее, включены ли задания, созданные в назначении.</summary>
+      <returns>Значение true, если созданные задания включены, в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.IfObjectExists">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists" />, указывающее, должно ли выполнение задачи завершиться ошибкой, следует ли перезаписать существующее задание или пропустить передачу задания, если задание с таким же именем уже существует в месте назначения.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.JobsList">
+      <summary>Возвращает или задает задания для передачи.</summary>
+      <returns>Задания для передачи.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.SourceConnection">
+      <summary>Возвращает или задает строку подключения диспетчера соединений.</summary>
+      <returns>Строка подключения диспетчера соединений.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.TransferAllJobs">
+      <summary>Возвращает или задает значение, которое показывает, переносятся некоторые или все задания.</summary>
+      <returns>Значение true, если все задания переносятся. В противном случае — значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.DebugMode">
+      <summary>Возвращает или задает значение типа Boolean, указывающее, должна ли задача определять точки останова.</summary>
+      <returns>Значение true, если задача должна определить, разрешены ли точки останова. Значение false, если задача может игнорировать все точки останова.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.DestinationConnection">
+      <summary>Возвращает или задает значение типа String, содержащее имя диспетчера соединений SMO для целевой базы данных.</summary>
+      <returns>Значение типа String, содержащее диспетчер соединений SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.EnableJobsAtDestination">
+      <summary>Возвращает или задает значение типа Boolean, указывающее, включены ли задания, созданные в назначении.</summary>
+      <returns>Значение true указывает, что созданные задания включены. Значение false указывает, что они отключены.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.ExecutionValue">
+      <summary>Возвращает объект, указывающий количество переданных заданий.</summary>
+      <returns>Объект, содержащий количество задач, успешно переданных в место назначения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.IfObjectExists">
+      <summary>Возвращает или задает значение из перечисления <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.IfObjectExists" />, указывающее, должно ли выполнение задачи завершиться ошибкой, следует ли перезаписать существующее задание или пропустить передачу задания, если идентичное задание уже существует в назначении.</summary>
+      <returns>Значение из перечисления <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.IfObjectExists" />, указывающее, должно ли выполнение задачи завершиться ошибкой, следует ли игнорировать существующее задание или пропустить передачу задания, если задание с тем же именем уже существует в месте назначения.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.JobsList">
+      <summary>Возвращает или задает коллекцию StringCollection, содержащую имена заданий, которые необходимо передать.</summary>
+      <returns>Коллекция StringCollection, содержащая список имен заданий, разделенных запятой.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.SourceConnection">
+      <summary>Возвращает или задает значение типа String, содержащее имя диспетчера соединений SMO для базы данных-источника.</summary>
+      <returns>Значение типа String, содержащее строку соединения диспетчера соединений SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.SuspendRequired">
+      <summary>Возвращает или задает значение типа Boolean, которое указывает, будет ли производиться приостановка задачи в точках останова. Это значение устанавливается подсистемой среды выполнения для задач и контейнеров при обнаружении точки останова.</summary>
+      <returns>Значение true, если задача приостанавливается при достижении точки останова.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.TransferAllJobs">
+      <summary>Возвращает или задает значение типа Boolean, указывающее, следует передавать только некоторые или все задания.</summary>
+      <returns>Значение true указывает, что передаются все задания. Значение false указывает, что передаются только задания, перечисленные в свойстве <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.JobsList" />.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists">
+      <summary>Содержит значения, используемые свойством <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.IfObjectExists" /><see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask" /> для определения способов обработки передачи, если задание существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists.FailTask">
+      <summary>Вызывает ошибку в выполнении задачи, если это же задание существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists.Overwrite">
+      <summary>Перезаписывает задание, если это же задание существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists.Skip">
+      <summary>Пропускает передачу задания, если это же задание существует в назначении.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask">
+      <summary>Представляет задачу «Передача заданий».</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask">
+      <summary>Обеспечивает методы и свойства для передачи заданий агента SQL Server из одного экземпляра SQL Server в другой.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.DtsTransferJobsException">
+      <summary>Исключение, которое вызывается во время загрузки, если сохраненное имя корневого узла XML задачи повреждено.</summary>
+    </member>
+  </members>
+</doc>

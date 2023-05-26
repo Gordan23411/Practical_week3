@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Отчет о проверке конфигурации системы для Microsoft SQL Server 2019</title>
+  </head>
+  <body>
+    <p STYLE="font-family: Verdana, Arial, sans-serif; font-size: 14pt;">
+      <b>Microsoft SQL Server 2019 — отчет о проверке конфигурации системы</b>
+    </p>
+    <p STYLE="font-family: Verdana, Arial, sans-serif; font-size: 10pt;">
+      <b>Имя компьютера: </b>DESKTOP-C73J7NQ <br /><b>Дата и время отчета: </b>27.05.2023 0:15<br /><b>Сохранен в каталоге: </b><a href="C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230527_001513\SystemConfigurationCheck_Report.htm">C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230527_001513\SystemConfigurationCheck_Report.htm</a></p>
+    <table border="1" cellpadding="7" cellspacing="0" STYLE="font-family: Verdana, Arial, sans-serif; font-size: 9pt;">
+      <tr style="background-color:Silver">
+        <th colspan="2" align="center">Имя правила</th>
+        <th align="center">Описание правила</th>
+        <th align="center">Результат</th>
+        <th align="center">Сообщение/действие по исправлению</th>
+      </tr>
+      <tr style="background-color:Aqua">
+        <td colspan="5">
+          <b>GlobalRules:
+                    Проверки конфигурации программы установки SQL Server 2019 для группы правил "GlobalRules"</b>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>ServerCore64BitCheck</td>
+        <td>Проверяет, является ли данная версия SQL Server 64-разрядной.</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>AclPermissionsFacet</td>
+        <td>Проверяет согласованность разделов реестра SQL Server.</td>
+        <td>пройдено</td>
+        <td>Разделы реестра SQL Server находятся в согласованном состоянии, допускающем обновление и установку SQL Server.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>FacetWOW64PlatformCheck</td>
+        <td>Определяет, поддерживается ли программа установки SQL Server на этой платформе операционной системы.</td>
+        <td>пройдено</td>
+        <td>Программа установки SQL Server поддерживается на данной платформе операционной системы.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>HasSecurityBackupAndDebugPrivilegesCheck</td>
+        <td>Проверяет, имеет ли учетная запись, выполняющая программу установки SQL Server, право резервного копирования файлов и папок, управления аудитом и журналами безопасности и отладки программ.</td>
+        <td>пройдено</td>
+        <td>Учетная запись, выполняющая программу установки SQL Server, имеет право резервного копирования файлов и папок, управления аудитом и журналами безопасности и отладки программ.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>MediaPathLength</td>
+        <td>Проверяет, указан ли слишком длинный путь к установочному носителю SQL Server.</td>
+        <td>пройдено</td>
+        <td>Путь к установочному носителю SQL Server имеет допустимую длину.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>RebootRequiredCheck</td>
+        <td>Проверяет необходимость отложенной перезагрузки компьютера. Отложенная перезагрузка может помешать успешной установке.</td>
+        <td>пройдено</td>
+        <td>Перезагрузка компьютера не требуется.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>SetupCompatibilityCheck</td>
+        <td>Проверяет, совместима ли текущая версия SQL Server с позже установленной версией.</td>
+        <td>пройдено</td>
+        <td>Программа установки не обнаружила проблем совместимости.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>ThreadHasAdminPrivilegeCheck</td>
+        <td>Проверяет, имеет ли учетная запись, под которой запущена программа установки SQL Server, права администратора на этом компьютере.</td>
+        <td>пройдено</td>
+        <td>Учетная запись, под которой запущена программа установки SQL Server, имеет права администратора на этом компьютере.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>WmiServiceStateCheck</td>
+        <td>Проверяет, запущены ли на компьютере службы WMI.</td>
+        <td>пройдено</td>
+        <td>Служба инструментария WMI запущена и работает.</td>
+      </tr>
+      <tr style="background-color:Aqua">
+        <td colspan="5">
+          <b>InstallGlobalRules:
+                    Проверки конфигурации программы установки SQL Server 2019 для группы правил "InstallGlobalRules"</b>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>ServerCoreBlockUnsupportedSxSCheck</td>
+        <td>Проверяет, установлена ли более ранняя версия SQL Server.</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>AclPermissionsFacet</td>
+        <td>Проверяет согласованность разделов реестра SQL Server.</td>
+        <td>пройдено</td>
+        <td>Разделы реестра SQL Server находятся в согласованном состоянии, допускающем обновление и установку SQL Server.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>BlockUnsupportedSxSCheck</td>
+        <td>Проверка наличия экземпляров SQL 2019 CTP с версией ниже CTP 3.0.</td>
+        <td>пройдено</td>
+        <td>Экземпляры SQL 2019 CTP с версией ниже CTP 3.0 не обнаружены.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>FacetDomainControllerCheck</td>
+        <td>Проверяет, является ли компьютер контроллером домена. Устанавливать SQL Server 2019 на контроллере домена не рекомендуется.</td>
+        <td>пройдено</td>
+        <td>Компьютер не является контроллером домена.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>IsFirewallEnabled</td>
+        <td>Проверяет, включен ли брандмауэр Windows.</td>
+        <td>пройдено</td>
+        <td>Брандмауэр Windows не включен. Windows не будет блокировать удаленный доступ. Однако работа брандмауэров сторонних разработчиков может привести к ошибкам доступа.</td>
+      </tr>
+      <tr style="background-color:Aqua">
+        <td colspan="5">
+          <b>InstallFeatureSpecificRules:
+                    Проверки конфигурации программы установки SQL Server 2019 для группы правил "InstallFeatureSpecificRules"</b>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>ASIsValidEditionForDeploymentModeCheck</td>
+        <td>Проверьте, поддерживает ли этот выпуск служб SQL Server выбранный режим сервера служб Analysis Services.</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>EnterpriseCalLimit</td>
+        <td>Проверяет, не введен ли ключ продукта Enterprise Server/CAL в системе, где имеется больше 20 физических ядер или 40 логических с технологией Hyper-Threading.</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>Polybase_IsDomainController</td>
+        <td>PolyBase нельзя установить на контроллере домена Active Directory</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>Polybase_IsPolybaseInstalled</td>
+        <td>PolyBase можно установить только на одном экземпляре SQL Server для каждого компьютера</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>Polybase_IsSqlEngineRunning</td>
+        <td>Для добавления компонента PolyBase в экземпляр SQL Server требуется подключение к ядру СУБД SQL Server в экземпляре</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>PowerShellCheck</td>
+        <td>Проверяет, установлена ли уже в системе оболочка Windows PowerShell 3.0 или более высокой версии. Оболочка Windows PowerShell является обязательной для некоторых компонентов SQL Server.</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>ServerCoreBlockUnsupportedFeaturesCheck</td>
+        <td>Проверяет, все ли выбранные компоненты поддерживаются на Windows Server Core.</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>SlipstreamMediaInfoCheck</td>
+        <td>Проверяет, совпадает ли язык исходного носителя с языком указанного пакета обновления.</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr style="background-color:Aqua">
+        <td colspan="5">
+          <b>InstallFeatureSpecificConfigRules:
+                    Проверки конфигурации программы установки SQL Server 2019 для группы правил "InstallFeatureSpecificConfigRules"</b>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>ASIsValidEditionForDeploymentModeCheck</td>
+        <td>Проверьте, поддерживает ли этот выпуск служб SQL Server выбранный режим сервера служб Analysis Services.</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSkip.ico" />
+        </td>
+        <td>InstanceClashRule</td>
+        <td>Проверяет, используется ли заданное имя экземпляра существующим экземпляром SQL Server.</td>
+        <td>неприменимо</td>
+        <td>Это правило неприменимо к текущей конфигурации системы.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>BlockCrossLanguageInstall</td>
+        <td>Проверяет, соответствует ли язык установки языку установленных компонентов SQL Server.</td>
+        <td>пройдено</td>
+        <td>Нет установленных компонентов SQL Server, либо язык установки соответствует языку существующих компонентов SQL Server.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>BlockMixedArchitectureInstall</td>
+        <td>Проверяет, соответствует ли архитектура ЦП устанавливаемых компонентов архитектуре ЦП указанного экземпляра.</td>
+        <td>пройдено</td>
+        <td>Архитектура ЦП устанавливаемых компонентов соответствует архитектуре ЦП указанного экземпляра.</td>
+      </tr>
+      <tr valign="top">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>FAT32FileSystemCheck</td>
+        <td>Проверяет, является ли заданный диск томом файловой системы FAT32. Установка в файловую систему FAT32 поддерживается, но не рекомендуется, поскольку эта системе хуже защищена, чем файловая система NTFS.</td>
+        <td>пройдено</td>
+        <td>Указанный диск не имеет файловую систему FAT32.</td>
+      </tr>
+      <tr valign="top" style="background-color:LightYellow">
+        <td>
+          <img src="resources\ProgressSuccess.ico" />
+        </td>
+        <td>StandaloneInstall_HasClusteredOrPreparedInstanceCheck</td>
+        <td>Проверяет, используется ли выбранное имя экземпляра существующим кластеризованным или готовым к работе в кластере экземпляром на любом из узлов кластера. </td>
+        <td>пройдено</td>
+        <td>Ни на одном из узлов кластера не установлен кластеризованный или готовый к работе в кластере экземпляр с выбранным именем. </td>
+      </tr>
+    </table>
+    <p STYLE="font-family: Verdana, Arial, sans-serif; font-size: 10pt;">
+      <b>Документация по правилам: </b>
+      <a href="https://go.microsoft.com/fwlink/?linkid=862098">https://go.microsoft.com/fwlink/?linkid=862098</a>
+      <br />
+      <b>Сообщество: </b>
+      <a href="https://go.microsoft.com/fwlink/?linkid=2094703">https://go.microsoft.com/fwlink/?linkid=2094703</a>
+      <br />
+      <b>Файл справки по установке: </b>
+      <a href="https://go.microsoft.com/fwlink/?linkid=862093">https://go.microsoft.com/fwlink/?linkid=862093</a>
+    </p>
+  </body>
+  <xml id="xmlDataIsland">
+    <RunRuleResults>
+  <Header reportDate="27.05.2023" reportTime="0:15" savedToDirectory="C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230527_001513\SystemConfigurationCheck_Report.htm">
+    <Machines>
+      <Machine value="DESKTOP-C73J7NQ" />
+    </Machines>
+  </Header>
+  <group groupName="GlobalRules" groupDescription="Проверки конфигурации программы установки SQL Server 2019 для группы правил &quot;GlobalRules&quot;">
+    <RunRuleResult ruleName="ThreadHasAdminPrivilegeCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, имеет ли учетная запись, под которой запущена программа установки SQL Server, права администратора на этом компьютере." result="пройдено" message="Учетная запись, под которой запущена программа установки SQL Server, имеет права администратора на этом компьютере." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="HasSecurityBackupAndDebugPrivilegesCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, имеет ли учетная запись, выполняющая программу установки SQL Server, право резервного копирования файлов и папок, управления аудитом и журналами безопасности и отладки программ." result="пройдено" message="Учетная запись, выполняющая программу установки SQL Server, имеет право резервного копирования файлов и папок, управления аудитом и журналами безопасности и отладки программ." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="RebootRequiredCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет необходимость отложенной перезагрузки компьютера. Отложенная перезагрузка может помешать успешной установке." result="пройдено" message="Перезагрузка компьютера не требуется." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="WmiServiceStateCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, запущены ли на компьютере службы WMI." result="пройдено" message="Служба инструментария WMI запущена и работает." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="AclPermissionsFacet" machineName="DESKTOP-C73J7NQ" description="Проверяет согласованность разделов реестра SQL Server." result="пройдено" message="Разделы реестра SQL Server находятся в согласованном состоянии, допускающем обновление и установку SQL Server." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="MediaPathLength" machineName="DESKTOP-C73J7NQ" description="Проверяет, указан ли слишком длинный путь к установочному носителю SQL Server." result="пройдено" message="Путь к установочному носителю SQL Server имеет допустимую длину." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="SetupCompatibilityCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, совместима ли текущая версия SQL Server с позже установленной версией." result="пройдено" message="Программа установки не обнаружила проблем совместимости." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="ServerCore64BitCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, является ли данная версия SQL Server 64-разрядной." result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+    <RunRuleResult ruleName="FacetWOW64PlatformCheck" machineName="DESKTOP-C73J7NQ" description="Определяет, поддерживается ли программа установки SQL Server на этой платформе операционной системы." result="пройдено" message="Программа установки SQL Server поддерживается на данной платформе операционной системы." imagePath="resources\ProgressSuccess.ico" />
+  </group>
+  <group groupName="InstallGlobalRules" groupDescription="Проверки конфигурации программы установки SQL Server 2019 для группы правил &quot;InstallGlobalRules&quot;">
+    <RunRuleResult ruleName="AclPermissionsFacet" machineName="DESKTOP-C73J7NQ" description="Проверяет согласованность разделов реестра SQL Server." result="пройдено" message="Разделы реестра SQL Server находятся в согласованном состоянии, допускающем обновление и установку SQL Server." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="FacetDomainControllerCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, является ли компьютер контроллером домена. Устанавливать SQL Server 2019 на контроллере домена не рекомендуется." result="пройдено" message="Компьютер не является контроллером домена." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="IsFirewallEnabled" machineName="DESKTOP-C73J7NQ" description="Проверяет, включен ли брандмауэр Windows." result="пройдено" message="Брандмауэр Windows не включен. Windows не будет блокировать удаленный доступ. Однако работа брандмауэров сторонних разработчиков может привести к ошибкам доступа." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="ServerCoreBlockUnsupportedSxSCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, установлена ли более ранняя версия SQL Server." result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+    <RunRuleResult ruleName="BlockUnsupportedSxSCheck" machineName="DESKTOP-C73J7NQ" description="Проверка наличия экземпляров SQL 2019 CTP с версией ниже CTP 3.0." result="пройдено" message="Экземпляры SQL 2019 CTP с версией ниже CTP 3.0 не обнаружены." imagePath="resources\ProgressSuccess.ico" />
+  </group>
+  <group groupName="InstallFeatureSpecificRules" groupDescription="Проверки конфигурации программы установки SQL Server 2019 для группы правил &quot;InstallFeatureSpecificRules&quot;">
+    <RunRuleResult ruleName="ASIsValidEditionForDeploymentModeCheck" machineName="DESKTOP-C73J7NQ" description="Проверьте, поддерживает ли этот выпуск служб SQL Server выбранный режим сервера служб Analysis Services." result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+    <RunRuleResult ruleName="SlipstreamMediaInfoCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, совпадает ли язык исходного носителя с языком указанного пакета обновления." result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+    <RunRuleResult ruleName="PowerShellCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, установлена ли уже в системе оболочка Windows PowerShell 3.0 или более высокой версии. Оболочка Windows PowerShell является обязательной для некоторых компонентов SQL Server." result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+    <RunRuleResult ruleName="ServerCoreBlockUnsupportedFeaturesCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, все ли выбранные компоненты поддерживаются на Windows Server Core." result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+    <RunRuleResult ruleName="Polybase_IsPolybaseInstalled" machineName="DESKTOP-C73J7NQ" description="PolyBase можно установить только на одном экземпляре SQL Server для каждого компьютера" result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+    <RunRuleResult ruleName="Polybase_IsSqlEngineRunning" machineName="DESKTOP-C73J7NQ" description="Для добавления компонента PolyBase в экземпляр SQL Server требуется подключение к ядру СУБД SQL Server в экземпляре" result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+    <RunRuleResult ruleName="Polybase_IsDomainController" machineName="DESKTOP-C73J7NQ" description="PolyBase нельзя установить на контроллере домена Active Directory" result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+    <RunRuleResult ruleName="EnterpriseCalLimit" machineName="DESKTOP-C73J7NQ" description="Проверяет, не введен ли ключ продукта Enterprise Server/CAL в системе, где имеется больше 20 физических ядер или 40 логических с технологией Hyper-Threading." result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+  </group>
+  <group groupName="InstallFeatureSpecificConfigRules" groupDescription="Проверки конфигурации программы установки SQL Server 2019 для группы правил &quot;InstallFeatureSpecificConfigRules&quot;">
+    <RunRuleResult ruleName="FAT32FileSystemCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, является ли заданный диск томом файловой системы FAT32. Установка в файловую систему FAT32 поддерживается, но не рекомендуется, поскольку эта системе хуже защищена, чем файловая система NTFS." result="пройдено" message="Указанный диск не имеет файловую систему FAT32." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="InstanceClashRule" machineName="DESKTOP-C73J7NQ" description="Проверяет, используется ли заданное имя экземпляра существующим экземпляром SQL Server." result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+    <RunRuleResult ruleName="StandaloneInstall_HasClusteredOrPreparedInstanceCheck" machineName="DESKTOP-C73J7NQ" description="Проверяет, используется ли выбранное имя экземпляра существующим кластеризованным или готовым к работе в кластере экземпляром на любом из узлов кластера. " result="пройдено" message="Ни на одном из узлов кластера не установлен кластеризованный или готовый к работе в кластере экземпляр с выбранным именем. " imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="BlockCrossLanguageInstall" machineName="DESKTOP-C73J7NQ" description="Проверяет, соответствует ли язык установки языку установленных компонентов SQL Server." result="пройдено" message="Нет установленных компонентов SQL Server, либо язык установки соответствует языку существующих компонентов SQL Server." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="BlockMixedArchitectureInstall" machineName="DESKTOP-C73J7NQ" description="Проверяет, соответствует ли архитектура ЦП устанавливаемых компонентов архитектуре ЦП указанного экземпляра." result="пройдено" message="Архитектура ЦП устанавливаемых компонентов соответствует архитектуре ЦП указанного экземпляра." imagePath="resources\ProgressSuccess.ico" />
+    <RunRuleResult ruleName="ASIsValidEditionForDeploymentModeCheck" machineName="DESKTOP-C73J7NQ" description="Проверьте, поддерживает ли этот выпуск служб SQL Server выбранный режим сервера служб Analysis Services." result="неприменимо" message="Это правило неприменимо к текущей конфигурации системы." imagePath="resources\ProgressSkip.ico" />
+  </group>
+  <Resources rulesDocumentation="https://go.microsoft.com/fwlink/?linkid=862098" community="https://go.microsoft.com/fwlink/?linkid=2094703" setupHelpFile="https://go.microsoft.com/fwlink/?linkid=862093" />
+</RunRuleResults>
+  </xml>
+</html>

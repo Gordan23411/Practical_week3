@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.SqlServer.TransferLoginsTask</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask" />.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+      <summary>Передает задаче объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="manager">Диспетчер точек останова, определенный для этой задачи.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+      <summary>Запускает задачу.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="transaction">Объект транзакции, частью которого является контейнер. Это значение может быть равно null.</param>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />.</returns>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+      <summary>Инициализирует свойства, связанные с задачей. Этот метод вызывается средой выполнения и не используется в коде.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <param name="eventInfos">Коллекция, которая содержит события, вызываемые при выполнении задачи.</param>
+      <param name="logEntryInfos">Коллекция записей журнала.</param>
+      <param name="refTracker">Средство отслеживания ссылок на объекты.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для загрузки пакета, сохраненного в виде XML-файла, используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="rootNode">Узел, который содержит сведения для загрузки.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.ResumeExecution">
+      <summary>Возобновляет выполнение задачи после приостановки. Задача или контейнер возобновляются средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+      <summary>Вызов этого метода кодом вашего приложения невозможен. Для сохранения пакета в виде XML-файла используйте метод <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />.</summary>
+      <param name="doc">XML-документ, в который сохраняется информация.</param>
+      <param name="events">Объект, который реализует интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> для вызова событий (ошибок, предупреждений и т. д.) при сохранении данных.</param>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SuspendExecution">
+      <summary>Указывает, что исполняемый объект должен быть приостановлен. Этот метод вызывается средой выполнения.</summary>
+    </member>
+    <member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+      <summary>Проверяет, правильно ли настроен компонент.</summary>
+      <param name="connections">Коллекция соединений, используемых задачей.</param>
+      <param name="variableDispenser">Объект <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> для блокировки переменных.</param>
+      <param name="events">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />.</param>
+      <param name="log">Объект, реализующий интерфейс <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.CopySids">
+      <summary>Возвращает или задает значение, указывающее, нужно ли копировать в назначение идентификаторы безопасности, связанные с именами входа.</summary>
+      <returns>Значение true, если идентификаторы безопасности, связанные с именами входа, копируются. В противном случае ― значение false.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.DatabasesList">
+      <summary>Возвращает или задает список баз данных.</summary>
+      <returns>Список баз данных.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.DestinationConnection">
+      <summary>Возвращает или задает имя диспетчера соединений для целевой базы данных.</summary>
+      <returns>Имя диспетчера соединений для целевой базы данных.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.IfObjectExists">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists" />, указывающее, должно ли выполнение задачи завершиться ошибкой, следует ли проигнорировать существующее имя входа или пропустить передачу имени входа, если аналогичное имя входа уже существует в назначении.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.LoginsList">
+      <summary>Возвращает или задает имена входа для передачи.</summary>
+      <returns>Имена входа для передачи.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.LoginsToTransfer">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer" />, указывающие имена входа, которые необходимо передать.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.SourceConnection">
+      <summary>Возвращает или задает имя диспетчера подключений для базы данных-источника.</summary>
+      <returns>Имя диспетчера подключений для базы данных-источника.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.CopySids">
+      <summary>Возвращает или задает значение типа Boolean, указывающее, нужно ли копировать в назначение идентификаторы безопасности, связанные с именами входа.</summary>
+      <returns>Значение true, если идентификаторы безопасности, связанные с именами входа, копируются.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DatabasesList">
+      <summary>Возвращает или задает коллекцию StringCollection, содержащую базы данных на исходном сервере, в которых содержатся имена входа, которые необходимо скопировать на целевой сервер.</summary>
+      <returns>Коллекция StringCollection, содержащая список баз данных на исходном сервере, в которых содержатся имена входа, которые необходимо скопировать на целевой сервер.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DebugMode">
+      <summary>Указывает, должна ли задача проверять точки останова. Это свойство задается подсистемой выполнения.</summary>
+      <returns>Значение true, если задача должна проверять, разрешены ли точки останова. Значение false, если задача может пропустить проверку точек останова.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DestinationConnection">
+      <summary>Возвращает или задает значение типа String, содержащее имя диспетчера соединений SMO для целевой базы данных.</summary>
+      <returns>Значение типа String, содержащее диспетчер соединений SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.ExecutionValue">
+      <summary>Возвращает объект, указывающий количество переданных имен входа.</summary>
+      <returns>Объект, содержащий количество переданных имен входа.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.IfObjectExists">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists" />, указывающее, должно ли выполнение задачи завершиться ошибкой, следует ли проигнорировать существующее имя входа или пропустить передачу имени входа, если аналогичное имя входа уже существует в назначении.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.LoginsList">
+      <summary>Возвращает или задает коллекцию StringCollection, содержащую имена входа, которые необходимо передать.</summary>
+      <returns>Коллекция StringCollection, содержащая имена входа, которые необходимо передать.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.LoginsToTransfer">
+      <summary>Возвращает или задает значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer" />, указывающие имена входа, которые необходимо передать.</summary>
+      <returns>Значение из перечисления <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer" />.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SourceConnection">
+      <summary>Возвращает или задает значение типа String, содержащее имя диспетчера соединений SMO для базы данных-источника.</summary>
+      <returns>Значение типа String, содержащее строку соединения диспетчера соединений SMO.</returns>
+    </member>
+    <member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SuspendRequired">
+      <summary>Возвращает или задает значение типа Boolean, которое указывает, следует ли приостанавливать выполнение задачи в точке останова. Это значение устанавливается подсистемой среды выполнения для задач и контейнеров при обнаружении точки останова.</summary>
+      <returns>Значение true, если задача приостанавливается при достижении точки останова.</returns>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists">
+      <summary>Содержит значения, используемые свойством <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.IfObjectExists" /><see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask" /> для определения способов обработки передачи, если имя входа существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists.FailTask">
+      <summary>Вызывает ошибку в выполнении задачи, если это же имя входа существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists.Overwrite">
+      <summary>Перезаписывает имя входа, если это же имя входа существует в назначении.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists.Skip">
+      <summary>Пропускает передачу имени входа, если это же имя входа существует в назначении.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask">
+      <summary>Представляет задачу «Передача имен входа».</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer">
+      <summary>Указывает имя входа, которое необходимо передать.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer.AllLogins">
+      <summary>Передает все имена входа.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer.SelectedLogins">
+      <summary>Передача только определенных имен входов. Указанные имена входа находятся в <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.LoginsList" />.</summary>
+    </member>
+    <member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer.AllLoginsFromSelectedDatabases">
+      <summary>Передает имена входа, если база данных по умолчанию, связанная с каждым именем входа, определенным в исходном соединении, совпадает с базой данных из списка баз данных. Список извлекается из свойства <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DatabasesList" />.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask">
+      <summary>Предоставляет элементы и перечисления, позволяющие передавать имена входа SQL Server из одного экземпляра SQL Server в другой.</summary>
+    </member>
+    <member name="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DtsTransferLoginsException">
+      <summary>Исключение, которое вызывается во время загрузки, если сохраненное имя корневого узла XML задачи повреждено.</summary>
+    </member>
+  </members>
+</doc>
